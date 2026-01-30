@@ -40,9 +40,69 @@ alpha-clash-tcg/
 ├── css/
 │   └── custom-styles.css   # Custom styling
 ├── js/
-│   └── custom-scripts.js   # Custom game logic
+│   └── custom-scripts.js   # Custom game logic (vanilla JS fallback)
+├── src/                    # TypeScript source
+│   ├── types/              # Type definitions
+│   ├── managers/           # Game logic managers
+│   ├── utils/              # Utility functions
+│   └── __tests__/          # Unit tests
+├── package.json            # NPM dependencies
+├── tsconfig.json           # TypeScript configuration
 └── README.md               # This file
 ```
+
+## Development Setup
+
+### Prerequisites
+
+- Node.js 18+ and npm
+- Git
+
+### TypeScript Development
+
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Build TypeScript**
+   ```bash
+   npm run build
+   ```
+
+3. **Run Tests**
+   ```bash
+   npm test
+   ```
+
+4. **Development Mode**
+   ```bash
+   npm run build:watch  # Watch for changes
+   npm run dev          # Build and serve
+   ```
+
+### Available Scripts
+
+| Script | Description |
+|--------|-------------|
+| `npm run build` | Compile TypeScript to JavaScript |
+| `npm run build:watch` | Watch mode for TypeScript |
+| `npm run dev` | Build and start development server |
+| `npm test` | Run unit tests |
+| `npm run test:watch` | Run tests in watch mode |
+| `npm run test:coverage` | Run tests with coverage report |
+| `npm run lint` | Run ESLint |
+| `npm run typecheck` | Type-check without emitting |
+| `npm run clean` | Remove build artifacts |
+
+### Project Architecture
+
+The TypeScript source is organized into:
+
+- **types/**: Type definitions for cards, game state, tokens
+- **managers/**: Core game logic (TokenManager, LifeManager, TurnManager)
+- **utils/**: Helper functions (throttle, debounce, shuffle, etc.)
+- **__tests__/**: Jest unit tests for all modules
 
 ## Quick Start
 
