@@ -1,0 +1,10 @@
+# Token Images Directory
+
+Place token images here:
+- damage.png
+- boost.png
+- shield.png
+- stun.png
+- freeze.png
+
+Recommended size: 64 x 64 pixels (square with transparent background)

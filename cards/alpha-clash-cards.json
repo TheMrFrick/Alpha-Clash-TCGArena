@@ -1,0 +1,1038 @@
+{
+  "_metadata": {
+    "name": "Alpha Clash Card Database",
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-01",
+    "totalCards": 50,
+    "source": "Deckplanet Import",
+    "description": "Sample card data for Alpha Clash TCG. Replace with full card data from Deckplanet."
+  },
+
+  "contender-blazing-phoenix": {
+    "id": "contender-blazing-phoenix",
+    "name": "Blazing Phoenix",
+    "type": "Contender",
+    "cost": 0,
+    "attack": 0,
+    "defense": 20,
+    "img_link": "contender-blazing-phoenix.webp",
+    "text": "At the start of your turn, if you have 5 or less life, gain 2 life.",
+    "rarity": "Ultra Rare",
+    "set": "Core Set",
+    "element": "Fire",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Blazing Phoenix",
+        "type": "Contender",
+        "image": "images/cards/contender-blazing-phoenix.webp"
+      }
+    }
+  },
+
+  "contender-frost-wyrm": {
+    "id": "contender-frost-wyrm",
+    "name": "Frost Wyrm",
+    "type": "Contender",
+    "cost": 0,
+    "attack": 0,
+    "defense": 20,
+    "img_link": "contender-frost-wyrm.webp",
+    "text": "Creatures you control cannot be frozen. At the end of your turn, you may freeze a creature with 2 or less attack.",
+    "rarity": "Ultra Rare",
+    "set": "Core Set",
+    "element": "Ice",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Frost Wyrm",
+        "type": "Contender",
+        "image": "images/cards/contender-frost-wyrm.webp"
+      }
+    }
+  },
+
+  "contender-shadow-lord": {
+    "id": "contender-shadow-lord",
+    "name": "Shadow Lord",
+    "type": "Contender",
+    "cost": 0,
+    "attack": 0,
+    "defense": 20,
+    "img_link": "contender-shadow-lord.webp",
+    "text": "Once per turn, you may pay 2 life to draw a card.",
+    "rarity": "Ultra Rare",
+    "set": "Core Set",
+    "element": "Dark",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Shadow Lord",
+        "type": "Contender",
+        "image": "images/cards/contender-shadow-lord.webp"
+      }
+    }
+  },
+
+  "portal-volcanic-rift": {
+    "id": "portal-volcanic-rift",
+    "name": "Volcanic Rift",
+    "type": "Portal",
+    "cost": 0,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "portal-volcanic-rift.webp",
+    "text": "Fire creatures you control get +1 attack. Tap: Deal 1 damage to any target.",
+    "rarity": "Rare",
+    "set": "Core Set",
+    "element": "Fire",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Volcanic Rift",
+        "type": "Portal",
+        "image": "images/cards/portal-volcanic-rift.webp"
+      }
+    }
+  },
+
+  "portal-frozen-citadel": {
+    "id": "portal-frozen-citadel",
+    "name": "Frozen Citadel",
+    "type": "Portal",
+    "cost": 0,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "portal-frozen-citadel.webp",
+    "text": "Ice creatures you control get +1 defense. Tap: Freeze a creature until end of turn.",
+    "rarity": "Rare",
+    "set": "Core Set",
+    "element": "Ice",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Frozen Citadel",
+        "type": "Portal",
+        "image": "images/cards/portal-frozen-citadel.webp"
+      }
+    }
+  },
+
+  "creature-fire-imp": {
+    "id": "creature-fire-imp",
+    "name": "Fire Imp",
+    "type": "Creature",
+    "cost": 1,
+    "attack": 2,
+    "defense": 1,
+    "img_link": "creature-fire-imp.webp",
+    "text": "Quick Strike - This creature deals combat damage before creatures without Quick Strike.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Fire",
+    "keywords": ["Quick Strike"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Fire Imp",
+        "type": "Creature",
+        "image": "images/cards/creature-fire-imp.webp"
+      }
+    }
+  },
+
+  "creature-ember-drake": {
+    "id": "creature-ember-drake",
+    "name": "Ember Drake",
+    "type": "Creature",
+    "cost": 3,
+    "attack": 3,
+    "defense": 3,
+    "img_link": "creature-ember-drake.webp",
+    "text": "Flying. When Ember Drake enters the Clashground, deal 1 damage to any target.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Fire",
+    "keywords": ["Flying"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Ember Drake",
+        "type": "Creature",
+        "image": "images/cards/creature-ember-drake.webp"
+      }
+    }
+  },
+
+  "creature-inferno-titan": {
+    "id": "creature-inferno-titan",
+    "name": "Inferno Titan",
+    "type": "Creature",
+    "cost": 6,
+    "attack": 6,
+    "defense": 6,
+    "img_link": "creature-inferno-titan.webp",
+    "text": "When Inferno Titan attacks, deal 3 damage divided as you choose among any number of targets.",
+    "rarity": "Rare",
+    "set": "Core Set",
+    "element": "Fire",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Inferno Titan",
+        "type": "Creature",
+        "image": "images/cards/creature-inferno-titan.webp"
+      }
+    }
+  },
+
+  "creature-ice-sprite": {
+    "id": "creature-ice-sprite",
+    "name": "Ice Sprite",
+    "type": "Creature",
+    "cost": 1,
+    "attack": 1,
+    "defense": 2,
+    "img_link": "creature-ice-sprite.webp",
+    "text": "When Ice Sprite enters the Clashground, you may freeze a creature with 2 or less attack.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Ice",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Ice Sprite",
+        "type": "Creature",
+        "image": "images/cards/creature-ice-sprite.webp"
+      }
+    }
+  },
+
+  "creature-frost-giant": {
+    "id": "creature-frost-giant",
+    "name": "Frost Giant",
+    "type": "Creature",
+    "cost": 4,
+    "attack": 4,
+    "defense": 5,
+    "img_link": "creature-frost-giant.webp",
+    "text": "When Frost Giant deals combat damage to a creature, freeze that creature.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Ice",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Frost Giant",
+        "type": "Creature",
+        "image": "images/cards/creature-frost-giant.webp"
+      }
+    }
+  },
+
+  "creature-blizzard-elemental": {
+    "id": "creature-blizzard-elemental",
+    "name": "Blizzard Elemental",
+    "type": "Creature",
+    "cost": 5,
+    "attack": 4,
+    "defense": 4,
+    "img_link": "creature-blizzard-elemental.webp",
+    "text": "Flying. When Blizzard Elemental enters the Clashground, freeze all creatures your opponent controls with 3 or less defense.",
+    "rarity": "Rare",
+    "set": "Core Set",
+    "element": "Ice",
+    "keywords": ["Flying"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Blizzard Elemental",
+        "type": "Creature",
+        "image": "images/cards/creature-blizzard-elemental.webp"
+      }
+    }
+  },
+
+  "creature-shadow-stalker": {
+    "id": "creature-shadow-stalker",
+    "name": "Shadow Stalker",
+    "type": "Creature",
+    "cost": 2,
+    "attack": 3,
+    "defense": 1,
+    "img_link": "creature-shadow-stalker.webp",
+    "text": "Stealth - Cannot be blocked except by creatures with Stealth.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Dark",
+    "keywords": ["Stealth"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Shadow Stalker",
+        "type": "Creature",
+        "image": "images/cards/creature-shadow-stalker.webp"
+      }
+    }
+  },
+
+  "creature-void-reaper": {
+    "id": "creature-void-reaper",
+    "name": "Void Reaper",
+    "type": "Creature",
+    "cost": 4,
+    "attack": 4,
+    "defense": 3,
+    "img_link": "creature-void-reaper.webp",
+    "text": "When Void Reaper destroys a creature in combat, draw a card.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Dark",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Void Reaper",
+        "type": "Creature",
+        "image": "images/cards/creature-void-reaper.webp"
+      }
+    }
+  },
+
+  "creature-nightmare-dragon": {
+    "id": "creature-nightmare-dragon",
+    "name": "Nightmare Dragon",
+    "type": "Creature",
+    "cost": 7,
+    "attack": 7,
+    "defense": 5,
+    "img_link": "creature-nightmare-dragon.webp",
+    "text": "Flying. When Nightmare Dragon enters the Clashground, each opponent discards a card. When it attacks, each opponent discards a card.",
+    "rarity": "Ultra Rare",
+    "set": "Core Set",
+    "element": "Dark",
+    "keywords": ["Flying"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Nightmare Dragon",
+        "type": "Creature",
+        "image": "images/cards/creature-nightmare-dragon.webp"
+      }
+    }
+  },
+
+  "creature-lightning-elemental": {
+    "id": "creature-lightning-elemental",
+    "name": "Lightning Elemental",
+    "type": "Creature",
+    "cost": 3,
+    "attack": 4,
+    "defense": 1,
+    "img_link": "creature-lightning-elemental.webp",
+    "text": "Haste - Can attack the turn it enters the Clashground.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Storm",
+    "keywords": ["Haste"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Lightning Elemental",
+        "type": "Creature",
+        "image": "images/cards/creature-lightning-elemental.webp"
+      }
+    }
+  },
+
+  "creature-stone-guardian": {
+    "id": "creature-stone-guardian",
+    "name": "Stone Guardian",
+    "type": "Creature",
+    "cost": 3,
+    "attack": 1,
+    "defense": 5,
+    "img_link": "creature-stone-guardian.webp",
+    "text": "Defender - This creature cannot attack. Taunt - Enemy creatures must attack this creature if able.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Earth",
+    "keywords": ["Defender", "Taunt"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Stone Guardian",
+        "type": "Creature",
+        "image": "images/cards/creature-stone-guardian.webp"
+      }
+    }
+  },
+
+  "creature-forest-spirit": {
+    "id": "creature-forest-spirit",
+    "name": "Forest Spirit",
+    "type": "Creature",
+    "cost": 2,
+    "attack": 2,
+    "defense": 2,
+    "img_link": "creature-forest-spirit.webp",
+    "text": "When Forest Spirit enters the Clashground, gain 2 life.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Nature",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Forest Spirit",
+        "type": "Creature",
+        "image": "images/cards/creature-forest-spirit.webp"
+      }
+    }
+  },
+
+  "creature-wind-rider": {
+    "id": "creature-wind-rider",
+    "name": "Wind Rider",
+    "type": "Creature",
+    "cost": 2,
+    "attack": 2,
+    "defense": 2,
+    "img_link": "creature-wind-rider.webp",
+    "text": "Flying. When Wind Rider enters the Clashground, draw a card then discard a card.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Air",
+    "keywords": ["Flying"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Wind Rider",
+        "type": "Creature",
+        "image": "images/cards/creature-wind-rider.webp"
+      }
+    }
+  },
+
+  "spell-fireball": {
+    "id": "spell-fireball",
+    "name": "Fireball",
+    "type": "Spell",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "spell-fireball.webp",
+    "text": "Deal 3 damage to any target.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Fire",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Fireball",
+        "type": "Spell",
+        "image": "images/cards/spell-fireball.webp"
+      }
+    }
+  },
+
+  "spell-inferno-wave": {
+    "id": "spell-inferno-wave",
+    "name": "Inferno Wave",
+    "type": "Spell",
+    "cost": 4,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "spell-inferno-wave.webp",
+    "text": "Deal 2 damage to all enemy creatures.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Fire",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Inferno Wave",
+        "type": "Spell",
+        "image": "images/cards/spell-inferno-wave.webp"
+      }
+    }
+  },
+
+  "spell-frost-nova": {
+    "id": "spell-frost-nova",
+    "name": "Frost Nova",
+    "type": "Spell",
+    "cost": 3,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "spell-frost-nova.webp",
+    "text": "Freeze all enemy creatures.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Ice",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Frost Nova",
+        "type": "Spell",
+        "image": "images/cards/spell-frost-nova.webp"
+      }
+    }
+  },
+
+  "spell-ice-shard": {
+    "id": "spell-ice-shard",
+    "name": "Ice Shard",
+    "type": "Spell",
+    "cost": 1,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "spell-ice-shard.webp",
+    "text": "Deal 2 damage to target creature. If it survives, freeze it.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Ice",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Ice Shard",
+        "type": "Spell",
+        "image": "images/cards/spell-ice-shard.webp"
+      }
+    }
+  },
+
+  "spell-dark-ritual": {
+    "id": "spell-dark-ritual",
+    "name": "Dark Ritual",
+    "type": "Spell",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "spell-dark-ritual.webp",
+    "text": "Pay 3 life. Draw 3 cards.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Dark",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Dark Ritual",
+        "type": "Spell",
+        "image": "images/cards/spell-dark-ritual.webp"
+      }
+    }
+  },
+
+  "spell-shadow-bolt": {
+    "id": "spell-shadow-bolt",
+    "name": "Shadow Bolt",
+    "type": "Spell",
+    "cost": 3,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "spell-shadow-bolt.webp",
+    "text": "Destroy target creature with 3 or less defense.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Dark",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Shadow Bolt",
+        "type": "Spell",
+        "image": "images/cards/spell-shadow-bolt.webp"
+      }
+    }
+  },
+
+  "spell-lightning-strike": {
+    "id": "spell-lightning-strike",
+    "name": "Lightning Strike",
+    "type": "Spell",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "spell-lightning-strike.webp",
+    "text": "Deal 3 damage to target creature or Contender.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Storm",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Lightning Strike",
+        "type": "Spell",
+        "image": "images/cards/spell-lightning-strike.webp"
+      }
+    }
+  },
+
+  "spell-natures-blessing": {
+    "id": "spell-natures-blessing",
+    "name": "Nature's Blessing",
+    "type": "Spell",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "spell-natures-blessing.webp",
+    "text": "Target creature gets +2/+2 until end of turn. You gain 2 life.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Nature",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Nature's Blessing",
+        "type": "Spell",
+        "image": "images/cards/spell-natures-blessing.webp"
+      }
+    }
+  },
+
+  "spell-draw-power": {
+    "id": "spell-draw-power",
+    "name": "Draw Power",
+    "type": "Spell",
+    "cost": 3,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "spell-draw-power.webp",
+    "text": "Draw 2 cards.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Neutral",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Draw Power",
+        "type": "Spell",
+        "image": "images/cards/spell-draw-power.webp"
+      }
+    }
+  },
+
+  "quickspell-counter": {
+    "id": "quickspell-counter",
+    "name": "Counter",
+    "type": "Quick-Spell",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "quickspell-counter.webp",
+    "text": "Counter target spell.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Neutral",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Counter",
+        "type": "Quick-Spell",
+        "image": "images/cards/quickspell-counter.webp"
+      }
+    }
+  },
+
+  "quickspell-shield-bash": {
+    "id": "quickspell-shield-bash",
+    "name": "Shield Bash",
+    "type": "Quick-Spell",
+    "cost": 1,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "quickspell-shield-bash.webp",
+    "text": "Target creature gets +0/+3 until end of turn. It can block an additional creature this turn.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Neutral",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Shield Bash",
+        "type": "Quick-Spell",
+        "image": "images/cards/quickspell-shield-bash.webp"
+      }
+    }
+  },
+
+  "quickspell-sudden-strike": {
+    "id": "quickspell-sudden-strike",
+    "name": "Sudden Strike",
+    "type": "Quick-Spell",
+    "cost": 1,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "quickspell-sudden-strike.webp",
+    "text": "Target creature gets +2/+0 until end of turn.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Neutral",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Sudden Strike",
+        "type": "Quick-Spell",
+        "image": "images/cards/quickspell-sudden-strike.webp"
+      }
+    }
+  },
+
+  "artifact-power-crystal": {
+    "id": "artifact-power-crystal",
+    "name": "Power Crystal",
+    "type": "Artifact",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "artifact-power-crystal.webp",
+    "text": "Tap: Add 1 resource. This resource can be used for any card type.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Neutral",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Power Crystal",
+        "type": "Artifact",
+        "image": "images/cards/artifact-power-crystal.webp"
+      }
+    }
+  },
+
+  "artifact-sword-of-flames": {
+    "id": "artifact-sword-of-flames",
+    "name": "Sword of Flames",
+    "type": "Artifact",
+    "cost": 3,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "artifact-sword-of-flames.webp",
+    "text": "Equipped creature gets +2/+0 and has 'When this creature deals combat damage to a Contender, deal 1 damage to that Contender.'",
+    "rarity": "Rare",
+    "set": "Core Set",
+    "element": "Fire",
+    "subtype": "Equipment",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Sword of Flames",
+        "type": "Artifact",
+        "image": "images/cards/artifact-sword-of-flames.webp"
+      }
+    }
+  },
+
+  "artifact-frost-armor": {
+    "id": "artifact-frost-armor",
+    "name": "Frost Armor",
+    "type": "Artifact",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "artifact-frost-armor.webp",
+    "text": "Equipped creature gets +0/+3 and has 'When this creature is dealt damage by a creature, freeze that creature.'",
+    "rarity": "Rare",
+    "set": "Core Set",
+    "element": "Ice",
+    "subtype": "Equipment",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Frost Armor",
+        "type": "Artifact",
+        "image": "images/cards/artifact-frost-armor.webp"
+      }
+    }
+  },
+
+  "artifact-shadow-cloak": {
+    "id": "artifact-shadow-cloak",
+    "name": "Shadow Cloak",
+    "type": "Artifact",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "artifact-shadow-cloak.webp",
+    "text": "Equipped creature has Stealth.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Dark",
+    "subtype": "Equipment",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Shadow Cloak",
+        "type": "Artifact",
+        "image": "images/cards/artifact-shadow-cloak.webp"
+      }
+    }
+  },
+
+  "artifact-war-banner": {
+    "id": "artifact-war-banner",
+    "name": "War Banner",
+    "type": "Artifact",
+    "cost": 3,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "artifact-war-banner.webp",
+    "text": "Creatures you control get +1/+0.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Neutral",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "War Banner",
+        "type": "Artifact",
+        "image": "images/cards/artifact-war-banner.webp"
+      }
+    }
+  },
+
+  "artifact-healing-fountain": {
+    "id": "artifact-healing-fountain",
+    "name": "Healing Fountain",
+    "type": "Artifact",
+    "cost": 3,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "artifact-healing-fountain.webp",
+    "text": "At the beginning of your turn, gain 1 life.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Nature",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Healing Fountain",
+        "type": "Artifact",
+        "image": "images/cards/artifact-healing-fountain.webp"
+      }
+    }
+  },
+
+  "trap-fire-trap": {
+    "id": "trap-fire-trap",
+    "name": "Fire Trap",
+    "type": "Trap",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "trap-fire-trap.webp",
+    "text": "When an opponent's creature attacks, deal 3 damage to it.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Fire",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Fire Trap",
+        "type": "Trap",
+        "image": "images/cards/trap-fire-trap.webp"
+      }
+    }
+  },
+
+  "trap-ice-wall": {
+    "id": "trap-ice-wall",
+    "name": "Ice Wall",
+    "type": "Trap",
+    "cost": 1,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "trap-ice-wall.webp",
+    "text": "When an opponent's creature attacks, freeze it and end combat.",
+    "rarity": "Common",
+    "set": "Core Set",
+    "element": "Ice",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Ice Wall",
+        "type": "Trap",
+        "image": "images/cards/trap-ice-wall.webp"
+      }
+    }
+  },
+
+  "trap-shadow-ambush": {
+    "id": "trap-shadow-ambush",
+    "name": "Shadow Ambush",
+    "type": "Trap",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "trap-shadow-ambush.webp",
+    "text": "When an opponent plays a creature, destroy it.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Dark",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Shadow Ambush",
+        "type": "Trap",
+        "image": "images/cards/trap-shadow-ambush.webp"
+      }
+    }
+  },
+
+  "trap-mirror-force": {
+    "id": "trap-mirror-force",
+    "name": "Mirror Force",
+    "type": "Trap",
+    "cost": 3,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "trap-mirror-force.webp",
+    "text": "When an opponent's creature attacks, destroy all attacking creatures.",
+    "rarity": "Rare",
+    "set": "Core Set",
+    "element": "Neutral",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Mirror Force",
+        "type": "Trap",
+        "image": "images/cards/trap-mirror-force.webp"
+      }
+    }
+  },
+
+  "trap-counter-spell": {
+    "id": "trap-counter-spell",
+    "name": "Counter Spell",
+    "type": "Trap",
+    "cost": 2,
+    "attack": 0,
+    "defense": 0,
+    "img_link": "trap-counter-spell.webp",
+    "text": "When an opponent plays a spell, counter that spell.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Neutral",
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Counter Spell",
+        "type": "Trap",
+        "image": "images/cards/trap-counter-spell.webp"
+      }
+    }
+  },
+
+  "creature-phoenix-hatchling": {
+    "id": "creature-phoenix-hatchling",
+    "name": "Phoenix Hatchling",
+    "type": "Creature",
+    "cost": 2,
+    "attack": 2,
+    "defense": 1,
+    "img_link": "creature-phoenix-hatchling.webp",
+    "text": "Flying. When Phoenix Hatchling dies, return it to your hand at the end of turn.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Fire",
+    "keywords": ["Flying"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Phoenix Hatchling",
+        "type": "Creature",
+        "image": "images/cards/creature-phoenix-hatchling.webp"
+      }
+    }
+  },
+
+  "creature-glacial-behemoth": {
+    "id": "creature-glacial-behemoth",
+    "name": "Glacial Behemoth",
+    "type": "Creature",
+    "cost": 6,
+    "attack": 5,
+    "defense": 7,
+    "img_link": "creature-glacial-behemoth.webp",
+    "text": "Taunt. When Glacial Behemoth enters the Clashground, freeze up to two target creatures.",
+    "rarity": "Rare",
+    "set": "Core Set",
+    "element": "Ice",
+    "keywords": ["Taunt"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Glacial Behemoth",
+        "type": "Creature",
+        "image": "images/cards/creature-glacial-behemoth.webp"
+      }
+    }
+  },
+
+  "creature-dark-assassin": {
+    "id": "creature-dark-assassin",
+    "name": "Dark Assassin",
+    "type": "Creature",
+    "cost": 3,
+    "attack": 3,
+    "defense": 2,
+    "img_link": "creature-dark-assassin.webp",
+    "text": "Stealth. When Dark Assassin attacks and is unblocked, deal 2 additional damage to the Contender.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Dark",
+    "keywords": ["Stealth"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Dark Assassin",
+        "type": "Creature",
+        "image": "images/cards/creature-dark-assassin.webp"
+      }
+    }
+  },
+
+  "creature-earth-elemental": {
+    "id": "creature-earth-elemental",
+    "name": "Earth Elemental",
+    "type": "Creature",
+    "cost": 4,
+    "attack": 3,
+    "defense": 6,
+    "img_link": "creature-earth-elemental.webp",
+    "text": "Taunt. Earth Elemental can't be targeted by spells or abilities.",
+    "rarity": "Uncommon",
+    "set": "Core Set",
+    "element": "Earth",
+    "keywords": ["Taunt", "Hexproof"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Earth Elemental",
+        "type": "Creature",
+        "image": "images/cards/creature-earth-elemental.webp"
+      }
+    }
+  },
+
+  "creature-storm-herald": {
+    "id": "creature-storm-herald",
+    "name": "Storm Herald",
+    "type": "Creature",
+    "cost": 5,
+    "attack": 4,
+    "defense": 4,
+    "img_link": "creature-storm-herald.webp",
+    "text": "Flying. When Storm Herald enters the Clashground, deal 2 damage to each creature without Flying.",
+    "rarity": "Rare",
+    "set": "Core Set",
+    "element": "Storm",
+    "keywords": ["Flying"],
+    "isHorizontal": false,
+    "face": {
+      "front": {
+        "name": "Storm Herald",
+        "type": "Creature",
+        "image": "images/cards/creature-storm-herald.webp"
+      }
+    }
+  }
+}

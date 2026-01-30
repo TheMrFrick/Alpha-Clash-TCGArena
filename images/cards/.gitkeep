@@ -1,0 +1,8 @@
+# Card Images Directory
+
+Place card images here.
+
+Files should match the `img_link` field in cards/alpha-clash-cards.json
+
+Recommended format: WebP or PNG
+Recommended size: 375 x 525 pixels

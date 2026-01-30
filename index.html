@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alpha Clash TCG - Battle with your Contender and clash your way to victory! Play online at TCGArena.">
+    <meta name="keywords" content="Alpha Clash, TCG, Trading Card Game, Online Card Game, TCGArena">
+    <meta name="author" content="Alpha Clash TCG">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Alpha Clash TCG - TCGArena">
+    <meta property="og:description" content="Battle with your Contender and clash your way to victory!">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alpha Clash TCG - TCGArena">
+    <meta name="twitter:description" content="Battle with your Contender and clash your way to victory!">
+    <meta name="twitter:image" content="images/logo.png">
+
+    <title>Alpha Clash TCG - TCGArena</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- TCGArena Core Styles (loaded by platform) -->
+    <!-- Custom Alpha Clash Styles -->
+    <link rel="stylesheet" href="css/custom-styles.css">
+
+    <style>
+        /* Critical CSS for fast initial render */
+        :root {
+            --ac-primary: #FF6B35;
+            --ac-secondary: #004E89;
+            --ac-accent: #FFD700;
+            --ac-background: #0A0E27;
+            --ac-surface: #1a1a2e;
+            --ac-text: #FFFFFF;
+            --ac-text-secondary: #B0B0B0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', 'Segoe UI', Arial, sans-serif;
+            background-color: var(--ac-background);
+            color: var(--ac-text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Loading Screen */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--ac-background) 0%, var(--ac-surface) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out;
+        }
+
+        #loading-screen.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #loading-screen .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        #loading-screen .loading-text {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            color: var(--ac-accent);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        #loading-screen .loading-bar {
+            width: 300px;
+            height: 4px;
+            background: var(--ac-surface);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        #loading-screen .loading-progress {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--ac-primary), var(--ac-accent));
+            border-radius: 2px;
+            animation: loading 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes loading {
+            0% { width: 0%; }
+            50% { width: 70%; }
+            100% { width: 100%; }
+        }
+
+        /* Game Container */
+        #game-container {
+            width: 100%;
+            min-height: 100vh;
+            display: none;
+        }
+
+        #game-container.loaded {
+            display: block;
+        }
+
+        /* Utility Classes */
+        .hidden { display: none !important; }
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <img src="images/logo.png" alt="Alpha Clash" class="logo" onerror="this.style.display='none'">
+        <div class="loading-text">Alpha Clash</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+        <p style="margin-top: 20px; color: var(--ac-text-secondary);">Loading game assets...</p>
+    </div>
+
+    <!-- Main Game Container -->
+    <div id="game-container">
+        <!-- TCGArena will inject the game interface here -->
+
+        <!-- Header -->
+        <header id="game-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="Alpha Clash" class="header-logo" onerror="this.parentElement.innerHTML='<span class=\'logo-text\'>Alpha Clash</span>'">
+                </div>
+                <nav class="game-nav">
+                    <button id="btn-menu" class="nav-btn" title="Menu">
+                        <span class="icon">&#9776;</span>
+                    </button>
+                    <button id="btn-settings" class="nav-btn" title="Settings">
+                        <span class="icon">&#9881;</span>
+                    </button>
+                    <button id="btn-fullscreen" class="nav-btn" title="Fullscreen">
+                        <span class="icon">&#x26F6;</span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Game Board Area -->
+        <main id="game-board">
+            <!-- Opponent Area -->
+            <section id="opponent-area" class="player-area opponent">
+                <div class="zone-row top-row">
+                    <div id="opponent-portal" class="zone portal-zone" data-zone="Portal">
+                        <div class="zone-label">Portal</div>
+                    </div>
+                    <div id="opponent-contender" class="zone contender-zone" data-zone="Contender">
+                        <div class="zone-label">Contender</div>
+                        <div class="life-display">
+                            <span class="life-value">20</span>
+                        </div>
+                    </div>
+                    <div id="opponent-artifacts" class="zone artifact-zone" data-zone="Artifact-Trap-Zone">
+                        <div class="zone-label">Artifacts & Traps</div>
+                    </div>
+                    <div id="opponent-resources" class="zone resource-zone" data-zone="Resources">
+                        <div class="zone-label">Resources</div>
+                    </div>
+                    <div class="deck-discard-group">
+                        <div id="opponent-deck" class="zone deck-zone" data-zone="Deck">
+                            <div class="zone-label">Deck</div>
+                            <div class="card-count">40</div>
+                        </div>
+                        <div id="opponent-discard" class="zone discard-zone" data-zone="Discard">
+                            <div class="zone-label">Discard</div>
+                            <div class="card-count">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zone-row clashground-row">
+                    <div id="opponent-clashground" class="zone clashground-zone" data-zone="Clashground">
+                        <div class="zone-label">Clashground</div>
+                    </div>
+                </div>
+                <div id="opponent-hand" class="zone hand-zone" data-zone="Hand">
+                    <div class="zone-label">Opponent's Hand</div>
+                    <div class="hand-count">8</div>
+                </div>
+            </section>
+
+            <!-- Clash Zone (Combat Area) -->
+            <section id="clash-zone" class="combat-area" data-zone="Clash-Zone">
+                <div class="zone-label">Clash Zone</div>
+                <div class="combat-divider"></div>
+            </section>
+
+            <!-- Player Area -->
+            <section id="player-area" class="player-area self">
+                <div id="player-hand" class="zone hand-zone" data-zone="Hand">
+                    <div class="zone-label">Your Hand</div>
+                </div>
+                <div class="zone-row clashground-row">
+                    <div id="player-clashground" class="zone clashground-zone" data-zone="Clashground">
+                        <div class="zone-label">Clashground</div>
+                    </div>
+                </div>
+                <div class="zone-row bottom-row">
+                    <div id="player-portal" class="zone portal-zone" data-zone="Portal">
+                        <div class="zone-label">Portal</div>
+                    </div>
+                    <div id="player-contender" class="zone contender-zone" data-zone="Contender">
+                        <div class="zone-label">Contender</div>
+                        <div class="life-display">
+                            <span class="life-value">20</span>
+                        </div>
+                    </div>
+                    <div id="player-artifacts" class="zone artifact-zone" data-zone="Artifact-Trap-Zone">
+                        <div class="zone-label">Artifacts & Traps</div>
+                    </div>
+                    <div id="player-resources" class="zone resource-zone" data-zone="Resources">
+                        <div class="zone-label">Resources</div>
+                    </div>
+                    <div class="deck-discard-group">
+                        <div id="player-deck" class="zone deck-zone" data-zone="Deck">
+                            <div class="zone-label">Deck</div>
+                            <div class="card-count">40</div>
+                        </div>
+                        <div id="player-discard" class="zone discard-zone" data-zone="Discard">
+                            <div class="zone-label">Discard</div>
+                            <div class="card-count">0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Turn/Phase Indicator -->
+        <aside id="turn-indicator">
+            <div class="turn-info">
+                <span class="turn-label">Turn</span>
+                <span class="turn-number">1</span>
+            </div>
+            <div class="phase-info">
+                <span class="phase-name">Main Phase</span>
+            </div>
+            <button id="btn-end-turn" class="end-turn-btn">End Turn</button>
+        </aside>
+
+        <!-- Chat Panel -->
+        <aside id="chat-panel" class="hidden">
+            <div class="chat-header">
+                <span>Chat</span>
+                <button id="btn-close-chat" class="close-btn">&times;</button>
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="btn-send-chat">Send</button>
+            </div>
+        </aside>
+
+        <!-- Card Zoom Overlay -->
+        <div id="card-zoom-overlay" class="hidden">
+            <div class="zoomed-card-container">
+                <img id="zoomed-card-image" src="" alt="Card">
+                <div class="card-details">
+                    <h3 class="card-name"></h3>
+                    <p class="card-type"></p>
+                    <p class="card-stats"></p>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Context Menu -->
+        <div id="context-menu" class="hidden">
+            <ul class="context-menu-list">
+                <!-- Populated dynamically -->
+            </ul>
+        </div>
+
+        <!-- Token Tray -->
+        <div id="token-tray">
+            <div class="token-tray-header">Tokens</div>
+            <div class="token-list">
+                <div class="token-item" data-token="damage-counter" draggable="true">
+                    <div class="token-icon damage"></div>
+                    <span>Damage</span>
+                </div>
+                <div class="token-item" data-token="boost-counter" draggable="true">
+                    <div class="token-icon boost"></div>
+                    <span>Boost</span>
+                </div>
+                <div class="token-item" data-token="shield-counter" draggable="true">
+                    <div class="token-icon shield"></div>
+                    <span>Shield</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Over Modal -->
+        <div id="game-over-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 class="result-title">Victory!</h2>
+                <p class="result-message">You have defeated your opponent!</p>
+                <div class="modal-actions">
+                    <button class="btn-primary" id="btn-rematch">Rematch</button>
+                    <button class="btn-secondary" id="btn-exit">Exit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TCGArena Core Scripts (loaded by platform) -->
+    <!-- Custom Alpha Clash Scripts -->
+    <script src="js/custom-scripts.js"></script>
+
+    <script>
+        // Initialize loading sequence
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            const gameContainer = document.getElementById('game-container');
+
+            // Simulate loading (TCGArena will handle actual loading)
+            setTimeout(function() {
+                loadingScreen.classList.add('hidden');
+                gameContainer.classList.add('loaded');
+            }, 2000);
+        });
+
+        // Fullscreen toggle
+        document.getElementById('btn-fullscreen')?.addEventListener('click', function() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        });
+    </script>
+</body>
+</html>
