@@ -1,700 +1,459 @@
 {
-  "gameName": "Alpha Clash",
-  "version": "1.0.0",
-  "minPlayers": 2,
-  "maxPlayers": 2,
-  "description": "Alpha Clash Trading Card Game - Battle with your Contender and clash your way to victory!",
-  "author": "Alpha Clash TCG",
-  "website": "https://alphaclash.com",
-
-  "players": {
-    "startingLife": 20,
-    "startingHandSize": 8,
-    "maxHandSize": null,
-    "deckSize": {
-      "min": 40,
-      "max": 60
-    }
+  "name": "Alpha Clash TCG",
+  "menuBackgroundImage": "images/backgrounds/arena-bg.svg",
+  "defaultRessources": {
+    "backgrounds": [
+      "images/backgrounds/arena-bg.svg"
+    ],
+    "decksUrl": ""
   },
-
-  "mulligan": {
-    "enabled": true,
-    "type": "partial",
-    "description": "Choose any number of cards to put back and redraw",
-    "triggeredByButton": false,
-    "maxMulligans": 1
-  },
-
-  "sections": {
-    "Deck": {
-      "title": "Deck",
-      "type": "deck",
-      "height": "MEDIUM",
-      "alignment": "DECK",
-      "displayedTitle": "Deck",
-      "isShuffled": true,
-      "drawOnClick": true,
-      "faceDown": true,
-      "viewable": false,
-      "position": {
-        "row": 1,
-        "column": 4
-      }
-    },
-
-    "Hand": {
-      "title": "Hand",
-      "type": "hand",
-      "height": "LOW",
-      "alignment": "HAND",
-      "displayedTitle": "Hand",
-      "faceDown": false,
-      "maxCards": null,
-      "sortable": true,
-      "position": {
-        "row": 3,
-        "column": 1,
-        "span": 5
-      }
-    },
-
-    "Contender": {
-      "title": "Contender",
-      "type": "special",
-      "height": "MEDIUM",
-      "alignment": "CENTER",
-      "displayedTitle": "Contender",
-      "maxCards": 1,
-      "faceDown": false,
-      "layout": "single",
-      "trackLife": true,
-      "startingLife": 20,
-      "position": {
-        "row": 2,
-        "column": 2
-      }
-    },
-
-    "Portal": {
-      "title": "Portal",
-      "type": "special",
-      "height": "MEDIUM",
-      "alignment": "LEFT",
-      "displayedTitle": "Portal",
-      "maxCards": 1,
-      "faceDown": false,
-      "layout": "single",
-      "position": {
-        "row": 2,
-        "column": 1
-      }
-    },
-
-    "Clashground": {
-      "title": "Clashground",
-      "type": "play",
-      "height": "HIGH",
-      "alignment": "CENTER",
-      "displayedTitle": "Clashground",
-      "maxCards": null,
-      "faceDown": false,
-      "layout": "grid",
-      "gridColumns": 5,
-      "canTap": true,
-      "position": {
-        "row": 1,
-        "column": 1,
-        "span": 3
-      }
-    },
-
-    "Clash-Zone": {
-      "title": "Clash Zone",
-      "type": "combat",
-      "height": "MEDIUM",
-      "alignment": "CENTER",
-      "displayedTitle": "Clash Zone",
-      "maxCards": null,
-      "faceDown": false,
-      "highlightOnCombat": true,
-      "combatIndicator": true,
-      "position": {
-        "row": 0,
-        "column": 2,
-        "span": 2
-      }
-    },
-
-    "Resources": {
-      "title": "Resources",
-      "type": "resource",
-      "height": "LOW",
-      "alignment": "BOTTOM",
-      "displayedTitle": "Resources",
-      "maxCards": null,
-      "faceDown": true,
-      "canTap": true,
-      "autoUntap": true,
-      "position": {
-        "row": 2,
-        "column": 3
-      }
-    },
-
-    "Oblivion": {
-      "title": "Oblivion",
-      "type": "discard",
-      "height": "MEDIUM",
-      "alignment": "DECK",
-      "displayedTitle": "Oblivion",
-      "faceDown": false,
-      "viewable": true,
-      "stackDisplay": true,
-      "position": {
-        "row": 1,
-        "column": 5
-      }
-    },
-
-    "Banished": {
-      "title": "Banished",
-      "type": "exile",
-      "height": "MEDIUM",
-      "alignment": "DECK",
-      "displayedTitle": "Banished Zone",
-      "faceDown": false,
-      "viewable": true,
-      "stackDisplay": true,
-      "position": {
-        "row": 0,
-        "column": 5
-      }
-    },
-
-    "Accessory-Zone": {
-      "title": "Accessory Zone",
-      "type": "permanent",
-      "height": "LOW",
-      "alignment": "RIGHT",
-      "displayedTitle": "Accessories",
-      "maxCards": null,
-      "faceDown": false,
-      "allowFaceDown": true,
-      "canTap": true,
-      "position": {
-        "row": 2,
-        "column": 4
-      }
-    }
-  },
-
+  "customHelp": "How to play Alpha Clash TCG:\n- Each player starts with a Contender (your main character with health points).\n- Draw 8 cards to start. You may mulligan once.\n- First player skips their draw phase on turn 1.\n- Each turn: Untap → Draw → Resource (play 1 card face-down) → Main → Clash → Main 2 → End.\n- Tap resources to pay for cards. Any card can be a resource.\n- Attack your opponent's Contender or their Clash cards.\n- Reduce opponent's Contender health to 0 to win!\n\nZones: Oblivion = graveyard, Banished = exiled cards.",
+  "cardRotation": "90",
   "cards": {
     "dataUrl": "cards/alpha-clash-cards.json",
     "cardBack": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/default_card_back.webp",
-    "cardBackColor": "#1a1a2e",
     "imageBasePath": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/",
-    "imageField": "imgLink",
-    "imageExtension": "",
-    "cardSize": {
-      "width": 250,
-      "height": 350
-    },
-    "extraCardBacks": {
-      "Contender": "images/contender-back.png",
-      "Portal": "images/portal-back.png"
-    },
-    "cardFields": {
-      "id": "id",
-      "name": "name",
-      "type": "type",
-      "subtype": "subtype",
-      "color": "color",
-      "cost": "cost",
-      "specificCost": "specificCost",
-      "attack": "attack",
-      "defense": "defense",
-      "health": "health",
-      "text": "text",
-      "image": "imgLink",
-      "rarity": "rarity",
-      "set": "set",
-      "affiliation": "affiliation",
-      "keywords": "keywords"
-    }
+    "imageField": "imgLink"
   },
-
-  "gameplay": {
-    "turnPhases": [
-      {
-        "id": "start",
-        "name": "Start Phase",
-        "description": "Beginning of turn effects trigger",
-        "automatic": true
-      },
-      {
-        "id": "untap",
-        "name": "Untap Phase",
-        "description": "Untap all tapped cards you control",
-        "automatic": true,
-        "autoUntapSections": ["Clashground", "Resources", "Accessory-Zone"]
-      },
-      {
-        "id": "draw",
-        "name": "Draw Phase",
-        "description": "Draw 1 card from your deck",
-        "autoDraw": 1,
-        "skipFirstTurn": true
-      },
-      {
-        "id": "resource",
-        "name": "Resource Phase",
-        "description": "You may play 1 card face-down as a resource",
-        "resourcePlayLimit": 1
-      },
-      {
-        "id": "main",
-        "name": "Main Phase",
-        "description": "Play creatures, artifacts, and traps. Activate abilities.",
-        "canPlayCards": true,
-        "canActivateAbilities": true
-      },
-      {
-        "id": "clash",
-        "name": "Clash Phase",
-        "description": "Declare attackers and resolve clashes against opponent's Contender or creatures",
-        "combatPhase": true,
-        "subPhases": [
-          {
-            "id": "declare_attackers",
-            "name": "Declare Attackers",
-            "description": "Choose which creatures will clash"
-          },
-          {
-            "id": "declare_blockers",
-            "name": "Declare Blockers",
-            "description": "Opponent chooses blockers"
-          },
-          {
-            "id": "combat_damage",
-            "name": "Combat Damage",
-            "description": "Deal and resolve combat damage"
-          }
-        ]
-      },
-      {
-        "id": "main2",
-        "name": "Main Phase 2",
-        "description": "Play additional cards and activate abilities",
-        "canPlayCards": true,
-        "canActivateAbilities": true,
-        "optional": true
-      },
-      {
-        "id": "end",
-        "name": "End Phase",
-        "description": "End of turn effects trigger. Pass turn to opponent.",
-        "automatic": true
-      }
-    ],
-
-    "beforeGameStart": {
-      "setupOrder": [
-        "placeContender",
-        "shuffleDeck",
-        "drawStartingHand",
-        "mulligan"
-      ],
-      "placeContender": {
-        "fromSection": "ContenderDeck",
-        "toSection": "Contender",
-        "faceUp": true
-      },
-      "initialBoardSetup": [
-        {
-          "drawFromTop": "Deck",
-          "count": 8,
-          "destination": "Hand"
-        }
-      ]
-    },
-
-    "lifeTracking": {
-      "enabled": true,
-      "trackPerContender": true,
-      "displayLocation": "Contender",
-      "damageAnimation": true,
-      "healAnimation": true
-    },
-
-    "resourceSystem": {
-      "enabled": true,
-      "resourceSection": "Resources",
-      "tapToUse": true,
-      "untapOnTurnStart": true,
-      "anyCardAsResource": true
-    },
-
-    "combatSystem": {
-      "enabled": true,
-      "attackersTap": true,
-      "summoningSickness": true,
-      "blockersRequired": false,
-      "directAttackAllowed": true,
-      "damageType": "simultaneous"
-    },
-
-    "draggableTokens": [
-      {
-        "id": "damage-counter",
-        "name": "Damage Counter",
-        "image": "images/tokens/damage.svg",
-        "color": "#FF4444",
-        "stackable": true,
-        "value": 1
-      },
-      {
-        "id": "boost-counter",
-        "name": "Boost Counter",
-        "image": "images/tokens/boost.svg",
-        "color": "#44FF44",
-        "stackable": true,
-        "value": 1
-      },
-      {
-        "id": "shield-counter",
-        "name": "Shield Counter",
-        "image": "images/tokens/shield.svg",
-        "color": "#4444FF",
-        "stackable": true,
-        "value": 1
-      },
-      {
-        "id": "status-stun",
-        "name": "Stun Token",
-        "image": "images/tokens/stun.svg",
-        "color": "#FFFF00",
-        "stackable": false
-      },
-      {
-        "id": "status-freeze",
-        "name": "Freeze Token",
-        "image": "images/tokens/freeze.svg",
-        "color": "#00FFFF",
-        "stackable": false
-      }
-    ],
-
-    "contextMenu": {
-      "enabled": true,
-      "options": [
-        {
-          "label": "Tap/Untap",
-          "action": "tap",
-          "icon": "rotate",
-          "shortcut": "T"
-        },
-        {
-          "label": "Flip Face Down",
-          "action": "flipFaceDown",
-          "icon": "flip",
-          "shortcut": "F"
-        },
-        {
-          "label": "Flip Face Up",
-          "action": "flipFaceUp",
-          "icon": "flip"
-        },
-        {
-          "label": "View Card",
-          "action": "viewCard",
-          "icon": "eye",
-          "shortcut": "V"
-        },
-        {
-          "separator": true
-        },
-        {
-          "label": "Move to Clashground",
-          "action": "moveToSection",
-          "targetSection": "Clashground",
-          "icon": "play"
-        },
-        {
-          "label": "Move to Clash Zone",
-          "action": "moveToSection",
-          "targetSection": "Clash-Zone",
-          "icon": "combat"
-        },
-        {
-          "label": "Play as Resource",
-          "action": "moveToSection",
-          "targetSection": "Resources",
-          "faceDown": true,
-          "icon": "resource"
-        },
-        {
-          "label": "Send to Oblivion",
-          "action": "moveToSection",
-          "targetSection": "Oblivion",
-          "icon": "trash"
-        },
-        {
-          "label": "Banish",
-          "action": "moveToSection",
-          "targetSection": "Banished",
-          "icon": "exile"
-        },
-        {
-          "label": "Return to Hand",
-          "action": "moveToSection",
-          "targetSection": "Hand",
-          "icon": "hand"
-        },
-        {
-          "label": "Put on Top of Deck",
-          "action": "moveToSection",
-          "targetSection": "Deck",
-          "position": "top",
-          "icon": "deck"
-        },
-        {
-          "label": "Put on Bottom of Deck",
-          "action": "moveToSection",
-          "targetSection": "Deck",
-          "position": "bottom",
-          "icon": "deck"
-        },
-        {
-          "separator": true
-        },
-        {
-          "label": "Add Damage Counter",
-          "action": "addToken",
-          "tokenId": "damage-counter",
-          "icon": "damage"
-        },
-        {
-          "label": "Remove Damage Counter",
-          "action": "removeToken",
-          "tokenId": "damage-counter"
-        },
-        {
-          "label": "Add Boost Counter",
-          "action": "addToken",
-          "tokenId": "boost-counter",
-          "icon": "boost"
-        },
-        {
-          "label": "Remove Boost Counter",
-          "action": "removeToken",
-          "tokenId": "boost-counter"
-        },
-        {
-          "label": "Add Shield Counter",
-          "action": "addToken",
-          "tokenId": "shield-counter",
-          "icon": "shield"
-        },
-        {
-          "label": "Clear All Tokens",
-          "action": "clearTokens"
-        }
-      ]
-    }
-  },
-
-  "theme": {
-    "primaryColor": "#FF6B35",
-    "secondaryColor": "#004E89",
-    "accentColor": "#FFD700",
-    "backgroundColor": "#0A0E27",
-    "surfaceColor": "#1a1a2e",
-    "cardBorderColor": "#FFD700",
-    "textColor": "#FFFFFF",
-    "textColorSecondary": "#B0B0B0",
-    "errorColor": "#FF4444",
-    "successColor": "#44FF44",
-    "warningColor": "#FFAA00",
-    "fontFamily": "'Rajdhani', 'Segoe UI', Arial, sans-serif",
-    "fontFamilyHeadings": "'Orbitron', 'Rajdhani', Arial, sans-serif",
-    "borderRadius": "8px",
-    "cardGlow": true,
-    "animations": true,
-    "particles": true
-  },
-
-  "ui": {
-    "showTurnIndicator": true,
-    "showPhaseIndicator": true,
-    "showLifeTotal": true,
-    "showDeckCount": true,
-    "showDiscardCount": true,
-    "showHandCount": true,
-    "enableChat": true,
-    "enableEmotes": true,
-    "enableSpectators": true,
-    "cardZoomOnHover": true,
-    "cardZoomScale": 2.0,
-    "dragAndDrop": true,
-    "touchSupport": true,
-    "soundEffects": true,
-    "musicEnabled": false,
-    "notifications": true
-  },
-
-  "sounds": {
-    "cardDraw": "sounds/card-draw.mp3",
-    "cardPlay": "sounds/card-play.mp3",
-    "attack": "sounds/attack.mp3",
-    "damage": "sounds/damage.mp3",
-    "victory": "sounds/victory.mp3",
-    "defeat": "sounds/defeat.mp3",
-    "turnStart": "sounds/turn-start.mp3",
-    "shuffle": "sounds/shuffle.mp3"
-  },
-
-  "winConditions": [
-    {
-      "id": "contender_defeat",
-      "type": "life",
-      "condition": "opponent_contender_life <= 0",
-      "description": "Reduce opponent's Contender life to 0",
-      "priority": 1
-    },
-    {
-      "id": "deck_out",
-      "type": "deck",
-      "condition": "opponent_cannot_draw",
-      "description": "Opponent cannot draw from an empty deck",
-      "priority": 2
-    },
-    {
-      "id": "concede",
-      "type": "concession",
-      "condition": "opponent_concedes",
-      "description": "Opponent concedes the game",
-      "priority": 0
-    }
-  ],
-
-  "cardTypes": {
-    "Contender": {
-      "description": "Your main character that represents you in battle",
-      "allowedSections": ["Contender"],
-      "hasLife": true,
-      "hasHealth": true,
-      "isRequired": true,
-      "maxInDeck": 1
-    },
-    "Clash": {
-      "description": "Units that fight for you on the Clashground",
-      "allowedSections": ["Hand", "Clashground", "Clash-Zone", "Oblivion", "Banished"],
-      "hasCost": true,
-      "hasAttack": true,
-      "hasDefense": true,
-      "canAttack": true,
-      "canBlock": true,
-      "maxInDeck": 4
-    },
-    "Action": {
-      "description": "One-time use cards with powerful effects",
-      "allowedSections": ["Hand", "Oblivion", "Banished"],
-      "hasCost": true,
-      "isInstant": false,
-      "maxInDeck": 4
-    },
-    "Accessory": {
-      "description": "Permanent items including Relics, Equipment, and Traps",
-      "allowedSections": ["Hand", "Accessory-Zone", "Oblivion", "Banished"],
-      "hasCost": true,
-      "isPermanent": true,
-      "canBeFaceDown": true,
-      "maxInDeck": 4,
-      "subtypes": ["Relic", "Equipment", "Trap"]
-    },
-    "Clashground": {
-      "description": "Location cards that provide battlefield effects",
-      "allowedSections": ["Hand", "Clashground", "Oblivion", "Banished"],
-      "hasCost": true,
-      "isPermanent": true,
-      "maxInDeck": 4
-    },
-    "Token": {
-      "description": "Cards created by other card effects",
-      "allowedSections": ["Clashground", "Clash-Zone"],
-      "hasAttack": true,
-      "hasDefense": true,
-      "isToken": true
-    },
-    "Basic": {
-      "description": "Basic resource cards",
-      "allowedSections": ["Resources"],
-      "providesResource": true
-    },
-    "Portal": {
-      "description": "Special location cards that provide unique abilities",
-      "allowedSections": ["Portal"],
-      "maxInDeck": 1,
-      "isOptional": true
-    }
-  },
-
   "deckBuilding": {
-    "enabled": true,
-    "minDeckSize": 40,
-    "maxDeckSize": 60,
-    "maxCopies": 4,
-    "requiredContender": true,
-    "optionalPortal": true,
-    "separateContenderDeck": false,
-    "banlist": [],
-    "restrictedList": [],
+    "mainFilters": [
+      "color",
+      "type",
+      "affiliation",
+      "rarity"
+    ],
     "formats": [
       {
-        "id": "standard",
-        "name": "Standard",
-        "description": "All sets from the current rotation",
-        "allowedSets": ["all"]
+        "title": "Standard",
+        "gameplay": "Classic",
+        "customCategories": []
       },
       {
-        "id": "unlimited",
-        "name": "Unlimited",
-        "description": "All cards ever printed",
-        "allowedSets": ["all"]
+        "title": "Unlimited",
+        "gameplay": "Classic",
+        "customCategories": []
       }
     ]
   },
-
-  "multiplayer": {
-    "enabled": true,
-    "matchmaking": true,
-    "privateGames": true,
-    "spectatorMode": true,
-    "maxSpectators": 10,
-    "replaySystem": true,
-    "reconnection": {
-      "enabled": true,
-      "timeout": 60
-    },
-    "turnTimer": {
-      "enabled": true,
-      "duration": 90,
-      "overtime": 30,
-      "overtimeCount": 3
+  "gameplay": {
+    "Classic": {
+      "mulligan": {
+        "info": "You may mulligan once. Choose cards to put back, then draw that many.",
+        "startingHandSize": "8",
+        "drawNewHand": false,
+        "putSelectionAtBottom": true,
+        "drawNewSelectedCards": true
+      },
+      "beforeGameStart": {
+        "initialBoardSetup": []
+      },
+      "newTurn": {
+        "drawOnStart": false,
+        "sharedTurn": false,
+        "firstPlayerTokenName": "",
+        "drawPerTurn": 1
+      },
+      "defaultNotes": "",
+      "tokens": [
+        {
+          "id": "damage",
+          "name": "Damage",
+          "image": "images/tokens/damage.svg",
+          "color": "#FF4444"
+        },
+        {
+          "id": "boost",
+          "name": "Boost",
+          "image": "images/tokens/boost.svg",
+          "color": "#44FF44"
+        },
+        {
+          "id": "shield",
+          "name": "Shield",
+          "image": "images/tokens/shield.svg",
+          "color": "#4444FF"
+        },
+        {
+          "id": "stun",
+          "name": "Stun",
+          "image": "images/tokens/stun.svg",
+          "color": "#FFFF00"
+        },
+        {
+          "id": "freeze",
+          "name": "Freeze",
+          "image": "images/tokens/freeze.svg",
+          "color": "#00FFFF"
+        }
+      ],
+      "countersStartingValues": [
+        20
+      ],
+      "hideFacedDownCards": false,
+      "sections": {
+        "customSections": [
+          "Contender",
+          "Portal",
+          "Clashground",
+          "ClashZone",
+          "Accessory",
+          "Resources",
+          "Oblivion",
+          "Banished"
+        ],
+        "layout": {
+          "direction": "row",
+          "isSymetricalForOpponents": true,
+          "content": [
+            {
+              "direction": "column",
+              "style": {
+                "width": "18vh"
+              },
+              "content": [
+                {
+                  "section": "Portal",
+                  "style": false
+                },
+                {
+                  "section": "Contender",
+                  "style": {
+                    "margin-top": "10px"
+                  }
+                }
+              ],
+              "isSymetricalForOpponents": false
+            },
+            {
+              "direction": "column",
+              "style": {
+                "flex": "1"
+              },
+              "content": [
+                {
+                  "section": "Clashground",
+                  "style": {
+                    "height": "50%"
+                  }
+                },
+                {
+                  "section": "ClashZone",
+                  "style": {
+                    "height": "25%",
+                    "border-top": "2px solid #FFD700",
+                    "border-bottom": "2px solid #FFD700"
+                  }
+                }
+              ],
+              "isSymetricalForOpponents": false
+            },
+            {
+              "direction": "column",
+              "style": {
+                "width": "20vh"
+              },
+              "content": [
+                {
+                  "section": "Accessory",
+                  "style": {
+                    "height": "40%"
+                  }
+                },
+                {
+                  "section": "Resources",
+                  "style": {
+                    "height": "60%"
+                  }
+                }
+              ],
+              "isSymetricalForOpponents": false
+            },
+            {
+              "direction": "column",
+              "style": {
+                "width": "12vh"
+              },
+              "content": [
+                {
+                  "section": "Banished",
+                  "style": false
+                },
+                {
+                  "section": "Oblivion",
+                  "style": {
+                    "margin-top": "10px"
+                  }
+                }
+              ],
+              "isSymetricalForOpponents": false
+            }
+          ]
+        },
+        "categoriesAlreadyOnBoard": [
+          "Contender"
+        ],
+        "autoPlayFromHand": {
+          "Clash": "Clashground",
+          "Action": "Stack",
+          "Accessory": "Accessory",
+          "Clashground": "Clashground"
+        },
+        "autoPlayFromStack": {
+          "Clash": "Clashground",
+          "Action": "Oblivion",
+          "Accessory": "Accessory"
+        },
+        "sectionsDict": {
+          "Hand": {
+            "isDefaultSection": true,
+            "title": "Hand",
+            "isHidden": "opponent-only",
+            "height": "DEFAULT",
+            "alignment": "CENTER",
+            "autoPayFrom": true,
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Discard": {
+            "isDefaultSection": true,
+            "title": "Discard",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "noAutoPayTo": true,
+            "opponentAlignment": false,
+            "displayedTitle": "Oblivion",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Deck": {
+            "isDefaultSection": true,
+            "title": "Deck",
+            "isHidden": "yes",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Stack": {
+            "isDefaultSection": true,
+            "title": "Stack",
+            "isHidden": "no",
+            "height": "HUGE",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Stack",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Exile": {
+            "isDefaultSection": true,
+            "title": "Exile",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "noAutoPayTo": true,
+            "displayedTitle": "Banished",
+            "opponentAlignment": false,
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "ExileHidden": {
+            "isDefaultSection": true,
+            "title": "ExileHidden",
+            "isHidden": "yes",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "noAutoPayTo": true,
+            "displayedTitle": "Banished (Hidden)",
+            "opponentAlignment": false,
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Sideboard": {
+            "isDefaultSection": true,
+            "title": "Sideboard",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Contender": {
+            "title": "Contender",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Contender",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Portal": {
+            "title": "Portal",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Portal",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Clashground": {
+            "title": "Clashground",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Clashground",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "ClashZone": {
+            "title": "ClashZone",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Clash Zone",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Accessory": {
+            "title": "Accessory",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Accessories",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Resources": {
+            "title": "Resources",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Resources",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": true,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Oblivion": {
+            "title": "Oblivion",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Oblivion",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Banished": {
+            "title": "Banished",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Banished",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          }
+        }
+      }
     }
-  },
-
-  "images": {
-    "logo": "images/logo.svg",
-    "cardBack": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/default_card_back.webp",
-    "contenderBack": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/default_card_back.webp",
-    "portalBack": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01a",
-    "background": "images/backgrounds/arena-bg.svg",
-    "loadingScreen": "images/loading.svg",
-    "victorySplash": "images/victory.svg",
-    "defeatSplash": "images/defeat.svg"
-  },
-
-  "customCss": "css/custom-styles.css",
-  "customJs": "js/custom-scripts.js"
+  }
 }
