@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Red Alpha Aggro",
+    "id": "starter-red-alpha-aggro",
+    "game": "Alpha Clash TCG",
+    "format": "Standard",
+    "cardCount": 51,
+    "createdAt": "2026-01-31T00:00:00.000Z",
+    "lastModifiedAt": "2026-01-31T00:00:00.000Z",
+    "deckList": {
+      "categoriesOrder": ["Contender", "Clash", "Action", "Accessory", "Clashground"],
+      "Contender": [
+        { "count": 1, "id": "ST2-006" }
+      ],
+      "Clash": [
+        { "count": 4, "id": "AC1-099" },
+        { "count": 4, "id": "AC1-100" },
+        { "count": 2, "id": "AC1-101" },
+        { "count": 4, "id": "AC1-104" },
+        { "count": 2, "id": "AC1-106" },
+        { "count": 4, "id": "RK1-007" },
+        { "count": 2, "id": "ST2-008" }
+      ],
+      "Action": [
+        { "count": 4, "id": "AC1-120" }
+      ],
+      "Accessory": [
+        { "count": 2, "id": "AC1-111" },
+        { "count": 4, "id": "AC1-112" },
+        { "count": 4, "id": "AC1-113" },
+        { "count": 4, "id": "ST2-009" },
+        { "count": 4, "id": "ST2-010" }
+      ],
+      "Clashground": [
+        { "count": 4, "id": "AC1-097" },
+        { "count": 2, "id": "ST2-007" }
+      ]
+    }
+  }
+]
