@@ -67,16 +67,26 @@ interface CardFace {
 }
 
 interface Card {
-  id: string;
-  isToken: boolean;
+  affiliation: string | null;
+  attack: number | null;
+  color: string;
+  colors: string[];
+  cost: number | null;
+  defense: number | null;
   face: {
     front: CardFace;
     back?: CardFace;
   };
+  health: number | null;
+  id: string;
+  isToken: boolean;
+  keywords: string[];
   name: string;
+  planet: string | null;
+  rarity: string;
+  set: string;
+  subtype: string | null;
   type: string;
-  cost: number | null;
-  color: string;
 }
 
 interface CardDatabase {
@@ -176,6 +186,28 @@ function parseNumber(value: string | null): number | null {
   return isNaN(num) ? null : num;
 }
 
+// Sort card IDs alphabetically with _ variants coming after base cards
+// e.g., AC1-063 comes before AC1-063_AA
+function sortCardIds(a: string, b: string): number {
+  // Extract base ID (everything before underscore)
+  const baseA = a.split('_')[0];
+  const baseB = b.split('_')[0];
+
+  // First compare base IDs
+  const baseCompare = baseA.localeCompare(baseB, undefined, { numeric: true, sensitivity: 'base' });
+  if (baseCompare !== 0) return baseCompare;
+
+  // If base IDs are equal, non-underscore version comes first
+  const hasUnderscoreA = a.includes('_');
+  const hasUnderscoreB = b.includes('_');
+
+  if (!hasUnderscoreA && hasUnderscoreB) return -1;
+  if (hasUnderscoreA && !hasUnderscoreB) return 1;
+
+  // Both have underscores (or neither), sort by full ID
+  return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+}
+
 // Strip HTML tags from text
 function stripHtml(html: string | null): string | null {
   if (!html) return null;
@@ -220,16 +252,27 @@ function convertCard(raw: RawCard): Card {
     planet: raw.card_planet,
   };
 
+  // Return with keys in alphabetical order
   return {
-    id: raw.card_number,
-    isToken,
+    affiliation: front.affiliation,
+    attack: front.attack,
+    color,
+    colors,
+    cost: cost,
+    defense: front.defense,
     face: {
       front,
     },
+    health: front.health,
+    id: raw.card_number,
+    isToken,
+    keywords: front.keywords,
     name: raw.card_name,
+    planet: front.planet,
+    rarity: front.rarity,
+    set: front.set,
+    subtype: front.subtype,
     type: cardType,
-    cost: cost,
-    color,
   };
 }
 
@@ -248,10 +291,14 @@ function convertCards(): void {
 
   const cards = publishedCards.map(convertCard);
 
+  // Sort cards by ID (alphabetically, with _ variants after base cards)
+  cards.sort((a, b) => sortCardIds(a.id, b.id));
+
   // Build database as object with card IDs as keys (TCGArena format)
+  // Using sorted order to maintain alphabetical key ordering in output
   const database: CardDatabase = {};
 
-  // Add each card with its ID as the key
+  // Add each card with its ID as the key (already sorted)
   for (const card of cards) {
     database[card.id] = card;
   }
