@@ -109,7 +109,7 @@
         ],
         "layout": {
           "direction": "row",
-          "isSymetricalForOpponents": true,
+          "isSymetricalForOpponents": false,
           "content": [
             {
               "direction": "column",
@@ -176,8 +176,7 @@
                   "section": "Deck",
                   "style": {
                     "height": "auto"
-                  },
-                  "isDefaultSection": true
+                  }
                 },
                 {
                   "section": "Oblivion",
