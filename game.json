@@ -1,9 +1,12 @@
 {
   "name": "Alpha Clash TCG",
-  "menuBackgroundImage": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/backgrounds/arena-bg.svg",
+  "menuBackgroundImage": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/backgrounds/alpha_clash_background_image.jpg",
   "defaultRessources": {
     "backgrounds": [
-      "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/backgrounds/arena-bg.svg"
+      "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/backgrounds/Aster+v+Clarity+Art+Mat.webp",
+      "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/backgrounds/Genesis+Poster+copy.webp",
+      "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/backgrounds/Krung+Art+Mat.webp",
+      "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/backgrounds/sonderflex-portal1.jpg"
     ],
     "decksUrl": "https://themrfrick.github.io/Alpha-Clash-TCGArena/decks/alpha-clash-decks.json"
   },
