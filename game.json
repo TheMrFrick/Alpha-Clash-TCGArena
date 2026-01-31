@@ -1,16 +1,16 @@
 {
   "name": "Alpha Clash TCG",
-  "menuBackgroundImage": "images/backgrounds/arena-bg.svg",
+  "menuBackgroundImage": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/backgrounds/arena-bg.svg",
   "defaultRessources": {
     "backgrounds": [
-      "images/backgrounds/arena-bg.svg"
+      "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/backgrounds/arena-bg.svg"
     ],
     "decksUrl": ""
   },
   "customHelp": "How to play Alpha Clash TCG:\n- Each player starts with a Contender (your main character with health points).\n- Draw 8 cards to start. You may mulligan once.\n- First player skips their draw phase on turn 1.\n- Each turn: Untap → Draw → Resource (play 1 card face-down) → Main → Clash → Main 2 → End.\n- Tap resources to pay for cards. Any card can be a resource.\n- Attack your opponent's Contender or their Clash cards.\n- Reduce opponent's Contender health to 0 to win!\n\nZones: Oblivion = graveyard, Banished = exiled cards.",
   "cardRotation": "90",
   "cards": {
-    "dataUrl": "cards/alpha-clash-cards.json",
+    "dataUrl": "https://themrfrick.github.io/Alpha-Clash-TCGArena/cards/alpha-clash-cards.json",
     "cardBack": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/default_card_back.webp",
     "imageBasePath": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/",
     "imageField": "imgLink"
@@ -58,31 +58,31 @@
         {
           "id": "damage",
           "name": "Damage",
-          "image": "images/tokens/damage.svg",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/damage.svg",
           "color": "#FF4444"
         },
         {
           "id": "boost",
           "name": "Boost",
-          "image": "images/tokens/boost.svg",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/boost.svg",
           "color": "#44FF44"
         },
         {
           "id": "shield",
           "name": "Shield",
-          "image": "images/tokens/shield.svg",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/shield.svg",
           "color": "#4444FF"
         },
         {
           "id": "stun",
           "name": "Stun",
-          "image": "images/tokens/stun.svg",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/stun.svg",
           "color": "#FFFF00"
         },
         {
           "id": "freeze",
           "name": "Freeze",
-          "image": "images/tokens/freeze.svg",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/freeze.svg",
           "color": "#00FFFF"
         }
       ],
