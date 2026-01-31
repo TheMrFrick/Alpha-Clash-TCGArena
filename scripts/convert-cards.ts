@@ -202,7 +202,7 @@ function convertCard(raw: RawCard): Card {
     name: raw.card_name,
     type: cardType,
     cost: cost,
-    image: `${IMAGE_BASE_URL}/${raw.img_link}`,
+    image: `${IMAGE_BASE_URL}/${raw.img_link}.webp`,
     isHorizontal: raw.is_horizontal || false,
     attack: parseNumber(raw.card_attack),
     defense: parseNumber(raw.card_defense),

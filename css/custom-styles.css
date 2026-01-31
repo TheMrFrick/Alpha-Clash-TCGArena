@@ -170,31 +170,63 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 60px 20px 20px;
-    gap: 10px;
+    padding: 70px 20px 20px;
+    gap: 5px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .player-area {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    flex: 1;
 }
 
 .player-area.opponent {
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
-.zone-row {
+/* Board Row - Main 3-column layout */
+.board-row {
     display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: stretch;
+    gap: 10px;
+    flex: 1;
+    min-height: 200px;
 }
 
-.deck-discard-group {
+/* Left Column - Contender */
+.left-column {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 120px;
+    min-width: 100px;
+}
+
+/* Center Column - Main Play Zones */
+.center-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 6px;
+}
+
+/* Right Column - Clashground, Deck, Oblivion */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    min-width: 90px;
+    gap: 6px;
+}
+
+/* Combat Divider between players */
+.combat-divider-line {
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--ac-accent), var(--ac-primary), var(--ac-accent), transparent);
+    margin: 10px 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
 }
 
 /* ========================================
@@ -236,44 +268,189 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Specific Zone Styles */
 .hand-zone {
-    min-height: 120px;
+    min-height: 100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 15px;
+    gap: 8px;
+    padding: 12px;
     justify-content: center;
+    align-items: center;
 }
 
-.clashground-zone {
-    flex: 1;
-    min-height: 150px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 10px;
-    padding: 15px;
-}
-
+/* Contender Zone - Left Column */
 .contender-zone {
-    width: 120px;
-    min-height: 180px;
+    width: 100%;
+    min-height: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-color: var(--ac-accent);
+    background: rgba(26, 26, 46, 0.9);
 }
 
 .contender-zone .life-display {
     background: linear-gradient(135deg, var(--ac-primary), var(--ac-primary-dark));
     border-radius: var(--ac-border-radius);
-    padding: 5px 15px;
+    padding: 8px 16px;
     margin-top: 10px;
     font-family: var(--ac-font-family-headings);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Main Zone Rows - Center Column */
+.main-zone {
+    flex: 1;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    background: rgba(26, 26, 46, 0.7);
+}
+
+.main-zone .zone-label {
+    position: static;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--ac-text-secondary);
+    font-family: var(--ac-font-family-headings);
+}
+
+/* Card Slots Container */
+.card-slots {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual Card Slots */
+.card-slot {
+    width: 70px;
+    height: 98px;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: var(--ac-border-radius);
+    background: rgba(0, 0, 0, 0.2);
+    transition: all var(--ac-transition-fast);
+}
+
+.card-slot:hover {
+    border-color: var(--ac-primary);
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.card-slot.occupied {
+    border-style: solid;
+    border-color: var(--ac-secondary);
+}
+
+/* Clash Zone Row - Red/combat themed */
+.clash-zone-row {
+    border-color: var(--ac-error);
+}
+
+.clash-zone-row .zone-label {
+    color: var(--ac-error);
+}
+
+.clash-zone-row .card-slot {
+    border-color: rgba(255, 68, 68, 0.3);
+}
+
+.clash-zone-row .card-slot:hover {
+    border-color: var(--ac-error);
+    background: rgba(255, 68, 68, 0.1);
+}
+
+/* Accessory Zone Row */
+.accessory-zone-row {
+    border-color: var(--ac-info);
+}
+
+.accessory-zone-row .zone-label {
+    color: var(--ac-info);
+}
+
+.accessory-zone-row .card-slot {
+    border-color: rgba(68, 136, 255, 0.3);
+}
+
+.accessory-zone-row .card-slot:hover {
+    border-color: var(--ac-info);
+    background: rgba(68, 136, 255, 0.1);
+}
+
+/* Resource Zone Row */
+.resource-zone-row {
+    border-color: var(--ac-success);
+}
+
+.resource-zone-row .zone-label {
+    color: var(--ac-success);
+}
+
+.resource-zone-row .card-slot {
+    border-color: rgba(68, 255, 68, 0.3);
+}
+
+.resource-zone-row .card-slot:hover {
+    border-color: var(--ac-success);
+    background: rgba(68, 255, 68, 0.1);
+}
+
+/* Side Zones - Right Column */
+.side-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: rgba(26, 26, 46, 0.85);
+}
+
+/* Clashground Zone */
+.clashground-zone {
+    flex: 1;
+    min-height: 80px;
+    border-color: var(--ac-accent);
+}
+
+.clashground-zone .zone-label {
+    color: var(--ac-accent);
+}
+
+/* Deck Zone */
+.deck-zone {
+    min-height: 90px;
+    border-color: var(--ac-secondary);
+}
+
+.deck-zone .card-count {
+    font-family: var(--ac-font-family-headings);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ac-accent);
+    margin-top: 5px;
+}
+
+/* Oblivion Zone (Graveyard) */
+.oblivion-zone {
+    min-height: 80px;
+    border-color: var(--ac-dark);
+}
+
+.oblivion-zone .zone-label {
+    color: var(--ac-dark);
+}
+
+/* Legacy zone support */
 .portal-zone {
     width: 100px;
     min-height: 150px;
@@ -296,7 +473,6 @@ h1, h2, h3, h4, h5, h6 {
     gap: 5px;
 }
 
-.deck-zone,
 .discard-zone {
     width: 80px;
     height: 110px;
@@ -306,44 +482,11 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
-.deck-zone .card-count,
 .discard-zone .card-count {
     font-family: var(--ac-font-family-headings);
     font-size: 18px;
     color: var(--ac-accent);
     margin-top: 5px;
-}
-
-/* Combat/Clash Zone */
-#clash-zone {
-    min-height: 120px;
-    margin: 10px 0;
-    border: 2px dashed var(--ac-error);
-    background: rgba(255, 68, 68, 0.05);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-#clash-zone .combat-divider {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--ac-error), transparent);
-}
-
-#clash-zone.active {
-    border-style: solid;
-    background: rgba(255, 68, 68, 0.1);
-    animation: combat-pulse 1s ease-in-out infinite;
-}
-
-@keyframes combat-pulse {
-    0%, 100% { box-shadow: 0 0 10px rgba(255, 68, 68, 0.3); }
-    50% { box-shadow: 0 0 25px rgba(255, 68, 68, 0.6); }
 }
 
 /* ========================================
@@ -930,12 +1073,48 @@ h1, h2, h3, h4, h5, h6 {
    Responsive Design
    ======================================== */
 @media (max-width: 1200px) {
-    .zone-row {
+    .card-slot {
+        width: 60px;
+        height: 84px;
+    }
+
+    .card-slots {
+        gap: 6px;
+    }
+}
+
+@media (max-width: 900px) {
+    .board-row {
         flex-wrap: wrap;
     }
 
-    .clashground-zone {
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    .left-column {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .left-column .contender-zone {
+        width: 120px;
+        min-height: 140px;
+    }
+
+    .center-column {
+        width: 100%;
+        order: 2;
+    }
+
+    .right-column {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        order: 3;
+    }
+
+    .right-column .side-zone {
+        flex: 1;
+        max-width: 120px;
     }
 }
 
@@ -945,12 +1124,22 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #game-board {
-        padding: 55px 10px 10px;
+        padding: 60px 8px 10px;
     }
 
     .card {
-        width: 60px;
-        height: 84px;
+        width: 55px;
+        height: 77px;
+    }
+
+    .card-slot {
+        width: 50px;
+        height: 70px;
+    }
+
+    .main-zone {
+        min-height: 60px;
+        padding: 6px 8px;
     }
 
     #turn-indicator {
@@ -959,11 +1148,13 @@ h1, h2, h3, h4, h5, h6 {
         right: auto;
         left: 50%;
         transform: translateX(-50%);
+        min-width: 100px;
+        padding: 10px;
     }
 
     #token-tray {
         right: 10px;
-        bottom: 150px;
+        bottom: 130px;
     }
 
     #chat-panel {
@@ -977,22 +1168,41 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 480px) {
     .card {
-        width: 50px;
-        height: 70px;
+        width: 45px;
+        height: 63px;
+    }
+
+    .card-slot {
+        width: 42px;
+        height: 59px;
     }
 
     .zone {
-        min-height: 70px;
-        padding: 8px;
+        min-height: 50px;
+        padding: 6px;
     }
 
     .zone-label {
         font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .main-zone .zone-label {
+        margin-bottom: 4px;
     }
 
     .contender-zone {
-        width: 80px;
-        min-height: 120px;
+        min-height: 100px;
+    }
+
+    .contender-zone .life-display {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .hand-zone {
+        min-height: 70px;
+        padding: 8px;
     }
 
     #card-zoom-overlay .zoomed-card-container {

@@ -183,86 +183,133 @@
         <main id="game-board">
             <!-- Opponent Area -->
             <section id="opponent-area" class="player-area opponent">
-                <div class="zone-row top-row">
-                    <div id="opponent-portal" class="zone portal-zone" data-zone="Portal">
-                        <div class="zone-label">Portal</div>
-                    </div>
-                    <div id="opponent-contender" class="zone contender-zone" data-zone="Contender">
-                        <div class="zone-label">Contender</div>
-                        <div class="life-display">
-                            <span class="life-value">20</span>
-                        </div>
-                    </div>
-                    <div id="opponent-artifacts" class="zone artifact-zone" data-zone="Artifact-Trap-Zone">
-                        <div class="zone-label">Artifacts & Traps</div>
-                    </div>
-                    <div id="opponent-resources" class="zone resource-zone" data-zone="Resources">
-                        <div class="zone-label">Resources</div>
-                    </div>
-                    <div class="deck-discard-group">
-                        <div id="opponent-deck" class="zone deck-zone" data-zone="Deck">
-                            <div class="zone-label">Deck</div>
-                            <div class="card-count">40</div>
-                        </div>
-                        <div id="opponent-discard" class="zone discard-zone" data-zone="Discard">
-                            <div class="zone-label">Discard</div>
-                            <div class="card-count">0</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="zone-row clashground-row">
-                    <div id="opponent-clashground" class="zone clashground-zone" data-zone="Clashground">
-                        <div class="zone-label">Clashground</div>
-                    </div>
-                </div>
                 <div id="opponent-hand" class="zone hand-zone" data-zone="Hand">
                     <div class="zone-label">Opponent's Hand</div>
                     <div class="hand-count">8</div>
                 </div>
-            </section>
-
-            <!-- Clash Zone (Combat Area) -->
-            <section id="clash-zone" class="combat-area" data-zone="Clash-Zone">
-                <div class="zone-label">Clash Zone</div>
-                <div class="combat-divider"></div>
-            </section>
-
-            <!-- Player Area -->
-            <section id="player-area" class="player-area self">
-                <div id="player-hand" class="zone hand-zone" data-zone="Hand">
-                    <div class="zone-label">Your Hand</div>
-                </div>
-                <div class="zone-row clashground-row">
-                    <div id="player-clashground" class="zone clashground-zone" data-zone="Clashground">
-                        <div class="zone-label">Clashground</div>
-                    </div>
-                </div>
-                <div class="zone-row bottom-row">
-                    <div id="player-portal" class="zone portal-zone" data-zone="Portal">
-                        <div class="zone-label">Portal</div>
-                    </div>
-                    <div id="player-contender" class="zone contender-zone" data-zone="Contender">
-                        <div class="zone-label">Contender</div>
-                        <div class="life-display">
-                            <span class="life-value">20</span>
+                <div class="board-row">
+                    <!-- Left Column: Contender -->
+                    <div class="left-column">
+                        <div id="opponent-contender" class="zone contender-zone" data-zone="Contender">
+                            <div class="zone-label">Contender</div>
+                            <div class="life-display">
+                                <span class="life-value">20</span>
+                            </div>
                         </div>
                     </div>
-                    <div id="player-artifacts" class="zone artifact-zone" data-zone="Artifact-Trap-Zone">
-                        <div class="zone-label">Artifacts & Traps</div>
+                    <!-- Center Column: Main Play Zones -->
+                    <div class="center-column">
+                        <div id="opponent-clash-zone" class="zone main-zone clash-zone-row" data-zone="ClashZone">
+                            <div class="zone-label">Clash Zone</div>
+                            <div class="card-slots">
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                            </div>
+                        </div>
+                        <div id="opponent-accessory" class="zone main-zone accessory-zone-row" data-zone="Accessory">
+                            <div class="zone-label">Accessory Zone</div>
+                            <div class="card-slots">
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                            </div>
+                        </div>
+                        <div id="opponent-resources" class="zone main-zone resource-zone-row" data-zone="Resources">
+                            <div class="zone-label">Resource Zone</div>
+                            <div class="card-slots">
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="player-resources" class="zone resource-zone" data-zone="Resources">
-                        <div class="zone-label">Resources</div>
-                    </div>
-                    <div class="deck-discard-group">
-                        <div id="player-deck" class="zone deck-zone" data-zone="Deck">
+                    <!-- Right Column: Clashground, Deck, Oblivion -->
+                    <div class="right-column">
+                        <div id="opponent-clashground" class="zone side-zone clashground-zone" data-zone="Clashground">
+                            <div class="zone-label">Clashground</div>
+                        </div>
+                        <div id="opponent-deck" class="zone side-zone deck-zone" data-zone="Deck">
                             <div class="zone-label">Deck</div>
                             <div class="card-count">40</div>
                         </div>
-                        <div id="player-discard" class="zone discard-zone" data-zone="Discard">
-                            <div class="zone-label">Discard</div>
-                            <div class="card-count">0</div>
+                        <div id="opponent-oblivion" class="zone side-zone oblivion-zone" data-zone="Oblivion">
+                            <div class="zone-label">Oblivion</div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Combat Divider -->
+            <div id="combat-divider" class="combat-divider-line"></div>
+
+            <!-- Player Area -->
+            <section id="player-area" class="player-area self">
+                <div class="board-row">
+                    <!-- Left Column: Contender -->
+                    <div class="left-column">
+                        <div id="player-contender" class="zone contender-zone" data-zone="Contender">
+                            <div class="zone-label">Contender</div>
+                            <div class="life-display">
+                                <span class="life-value">20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Center Column: Main Play Zones -->
+                    <div class="center-column">
+                        <div id="player-clash-zone" class="zone main-zone clash-zone-row" data-zone="ClashZone">
+                            <div class="zone-label">Clash Zone</div>
+                            <div class="card-slots">
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                            </div>
+                        </div>
+                        <div id="player-accessory" class="zone main-zone accessory-zone-row" data-zone="Accessory">
+                            <div class="zone-label">Accessory Zone</div>
+                            <div class="card-slots">
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                            </div>
+                        </div>
+                        <div id="player-resources" class="zone main-zone resource-zone-row" data-zone="Resources">
+                            <div class="zone-label">Resource Zone</div>
+                            <div class="card-slots">
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                                <div class="card-slot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Clashground, Deck, Oblivion -->
+                    <div class="right-column">
+                        <div id="player-clashground" class="zone side-zone clashground-zone" data-zone="Clashground">
+                            <div class="zone-label">Clashground</div>
+                        </div>
+                        <div id="player-deck" class="zone side-zone deck-zone" data-zone="Deck">
+                            <div class="zone-label">Deck</div>
+                            <div class="card-count">40</div>
+                        </div>
+                        <div id="player-oblivion" class="zone side-zone oblivion-zone" data-zone="Oblivion">
+                            <div class="zone-label">Oblivion</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="player-hand" class="zone hand-zone" data-zone="Hand">
+                    <div class="zone-label">Your Hand</div>
                 </div>
             </section>
         </main>

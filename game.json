@@ -45,7 +45,14 @@
         "drawNewSelectedCards": true
       },
       "beforeGameStart": {
-        "initialBoardSetup": []
+        "initialBoardSetup": [
+          {
+            "cardId": "AC2-T01",
+            "destination": "Portal",
+            "isShared": true,
+            "enterHorizontal": true
+          }
+        ]
       },
       "newTurn": {
         "drawOnStart": false,
@@ -108,17 +115,15 @@
             {
               "direction": "column",
               "style": {
-                "width": "18vh"
+                "width": "12vh",
+                "justify-content": "flex-start",
+                "padding-top": "10px"
               },
               "content": [
-                {
-                  "section": "Portal",
-                  "style": false
-                },
                 {
                   "section": "Contender",
                   "style": {
-                    "margin-top": "10px"
+                    "height": "auto"
                   }
                 }
               ],
@@ -127,42 +132,29 @@
             {
               "direction": "column",
               "style": {
-                "flex": "1"
+                "flex": "1",
+                "gap": "8px"
               },
               "content": [
-                {
-                  "section": "Clashground",
-                  "style": {
-                    "height": "50%"
-                  }
-                },
                 {
                   "section": "ClashZone",
                   "style": {
-                    "height": "25%",
-                    "border-top": "2px solid #FFD700",
-                    "border-bottom": "2px solid #FFD700"
+                    "min-height": "18vh",
+                    "flex": "1"
                   }
-                }
-              ],
-              "isSymetricalForOpponents": false
-            },
-            {
-              "direction": "column",
-              "style": {
-                "width": "20vh"
-              },
-              "content": [
+                },
                 {
                   "section": "Accessory",
                   "style": {
-                    "height": "40%"
+                    "min-height": "18vh",
+                    "flex": "1"
                   }
                 },
                 {
                   "section": "Resources",
                   "style": {
-                    "height": "60%"
+                    "min-height": "18vh",
+                    "flex": "1"
                   }
                 }
               ],
@@ -171,17 +163,27 @@
             {
               "direction": "column",
               "style": {
-                "width": "12vh"
+                "width": "12vh",
+                "gap": "8px"
               },
               "content": [
                 {
-                  "section": "Banished",
-                  "style": false
+                  "section": "Clashground",
+                  "style": {
+                    "flex": "1"
+                  }
+                },
+                {
+                  "section": "Deck",
+                  "style": {
+                    "height": "auto"
+                  },
+                  "isDefaultSection": true
                 },
                 {
                   "section": "Oblivion",
                   "style": {
-                    "margin-top": "10px"
+                    "height": "auto"
                   }
                 }
               ],
@@ -347,14 +349,15 @@
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
+            "isHorizontalAllowed": true,
             "displayedTitle": "Portal",
             "noQuickActions": false,
-            "enterTapped": false,
+            "enterTapped": true,
             "enterSpun": false,
             "isGroupForbidden": false,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false,
+            "isShared": true
           },
           "Clashground": {
             "title": "Clashground",
