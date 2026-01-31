@@ -110,96 +110,69 @@
           "isSymetricalForOpponents": false,
           "content": [
             {
-              "section": "Portal",
-              "style": {
-                "align-self": "center",
-                "margin-bottom": "10px"
-              },
-              "isSymetricalForOpponents": false
-            },
-            {
               "direction": "row",
               "style": {
                 "gap": "8px"
               },
               "content": [
                 {
-                  "direction": "column",
+                  "section": "Clash-Zone",
                   "style": {
-                    "width": "24vh",
-                    "gap": "8px"
-                  },
-                  "content": [
-                    {
-                      "direction": "row",
-                      "style": {
-                        "gap": "8px"
-                      },
-                      "content": [
-                        {
-                          "section": "Contender",
-                          "style": {
-                            "height": "auto",
-                            "width": "12vh"
-                          }
-                        },
-                        {
-                          "section": "Clashground",
-                          "style": {
-                            "height": "auto",
-                            "width": "12vh"
-                          }
-                        }
-                      ],
-                      "isSymetricalForOpponents": false
-                    },
-                    {
-                      "section": "Oblivion",
-                      "style": {
-                        "height": "auto"
-                      }
-                    }
-                  ],
-                  "isSymetricalForOpponents": false
+                    "width": "60%",
+                    "min-height": "18vh"
+                  }
                 },
                 {
-                  "direction": "column",
+                  "section": "Accessory-Zone",
                   "style": {
-                    "flex": "1",
-                    "gap": "8px"
-                  },
-                  "content": [
-                    {
-                      "direction": "row",
-                      "style": {
-                        "gap": "8px"
-                      },
-                      "content": [
-                        {
-                          "section": "Clash-Zone",
-                          "style": {
-                            "flex": "1",
-                            "min-height": "18vh"
-                          }
-                        },
-                        {
-                          "section": "Accessory-Zone",
-                          "style": {
-                            "flex": "1",
-                            "min-height": "18vh"
-                          }
-                        }
-                      ],
-                      "isSymetricalForOpponents": false
-                    },
-                    {
-                      "section": "Resources",
-                      "style": {
-                        "min-height": "18vh"
-                      }
-                    }
-                  ],
-                  "isSymetricalForOpponents": false
+                    "width": "30%",
+                    "min-height": "18vh"
+                  }
+                },
+                {
+                  "section": "Portal",
+                  "style": {
+                    "width": "10%",
+                    "height": "12vh"
+                  }
+                }
+              ],
+              "isSymetricalForOpponents": false
+            },
+            {
+              "section": "Resources",
+              "style": {
+                "min-height": "18vh",
+                "margin-top": "8px"
+              },
+              "isSymetricalForOpponents": false
+            },
+            {
+              "direction": "row",
+              "style": {
+                "gap": "8px",
+                "margin-top": "8px"
+              },
+              "content": [
+                {
+                  "section": "Contender",
+                  "style": {
+                    "height": "auto",
+                    "width": "12vh"
+                  }
+                },
+                {
+                  "section": "Clashground",
+                  "style": {
+                    "height": "auto",
+                    "width": "12vh"
+                  }
+                },
+                {
+                  "section": "Oblivion",
+                  "style": {
+                    "height": "auto"
+                  }
                 }
               ],
               "isSymetricalForOpponents": false
@@ -423,7 +396,7 @@
           },
           "Resources": {
             "title": "Resources",
-            "isHidden": "yes",
+            "isHidden": "no",
             "height": "SMALL",
             "alignment": "CENTER",
             "opponentAlignment": false,
