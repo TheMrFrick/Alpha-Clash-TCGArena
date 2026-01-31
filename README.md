@@ -8,7 +8,7 @@ Alpha Clash is a strategic trading card game where players battle using their Co
 
 ## Features
 
-- **Complete Game Board**: All 9 game zones (Deck, Hand, Contender, Portal, Clashground, Clash Zone, Artifact/Trap Zone, Resources, Discard)
+- **Complete Game Board**: All 10 game zones (Deck, Hand, Contender, Portal, Clashground, Clash Zone, Accessory Zone, Resources, Oblivion, Banished)
 - **Turn Phase System**: Full turn structure with Start, Untap, Draw, Resource, Main, Clash, Main 2, and End phases
 - **Resource System**: Any card can be played face-down as a resource
 - **Life Tracking**: Contender-based life tracking with animated damage/heal effects
@@ -141,31 +141,45 @@ The TypeScript source is organized into:
 
 ## Card Data Format
 
-Cards in `alpha-clash-cards.json` should follow this structure:
+Cards in `cards/alpha-clash-cards.json` should follow this structure:
 
 ```json
 {
-  "card-unique-id": {
-    "id": "card-unique-id",
+  "_metadata": {
+    "name": "Alpha Clash TCG Card Database",
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-31",
+    "totalCards": 1589,
+    "source": "DeckPlanet",
+    "description": "Complete Alpha Clash TCG card database"
+  },
+  "AC5-001": {
+    "id": "AC5-001",
     "name": "Card Name",
-    "type": "Creature|Contender|Artifact|Trap|Spell|Quick-Spell|Portal",
+    "type": "Clash",
+    "subtype": "Relic",
+    "color": "Blue",
+    "colors": ["Blue"],
     "cost": 3,
+    "specificCost": "UU",
     "attack": 4,
     "defense": 3,
-    "img_link": "card-filename.webp",
+    "health": null,
     "text": "Card ability text goes here.",
-    "rarity": "Common|Uncommon|Rare|Ultra Rare",
-    "set": "Core Set",
-    "element": "Fire|Ice|Dark|Nature|Storm|Earth|Air|Neutral",
-    "keywords": ["Flying", "Taunt"],
+    "rarity": "Common",
+    "set": "Equilibrium",
+    "cardNumber": "AC5-001",
+    "affiliation": "Alpha",
+    "keywords": [],
+    "artist": "Artist Name",
+    "planet": "Earth",
+    "imgLink": "AC5-001",
     "isHorizontal": false,
-    "face": {
-      "front": {
-        "name": "Card Name",
-        "type": "Type",
-        "image": "images/cards/card-filename.webp"
-      }
-    }
+    "isBanned": false,
+    "isLimited": false,
+    "limitedTo": null,
+    "hasErrata": false,
+    "errataText": null
   }
 }
 ```
@@ -174,56 +188,77 @@ Cards in `alpha-clash-cards.json` should follow this structure:
 
 | Type | Description |
 |------|-------------|
-| Contender | Your main character (1 required per deck) |
-| Creature | Units that battle on the Clashground |
-| Spell | One-time effects played during your Main Phase |
-| Quick-Spell | Instant-speed spells (can respond to opponent) |
-| Artifact | Permanent items with ongoing effects |
-| Trap | Hidden cards that trigger on conditions |
+| Contender | Your main character with health points (1 required per deck) |
+| Clash | Units that battle on the Clashground |
+| Action | One-time effects played during your Main Phase |
+| Accessory | Permanent items including Relics, Equipment, and Traps |
+| Clashground | Location cards that provide battlefield effects |
+| Token | Cards created by other card effects |
+| Basic | Basic resource cards |
 | Portal | Special location card (optional, max 1) |
+
+### Card Colors
+
+| Color | Symbol |
+|-------|--------|
+| Blue | U |
+| White | W |
+| Red | R |
+| Black | B |
+| Green | G |
+| Colorless | C |
+| Multi | Multiple colors (e.g., "Blue/Red") |
+
+### Affiliations
+
+- **Alpha**: Heroes fighting for justice
+- **Harbinger**: Dark forces seeking power
+- **Progenitor**: Ancient beings
+- **Rogue**: Independent fighters
+- **Dragon**: Dragon-type creatures
 
 ## Game Zones
 
 ### Layout
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    OPPONENT AREA                        │
-│  ┌──────┐ ┌──────────┐ ┌────────┐ ┌────────┐ ┌──────┐  │
-│  │Portal│ │Contender │ │Artifact│ │Resource│ │ Deck │  │
-│  └──────┘ └──────────┘ │  Zone  │ │  Zone  │ ├──────┤  │
-│                        └────────┘ └────────┘ │Discard│ │
-│  ┌─────────────────────────────────────────┐ └──────┘  │
-│  │            CLASHGROUND                   │          │
-│  └─────────────────────────────────────────┘          │
-│                     HAND                               │
-├─────────────────────────────────────────────────────────┤
-│             ═══════ CLASH ZONE ═══════                 │
-├─────────────────────────────────────────────────────────┤
-│                    YOUR AREA                           │
-│                     HAND                               │
-│  ┌─────────────────────────────────────────┐          │
-│  │            CLASHGROUND                   │          │
-│  └─────────────────────────────────────────┘          │
-│  ┌──────┐ ┌──────────┐ ┌────────┐ ┌────────┐ ┌──────┐  │
-│  │Portal│ │Contender │ │Artifact│ │Resource│ │ Deck │  │
-│  └──────┘ └──────────┘ │  Zone  │ │  Zone  │ ├──────┤  │
-│                        └────────┘ └────────┘ │Discard│ │
-│                                              └──────┘  │
-└─────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│                       OPPONENT AREA                          │
+│  ┌──────┐ ┌──────────┐ ┌─────────┐ ┌────────┐ ┌────────────┐ │
+│  │Portal│ │Contender │ │Accessory│ │Resource│ │    Deck    │ │
+│  └──────┘ └──────────┘ │  Zone   │ │  Zone  │ ├────────────┤ │
+│                        └─────────┘ └────────┘ │  Oblivion  │ │
+│  ┌──────────────────────────────────────────┐ ├────────────┤ │
+│  │              CLASHGROUND                  │ │  Banished  │ │
+│  └──────────────────────────────────────────┘ └────────────┘ │
+│                        HAND                                  │
+├──────────────────────────────────────────────────────────────┤
+│               ═══════ CLASH ZONE ═══════                     │
+├──────────────────────────────────────────────────────────────┤
+│                       YOUR AREA                              │
+│                        HAND                                  │
+│  ┌──────────────────────────────────────────┐ ┌────────────┐ │
+│  │              CLASHGROUND                  │ │  Banished  │ │
+│  └──────────────────────────────────────────┘ ├────────────┤ │
+│  ┌──────┐ ┌──────────┐ ┌─────────┐ ┌────────┐ │  Oblivion  │ │
+│  │Portal│ │Contender │ │Accessory│ │Resource│ ├────────────┤ │
+│  └──────┘ └──────────┘ │  Zone   │ │  Zone  │ │    Deck    │ │
+│                        └─────────┘ └────────┘ └────────────┘ │
+└──────────────────────────────────────────────────────────────┘
 ```
 
 ### Zone Descriptions
 
 - **Deck**: Draw pile (face-down, shuffled)
 - **Hand**: Cards you can play
-- **Contender**: Your main character (tracks life)
+- **Contender**: Your main character (tracks health)
 - **Portal**: Special location card
-- **Clashground**: Where creatures battle
+- **Clashground**: Where Clash cards battle
 - **Clash Zone**: Active combat area
-- **Artifact/Trap Zone**: Permanents and set traps
+- **Accessory Zone**: Relics, Equipment, and Traps
 - **Resources**: Face-down cards providing resources
-- **Discard**: Graveyard for used/destroyed cards
+- **Oblivion**: Graveyard for defeated/destroyed cards
+- **Banished**: Exiled cards removed from the game
 
 ## Turn Phases
 
@@ -256,10 +291,11 @@ Right-click any card to access:
 - Move to Clashground
 - Move to Clash Zone
 - Play as Resource
-- Send to Discard
+- Send to Oblivion
+- Banish
 - Return to Hand
 - Put on Top/Bottom of Deck
-- Add/Remove Tokens
+- Add/Remove Tokens (Damage, Boost, Shield)
 
 ## Customization
 

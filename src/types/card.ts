@@ -4,29 +4,43 @@
 
 export type CardType =
   | 'Contender'
-  | 'Creature'
-  | 'Spell'
-  | 'Quick-Spell'
-  | 'Artifact'
-  | 'Trap'
-  | 'Portal'
-  | 'Resource';
+  | 'Clash'
+  | 'Action'
+  | 'Accessory'
+  | 'Clashground'
+  | 'Token'
+  | 'Basic';
 
 export type CardRarity =
   | 'Common'
   | 'Uncommon'
   | 'Rare'
-  | 'Ultra Rare';
+  | 'Epic'
+  | 'Legendary'
+  | 'Promo'
+  | 'Iconic Art'
+  | 'Iconic Rare'
+  | 'Starter Rare'
+  | 'Alpha Rare'
+  | 'AxO';
 
-export type CardElement =
-  | 'Fire'
-  | 'Ice'
-  | 'Dark'
-  | 'Nature'
-  | 'Storm'
-  | 'Earth'
-  | 'Air'
-  | 'Neutral';
+export type CardColor =
+  | 'Blue'
+  | 'White'
+  | 'Red'
+  | 'Black'
+  | 'Green'
+  | 'Colorless'
+  | 'Multi';
+
+export type CardAffiliation =
+  | 'Alpha'
+  | 'Harbinger'
+  | 'Progenitor'
+  | 'Rogue'
+  | 'Dragon'
+  | 'Alpha Hunter'
+  | 'Discarded';
 
 export type CardKeyword =
   | 'Flying'
@@ -35,7 +49,14 @@ export type CardKeyword =
   | 'Haste'
   | 'Quick Strike'
   | 'Defender'
-  | 'Hexproof';
+  | 'Hexproof'
+  | 'Engage'
+  | 'Guard'
+  | 'Ambush'
+  | 'Foretell'
+  | 'Portal'
+  | 'Banish'
+  | 'Trigger';
 
 export interface CardFace {
   name: string;
@@ -47,33 +68,43 @@ export interface Card {
   id: string;
   name: string;
   type: CardType;
-  cost: number;
-  attack: number;
-  defense: number;
-  img_link: string;
-  text: string;
+  subtype: string | null;
+  color: CardColor;
+  colors: string[];
+  cost: number | null;
+  specificCost: string | null;
+  attack: number | null;
+  defense: number | null;
+  health: number | null;
+  text: string | null;
   rarity: CardRarity;
   set: string;
-  element?: CardElement;
-  keywords?: CardKeyword[];
-  subtype?: string;
-  isHorizontal?: boolean;
-  face?: {
-    front: CardFace;
-    back?: CardFace;
-  };
+  cardNumber: string;
+  affiliation: CardAffiliation | null;
+  keywords: string[];
+  artist: string | null;
+  planet: string | null;
+  imgLink: string;
+  isHorizontal: boolean;
+  isBanned: boolean;
+  isLimited: boolean;
+  limitedTo: number | null;
+  hasErrata: boolean;
+  errataText: string | null;
+}
+
+export interface CardDatabaseMetadata {
+  name: string;
+  version: string;
+  lastUpdated: string;
+  totalCards: number;
+  source: string;
+  description: string;
 }
 
 export interface CardDatabase {
-  _metadata?: {
-    name: string;
-    version: string;
-    lastUpdated: string;
-    totalCards: number;
-    source: string;
-    description: string;
-  };
-  [cardId: string]: Card | CardDatabase['_metadata'];
+  _metadata: CardDatabaseMetadata;
+  [cardId: string]: Card | CardDatabaseMetadata;
 }
 
 export interface CardInstance {
@@ -93,9 +124,10 @@ export type ZoneName =
   | 'Portal'
   | 'Clashground'
   | 'Clash-Zone'
-  | 'Artifact-Trap-Zone'
+  | 'Accessory-Zone'
   | 'Resources'
-  | 'Discard';
+  | 'Oblivion'
+  | 'Banished';
 
 export interface Zone {
   name: ZoneName;

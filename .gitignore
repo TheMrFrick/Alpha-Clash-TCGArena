@@ -52,3 +52,5 @@ Thumbs.db
 # *.psd
 # *.ai
 # *.sketch
+.claude
+data/

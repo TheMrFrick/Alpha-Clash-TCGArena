@@ -234,6 +234,15 @@ export class TurnManager {
     this.state.phase = phase;
     this.state.phaseActionsRemaining = { ...DEFAULT_PHASE_ACTIONS[phase] };
 
+    // Handle first turn draw skip
+    if (
+      phase === 'draw' &&
+      this.state.turnNumber === 1 &&
+      this.config.skipFirstDraw
+    ) {
+      this.state.phaseActionsRemaining.canDraw = false;
+    }
+
     const event: PhaseChangeEvent = {
       previousPhase,
       newPhase: phase,

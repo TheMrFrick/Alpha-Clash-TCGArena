@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="defeatBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0a"/>
+      <stop offset="50%" style="stop-color:#2a1515"/>
+      <stop offset="100%" style="stop-color:#1a0a0a"/>
+    </linearGradient>
+    <linearGradient id="defeatRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000"/>
+      <stop offset="50%" style="stop-color:#CC0000"/>
+      <stop offset="100%" style="stop-color:#8B0000"/>
+    </linearGradient>
+    <filter id="defeatGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#defeatBg)"/>
+
+  <!-- Dark vignette effect -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" style="stop-color:transparent"/>
+    <stop offset="100%" style="stop-color:#000000" stop-opacity="0.7"/>
+  </radialGradient>
+  <rect width="800" height="600" fill="url(#vignette)"/>
+
+  <!-- Broken sword icon -->
+  <g transform="translate(400, 160)" opacity="0.8">
+    <!-- Blade piece 1 -->
+    <path d="M-5 -60 L5 -60 L8 0 L-8 0 Z" fill="#666" stroke="#444" stroke-width="2" transform="rotate(-15)"/>
+    <!-- Blade piece 2 (fallen) -->
+    <path d="M-5 20 L5 20 L8 80 L-8 80 Z" fill="#555" stroke="#333" stroke-width="2" transform="rotate(25) translate(30, 10)"/>
+    <!-- Hilt -->
+    <rect x="-15" y="0" width="30" height="12" fill="#8B4513" stroke="#5D3A1A" stroke-width="2"/>
+    <rect x="-4" y="10" width="8" height="30" fill="#4A3728" stroke="#3A2718" stroke-width="1"/>
+  </g>
+
+  <!-- Defeat text -->
+  <text x="400" y="320" font-family="'Orbitron', 'Arial Black', sans-serif" font-size="88" fill="url(#defeatRed)" text-anchor="middle" font-weight="bold" filter="url(#defeatGlow)">DEFEAT</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="380" font-family="'Rajdhani', Arial, sans-serif" font-size="26" fill="#888" text-anchor="middle">YOUR CONTENDER HAS FALLEN</text>
+
+  <!-- Skulls decoration -->
+  <g fill="#444" opacity="0.5">
+    <circle cx="150" cy="480" r="20"/>
+    <circle cx="140" cy="475" r="6" fill="#1a0a0a"/>
+    <circle cx="160" cy="475" r="6" fill="#1a0a0a"/>
+    <ellipse cx="150" cy="490" rx="4" ry="6" fill="#1a0a0a"/>
+
+    <circle cx="650" cy="480" r="20"/>
+    <circle cx="640" cy="475" r="6" fill="#1a0a0a"/>
+    <circle cx="660" cy="475" r="6" fill="#1a0a0a"/>
+    <ellipse cx="650" cy="490" rx="4" ry="6" fill="#1a0a0a"/>
+  </g>
+
+  <!-- Embers/particles -->
+  <g fill="#FF4500" opacity="0.6">
+    <circle cx="200" cy="350" r="3">
+      <animate attributeName="cy" values="350;320;350" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="330" r="2">
+      <animate attributeName="cy" values="330;300;330" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="370" r="2.5">
+      <animate attributeName="cy" values="370;340;370" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="360" r="2">
+      <animate attributeName="cy" values="360;330;360" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Continue prompt -->
+  <text x="400" y="520" font-family="'Rajdhani', Arial, sans-serif" font-size="20" fill="#666" text-anchor="middle">
+    Click anywhere to continue
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Footer -->
+  <text x="400" y="570" font-family="'Rajdhani', Arial, sans-serif" font-size="16" fill="#444" text-anchor="middle">ALPHA CLASH TCG</text>
+</svg>

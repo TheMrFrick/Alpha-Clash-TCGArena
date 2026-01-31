@@ -60,14 +60,30 @@ describe('Card Types', () => {
     const mockCard: Card = {
       id: 'test-card',
       name: 'Test Card',
-      type: 'Creature',
+      type: 'Clash',
+      subtype: null,
+      color: 'Blue',
+      colors: ['Blue'],
       cost: 3,
+      specificCost: 'U',
       attack: 2,
       defense: 2,
-      img_link: 'test.webp',
+      health: null,
       text: 'Test text',
       rarity: 'Common',
       set: 'Core Set',
+      cardNumber: 'TST-001',
+      affiliation: 'Alpha',
+      keywords: [],
+      artist: null,
+      planet: null,
+      imgLink: 'https://example.com/test.webp',
+      isHorizontal: false,
+      isBanned: false,
+      isLimited: false,
+      limitedTo: null,
+      hasErrata: false,
+      errataText: null,
     };
 
     it('should create card instance with unique ID', () => {
@@ -184,9 +200,10 @@ describe('Game Types', () => {
       expect(zones.get('Portal')).toBeDefined();
       expect(zones.get('Clashground')).toBeDefined();
       expect(zones.get('Clash-Zone')).toBeDefined();
-      expect(zones.get('Artifact-Trap-Zone')).toBeDefined();
+      expect(zones.get('Accessory-Zone')).toBeDefined();
       expect(zones.get('Resources')).toBeDefined();
-      expect(zones.get('Discard')).toBeDefined();
+      expect(zones.get('Oblivion')).toBeDefined();
+      expect(zones.get('Banished')).toBeDefined();
     });
 
     it('should have empty turn history', () => {

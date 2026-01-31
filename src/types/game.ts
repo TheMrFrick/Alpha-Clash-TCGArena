@@ -123,9 +123,10 @@ export function createInitialGameState(
       ['Portal', []],
       ['Clashground', []],
       ['Clash-Zone', []],
-      ['Artifact-Trap-Zone', []],
+      ['Accessory-Zone', []],
       ['Resources', []],
-      ['Discard', []],
+      ['Oblivion', []],
+      ['Banished', []],
     ]),
     isActive: false,
   });

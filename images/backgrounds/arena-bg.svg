@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="arenaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0E27"/>
+      <stop offset="30%" style="stop-color:#0D1233"/>
+      <stop offset="70%" style="stop-color:#0D1233"/>
+      <stop offset="100%" style="stop-color:#0A0E27"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF6B35" stop-opacity="0.1"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </radialGradient>
+    <pattern id="gridPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1a2a4a" stroke-width="0.5" opacity="0.5"/>
+    </pattern>
+    <filter id="arenaGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1920" height="1080" fill="url(#arenaBg)"/>
+
+  <!-- Grid overlay -->
+  <rect width="1920" height="1080" fill="url(#gridPattern)"/>
+
+  <!-- Center glow -->
+  <ellipse cx="960" cy="540" rx="800" ry="400" fill="url(#centerGlow)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="960" cy="540" r="450" fill="none" stroke="#FF6B35" stroke-width="1" opacity="0.1"/>
+  <circle cx="960" cy="540" r="380" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.08"/>
+  <circle cx="960" cy="540" r="300" fill="none" stroke="#004E89" stroke-width="1" opacity="0.1"/>
+
+  <!-- Corner accents -->
+  <g opacity="0.15">
+    <!-- Top left -->
+    <path d="M0 0 L150 0 L150 10 L10 10 L10 150 L0 150 Z" fill="#FF6B35"/>
+    <!-- Top right -->
+    <path d="M1920 0 L1770 0 L1770 10 L1910 10 L1910 150 L1920 150 Z" fill="#FF6B35"/>
+    <!-- Bottom left -->
+    <path d="M0 1080 L150 1080 L150 1070 L10 1070 L10 930 L0 930 Z" fill="#FF6B35"/>
+    <!-- Bottom right -->
+    <path d="M1920 1080 L1770 1080 L1770 1070 L1910 1070 L1910 930 L1920 930 Z" fill="#FF6B35"/>
+  </g>
+
+  <!-- Clash zone indicator line -->
+  <line x1="100" y1="540" x2="1820" y2="540" stroke="#FFD700" stroke-width="2" opacity="0.2" stroke-dasharray="20,10"/>
+
+  <!-- Side decorations -->
+  <g opacity="0.1">
+    <rect x="20" y="300" width="4" height="480" fill="#FF6B35"/>
+    <rect x="1896" y="300" width="4" height="480" fill="#FF6B35"/>
+  </g>
+
+  <!-- Floating particles effect -->
+  <g fill="#FFD700" opacity="0.3">
+    <circle cx="200" cy="200" r="2"/>
+    <circle cx="1700" cy="150" r="1.5"/>
+    <circle cx="300" cy="800" r="2"/>
+    <circle cx="1600" cy="900" r="1.5"/>
+    <circle cx="500" cy="300" r="1"/>
+    <circle cx="1400" cy="350" r="1.5"/>
+    <circle cx="600" cy="750" r="1"/>
+    <circle cx="1300" cy="780" r="1.5"/>
+  </g>
+
+  <!-- Alpha Clash watermark -->
+  <text x="960" y="1050" font-family="'Orbitron', Arial, sans-serif" font-size="14" fill="#1a2a4a" text-anchor="middle" opacity="0.5">ALPHA CLASH ARENA</text>
+</svg>

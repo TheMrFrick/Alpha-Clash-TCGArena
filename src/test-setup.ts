@@ -2,6 +2,8 @@
  * Alpha Clash TCG - Jest Test Setup
  */
 
+export {};
+
 // Mock console methods for cleaner test output
 const originalConsole = { ...console };
 

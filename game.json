@@ -125,22 +125,6 @@
       }
     },
 
-    "Artifact-Trap-Zone": {
-      "title": "Artifact/Trap Zone",
-      "type": "permanent",
-      "height": "LOW",
-      "alignment": "RIGHT",
-      "displayedTitle": "Artifacts & Traps",
-      "maxCards": null,
-      "faceDown": false,
-      "allowFaceDown": true,
-      "canTap": true,
-      "position": {
-        "row": 2,
-        "column": 4
-      }
-    },
-
     "Resources": {
       "title": "Resources",
       "type": "resource",
@@ -157,12 +141,12 @@
       }
     },
 
-    "Discard": {
-      "title": "Discard",
+    "Oblivion": {
+      "title": "Oblivion",
       "type": "discard",
       "height": "MEDIUM",
       "alignment": "DECK",
-      "displayedTitle": "Discard Pile",
+      "displayedTitle": "Oblivion",
       "faceDown": false,
       "viewable": true,
       "stackDisplay": true,
@@ -170,16 +154,47 @@
         "row": 1,
         "column": 5
       }
+    },
+
+    "Banished": {
+      "title": "Banished",
+      "type": "exile",
+      "height": "MEDIUM",
+      "alignment": "DECK",
+      "displayedTitle": "Banished Zone",
+      "faceDown": false,
+      "viewable": true,
+      "stackDisplay": true,
+      "position": {
+        "row": 0,
+        "column": 5
+      }
+    },
+
+    "Accessory-Zone": {
+      "title": "Accessory Zone",
+      "type": "permanent",
+      "height": "LOW",
+      "alignment": "RIGHT",
+      "displayedTitle": "Accessories",
+      "maxCards": null,
+      "faceDown": false,
+      "allowFaceDown": true,
+      "canTap": true,
+      "position": {
+        "row": 2,
+        "column": 4
+      }
     }
   },
 
   "cards": {
     "dataUrl": "cards/alpha-clash-cards.json",
-    "cardBack": "images/card-back.png",
+    "cardBack": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/default_card_back.webp",
     "cardBackColor": "#1a1a2e",
-    "imageBasePath": "images/cards/",
-    "imageField": "img_link",
-    "imageExtension": ".webp",
+    "imageBasePath": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/",
+    "imageField": "imgLink",
+    "imageExtension": "",
     "cardSize": {
       "width": 250,
       "height": 350
@@ -192,13 +207,19 @@
       "id": "id",
       "name": "name",
       "type": "type",
+      "subtype": "subtype",
+      "color": "color",
       "cost": "cost",
+      "specificCost": "specificCost",
       "attack": "attack",
       "defense": "defense",
+      "health": "health",
       "text": "text",
-      "image": "img_link",
+      "image": "imgLink",
       "rarity": "rarity",
-      "set": "set"
+      "set": "set",
+      "affiliation": "affiliation",
+      "keywords": "keywords"
     }
   },
 
@@ -215,7 +236,7 @@
         "name": "Untap Phase",
         "description": "Untap all tapped cards you control",
         "automatic": true,
-        "autoUntapSections": ["Clashground", "Resources", "Artifact-Trap-Zone"]
+        "autoUntapSections": ["Clashground", "Resources", "Accessory-Zone"]
       },
       {
         "id": "draw",
@@ -326,7 +347,7 @@
       {
         "id": "damage-counter",
         "name": "Damage Counter",
-        "image": "images/tokens/damage.png",
+        "image": "images/tokens/damage.svg",
         "color": "#FF4444",
         "stackable": true,
         "value": 1
@@ -334,7 +355,7 @@
       {
         "id": "boost-counter",
         "name": "Boost Counter",
-        "image": "images/tokens/boost.png",
+        "image": "images/tokens/boost.svg",
         "color": "#44FF44",
         "stackable": true,
         "value": 1
@@ -342,7 +363,7 @@
       {
         "id": "shield-counter",
         "name": "Shield Counter",
-        "image": "images/tokens/shield.png",
+        "image": "images/tokens/shield.svg",
         "color": "#4444FF",
         "stackable": true,
         "value": 1
@@ -350,14 +371,14 @@
       {
         "id": "status-stun",
         "name": "Stun Token",
-        "image": "images/tokens/stun.png",
+        "image": "images/tokens/stun.svg",
         "color": "#FFFF00",
         "stackable": false
       },
       {
         "id": "status-freeze",
         "name": "Freeze Token",
-        "image": "images/tokens/freeze.png",
+        "image": "images/tokens/freeze.svg",
         "color": "#00FFFF",
         "stackable": false
       }
@@ -412,10 +433,16 @@
           "icon": "resource"
         },
         {
-          "label": "Send to Discard",
+          "label": "Send to Oblivion",
           "action": "moveToSection",
-          "targetSection": "Discard",
+          "targetSection": "Oblivion",
           "icon": "trash"
+        },
+        {
+          "label": "Banish",
+          "action": "moveToSection",
+          "targetSection": "Banished",
+          "icon": "exile"
         },
         {
           "label": "Return to Hand",
@@ -555,12 +582,13 @@
       "description": "Your main character that represents you in battle",
       "allowedSections": ["Contender"],
       "hasLife": true,
+      "hasHealth": true,
       "isRequired": true,
       "maxInDeck": 1
     },
-    "Creature": {
+    "Clash": {
       "description": "Units that fight for you on the Clashground",
-      "allowedSections": ["Hand", "Clashground", "Clash-Zone", "Discard"],
+      "allowedSections": ["Hand", "Clashground", "Clash-Zone", "Oblivion", "Banished"],
       "hasCost": true,
       "hasAttack": true,
       "hasDefense": true,
@@ -568,44 +596,46 @@
       "canBlock": true,
       "maxInDeck": 4
     },
-    "Artifact": {
-      "description": "Permanent items that provide ongoing effects",
-      "allowedSections": ["Hand", "Artifact-Trap-Zone", "Discard"],
-      "hasCost": true,
-      "isPermanent": true,
-      "maxInDeck": 4
-    },
-    "Trap": {
-      "description": "Hidden cards that trigger when conditions are met",
-      "allowedSections": ["Hand", "Artifact-Trap-Zone", "Discard"],
-      "hasCost": true,
-      "canBeFaceDown": true,
-      "maxInDeck": 4
-    },
-    "Spell": {
+    "Action": {
       "description": "One-time use cards with powerful effects",
-      "allowedSections": ["Hand", "Discard"],
+      "allowedSections": ["Hand", "Oblivion", "Banished"],
       "hasCost": true,
       "isInstant": false,
       "maxInDeck": 4
     },
-    "Quick-Spell": {
-      "description": "Instant speed spells that can be played on opponent's turn",
-      "allowedSections": ["Hand", "Discard"],
+    "Accessory": {
+      "description": "Permanent items including Relics, Equipment, and Traps",
+      "allowedSections": ["Hand", "Accessory-Zone", "Oblivion", "Banished"],
       "hasCost": true,
-      "isInstant": true,
+      "isPermanent": true,
+      "canBeFaceDown": true,
+      "maxInDeck": 4,
+      "subtypes": ["Relic", "Equipment", "Trap"]
+    },
+    "Clashground": {
+      "description": "Location cards that provide battlefield effects",
+      "allowedSections": ["Hand", "Clashground", "Oblivion", "Banished"],
+      "hasCost": true,
+      "isPermanent": true,
       "maxInDeck": 4
+    },
+    "Token": {
+      "description": "Cards created by other card effects",
+      "allowedSections": ["Clashground", "Clash-Zone"],
+      "hasAttack": true,
+      "hasDefense": true,
+      "isToken": true
+    },
+    "Basic": {
+      "description": "Basic resource cards",
+      "allowedSections": ["Resources"],
+      "providesResource": true
     },
     "Portal": {
       "description": "Special location cards that provide unique abilities",
       "allowedSections": ["Portal"],
       "maxInDeck": 1,
       "isOptional": true
-    },
-    "Resource": {
-      "description": "Cards played face-down to generate resources",
-      "allowedSections": ["Resources"],
-      "providesResource": true
     }
   },
 
@@ -655,14 +685,14 @@
   },
 
   "images": {
-    "logo": "images/logo.png",
-    "cardBack": "images/card-back.png",
-    "contenderBack": "images/contender-back.png",
-    "portalBack": "images/portal-back.png",
-    "background": "images/backgrounds/arena-bg.jpg",
-    "loadingScreen": "images/loading.png",
-    "victorySplash": "images/victory.png",
-    "defeatSplash": "images/defeat.png"
+    "logo": "images/logo.svg",
+    "cardBack": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/default_card_back.webp",
+    "contenderBack": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/default_card_back.webp",
+    "portalBack": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01a",
+    "background": "images/backgrounds/arena-bg.svg",
+    "loadingScreen": "images/loading.svg",
+    "victorySplash": "images/victory.svg",
+    "defeatSplash": "images/defeat.svg"
   },
 
   "customCss": "css/custom-styles.css",

@@ -541,39 +541,290 @@
     };
 
     // ========================================
-    // Sound Manager
+    // Sound Manager (Web Audio API - Procedural Sounds)
     // ========================================
     const SoundManager = {
-        sounds: {},
+        audioContext: null,
         enabled: CONFIG.soundEnabled,
 
         init: function() {
-            // Preload common sounds
-            this.preload('card-draw', 'sounds/card-draw.mp3');
-            this.preload('card-play', 'sounds/card-play.mp3');
-            this.preload('attack', 'sounds/attack.mp3');
-            this.preload('damage', 'sounds/damage.mp3');
+            // Initialize AudioContext on first user interaction
+            const initAudio = () => {
+                if (!this.audioContext) {
+                    this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                document.removeEventListener('click', initAudio);
+                document.removeEventListener('keydown', initAudio);
+            };
+            document.addEventListener('click', initAudio);
+            document.addEventListener('keydown', initAudio);
 
-            Utils.debug('SoundManager initialized');
-        },
-
-        preload: function(name, src) {
-            const audio = new Audio();
-            audio.src = src;
-            audio.preload = 'auto';
-            this.sounds[name] = audio;
+            Utils.debug('SoundManager initialized (Web Audio API)');
         },
 
         play: function(name) {
-            if (!this.enabled || !this.sounds[name]) return;
+            if (!this.enabled) return;
+
+            // Initialize context if needed
+            if (!this.audioContext) {
+                this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
 
             try {
-                const sound = this.sounds[name].cloneNode();
-                sound.volume = 0.5;
-                sound.play().catch(() => {});
+                switch(name) {
+                    case 'card-draw':
+                        this.playCardDraw();
+                        break;
+                    case 'card-play':
+                        this.playCardPlay();
+                        break;
+                    case 'attack':
+                        this.playAttack();
+                        break;
+                    case 'damage':
+                        this.playDamage();
+                        break;
+                    case 'victory':
+                        this.playVictory();
+                        break;
+                    case 'defeat':
+                        this.playDefeat();
+                        break;
+                    case 'turn-start':
+                        this.playTurnStart();
+                        break;
+                    case 'shuffle':
+                        this.playShuffle();
+                        break;
+                    default:
+                        this.playGeneric();
+                }
             } catch (e) {
                 Utils.debug('Sound playback failed:', e);
             }
+        },
+
+        // Card draw - quick swoosh
+        playCardDraw: function() {
+            const ctx = this.audioContext;
+            const now = ctx.currentTime;
+
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            const filter = ctx.createBiquadFilter();
+
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(2000, now);
+            filter.frequency.exponentialRampToValueAtTime(400, now + 0.15);
+
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(800, now);
+            osc.frequency.exponentialRampToValueAtTime(200, now + 0.15);
+
+            gain.gain.setValueAtTime(0.15, now);
+            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(ctx.destination);
+
+            osc.start(now);
+            osc.stop(now + 0.15);
+        },
+
+        // Card play - thud with resonance
+        playCardPlay: function() {
+            const ctx = this.audioContext;
+            const now = ctx.currentTime;
+
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(150, now);
+            osc.frequency.exponentialRampToValueAtTime(50, now + 0.1);
+
+            gain.gain.setValueAtTime(0.3, now);
+            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+
+            osc.start(now);
+            osc.stop(now + 0.2);
+        },
+
+        // Attack - aggressive hit
+        playAttack: function() {
+            const ctx = this.audioContext;
+            const now = ctx.currentTime;
+
+            // Impact
+            const osc1 = ctx.createOscillator();
+            const gain1 = ctx.createGain();
+            osc1.type = 'sawtooth';
+            osc1.frequency.setValueAtTime(200, now);
+            osc1.frequency.exponentialRampToValueAtTime(80, now + 0.1);
+            gain1.gain.setValueAtTime(0.25, now);
+            gain1.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+            osc1.connect(gain1);
+            gain1.connect(ctx.destination);
+            osc1.start(now);
+            osc1.stop(now + 0.15);
+
+            // Swoosh
+            const osc2 = ctx.createOscillator();
+            const gain2 = ctx.createGain();
+            const filter = ctx.createBiquadFilter();
+            filter.type = 'highpass';
+            filter.frequency.value = 1000;
+            osc2.type = 'sawtooth';
+            osc2.frequency.setValueAtTime(1500, now);
+            osc2.frequency.exponentialRampToValueAtTime(300, now + 0.08);
+            gain2.gain.setValueAtTime(0.1, now);
+            gain2.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+            osc2.connect(filter);
+            filter.connect(gain2);
+            gain2.connect(ctx.destination);
+            osc2.start(now);
+            osc2.stop(now + 0.08);
+        },
+
+        // Damage - low thump
+        playDamage: function() {
+            const ctx = this.audioContext;
+            const now = ctx.currentTime;
+
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(100, now);
+            osc.frequency.exponentialRampToValueAtTime(30, now + 0.3);
+
+            gain.gain.setValueAtTime(0.4, now);
+            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+
+            osc.start(now);
+            osc.stop(now + 0.3);
+        },
+
+        // Victory - triumphant fanfare
+        playVictory: function() {
+            const ctx = this.audioContext;
+            const now = ctx.currentTime;
+            const notes = [523, 659, 784, 1047]; // C5, E5, G5, C6
+
+            notes.forEach((freq, i) => {
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.type = 'triangle';
+                osc.frequency.value = freq;
+                gain.gain.setValueAtTime(0, now + i * 0.15);
+                gain.gain.linearRampToValueAtTime(0.15, now + i * 0.15 + 0.05);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + i * 0.15 + 0.4);
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start(now + i * 0.15);
+                osc.stop(now + i * 0.15 + 0.4);
+            });
+        },
+
+        // Defeat - descending tones
+        playDefeat: function() {
+            const ctx = this.audioContext;
+            const now = ctx.currentTime;
+            const notes = [392, 349, 294, 262]; // G4, F4, D4, C4
+
+            notes.forEach((freq, i) => {
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.type = 'sine';
+                osc.frequency.value = freq;
+                gain.gain.setValueAtTime(0, now + i * 0.2);
+                gain.gain.linearRampToValueAtTime(0.12, now + i * 0.2 + 0.05);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + i * 0.2 + 0.5);
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start(now + i * 0.2);
+                osc.stop(now + i * 0.2 + 0.5);
+            });
+        },
+
+        // Turn start - chime
+        playTurnStart: function() {
+            const ctx = this.audioContext;
+            const now = ctx.currentTime;
+
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(880, now);
+            gain.gain.setValueAtTime(0.15, now);
+            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(now);
+            osc.stop(now + 0.3);
+
+            const osc2 = ctx.createOscillator();
+            const gain2 = ctx.createGain();
+            osc2.type = 'sine';
+            osc2.frequency.value = 1320;
+            gain2.gain.setValueAtTime(0, now + 0.1);
+            gain2.gain.linearRampToValueAtTime(0.1, now + 0.12);
+            gain2.gain.exponentialRampToValueAtTime(0.01, now + 0.4);
+            osc2.connect(gain2);
+            gain2.connect(ctx.destination);
+            osc2.start(now + 0.1);
+            osc2.stop(now + 0.4);
+        },
+
+        // Shuffle - rapid noise burst
+        playShuffle: function() {
+            const ctx = this.audioContext;
+            const now = ctx.currentTime;
+
+            for (let i = 0; i < 5; i++) {
+                const bufferSize = ctx.sampleRate * 0.05;
+                const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+                const data = buffer.getChannelData(0);
+                for (let j = 0; j < bufferSize; j++) {
+                    data[j] = (Math.random() * 2 - 1) * 0.3;
+                }
+                const noise = ctx.createBufferSource();
+                noise.buffer = buffer;
+                const gain = ctx.createGain();
+                const filter = ctx.createBiquadFilter();
+                filter.type = 'bandpass';
+                filter.frequency.value = 2000;
+                gain.gain.setValueAtTime(0.08, now + i * 0.06);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + i * 0.06 + 0.05);
+                noise.connect(filter);
+                filter.connect(gain);
+                gain.connect(ctx.destination);
+                noise.start(now + i * 0.06);
+            }
+        },
+
+        // Generic click
+        playGeneric: function() {
+            const ctx = this.audioContext;
+            const now = ctx.currentTime;
+
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sine';
+            osc.frequency.value = 600;
+            gain.gain.setValueAtTime(0.1, now);
+            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(now);
+            osc.stop(now + 0.05);
         },
 
         toggle: function() {

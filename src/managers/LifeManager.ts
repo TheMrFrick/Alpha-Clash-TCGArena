@@ -78,7 +78,7 @@ export class LifeManager {
       previousLife,
       newLife: clampedLife,
       change: clampedLife - previousLife,
-      source,
+      ...(source !== undefined && { source }),
     };
 
     this.notifyListeners(event);
