@@ -124,6 +124,12 @@
                   "style": {
                     "height": "auto"
                   }
+                },
+                {
+                  "section": "Portal",
+                  "style": {
+                    "height": "auto"
+                  }
                 }
               ],
               "isSymetricalForOpponents": false
@@ -170,12 +176,6 @@
                   "section": "Clashground",
                   "style": {
                     "flex": "1"
-                  }
-                },
-                {
-                  "section": "Deck",
-                  "style": {
-                    "height": "auto"
                   }
                 },
                 {
