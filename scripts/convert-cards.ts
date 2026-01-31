@@ -42,45 +42,45 @@ interface RawCard {
   img_link: string;
 }
 
-interface Card {
-  id: string;
+const IMAGE_BASE_URL = 'https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash';
+
+interface CardFace {
   name: string;
   type: string;
-  subtype: string | null;
-  color: string;
-  colors: string[];
   cost: number | null;
-  specificCost: string | null;
+  image: string;
+  isHorizontal: boolean;
   attack: number | null;
   defense: number | null;
   health: number | null;
+  color: string;
+  colors: string[];
+  specificCost: string | null;
+  affiliation: string | null;
+  subtype: string | null;
   text: string | null;
   rarity: string;
   set: string;
-  cardNumber: string;
-  affiliation: string | null;
   keywords: string[];
   artist: string | null;
   planet: string | null;
-  imgLink: string;
-  isHorizontal: boolean;
-  isBanned: boolean;
-  isLimited: boolean;
-  limitedTo: number | null;
-  hasErrata: boolean;
-  errataText: string | null;
+}
+
+interface Card {
+  id: string;
+  isToken: boolean;
+  face: {
+    front: CardFace;
+    back?: CardFace;
+  };
+  name: string;
+  type: string;
+  cost: number | null;
+  color: string;
 }
 
 interface CardDatabase {
-  _metadata: {
-    name: string;
-    version: string;
-    lastUpdated: string;
-    totalCards: number;
-    source: string;
-    description: string;
-  };
-  [cardId: string]: Card | CardDatabase['_metadata'];
+  [cardId: string]: Card;
 }
 
 // Image link is just the card number - game.json builds the full URL
@@ -191,37 +191,45 @@ function stripHtml(html: string | null): string | null {
     .trim();
 }
 
-// Convert a raw card to our Card format
+// Convert a raw card to TCGArena Card format
 function convertCard(raw: RawCard): Card {
   const { color, colors } = parseColor(raw.card_color);
+  const cardType = normalizeCardType(raw.card_type);
+  const cost = parseNumber(raw.card_cost);
+  const isToken = cardType === 'Token';
 
-  return {
-    id: raw.card_number,
+  const front: CardFace = {
     name: raw.card_name,
-    type: normalizeCardType(raw.card_type),
-    subtype: raw.card_subtype,
-    color,
-    colors,
-    cost: parseNumber(raw.card_cost),
-    specificCost: raw.card_specific_cost,
+    type: cardType,
+    cost: cost,
+    image: `${IMAGE_BASE_URL}/${raw.img_link}`,
+    isHorizontal: raw.is_horizontal || false,
     attack: parseNumber(raw.card_attack),
     defense: parseNumber(raw.card_defense),
     health: parseNumber(raw.card_health),
+    color,
+    colors,
+    specificCost: raw.card_specific_cost,
+    affiliation: normalizeAffiliation(raw.card_affiliation),
+    subtype: raw.card_subtype,
     text: stripHtml(raw.card_skill),
     rarity: normalizeCardRarity(raw.card_rarity),
     set: raw.card_series,
-    cardNumber: raw.card_number,
-    affiliation: normalizeAffiliation(raw.card_affiliation),
     keywords: raw.card_keywords || [],
     artist: raw.card_artist,
     planet: raw.card_planet,
-    imgLink: raw.img_link,
-    isHorizontal: raw.is_horizontal || false,
-    isBanned: raw.is_banned || false,
-    isLimited: raw.is_limited || false,
-    limitedTo: raw.limited_to,
-    hasErrata: raw.has_errata || false,
-    errataText: stripHtml(raw.errata_text),
+  };
+
+  return {
+    id: raw.card_number,
+    isToken,
+    face: {
+      front,
+    },
+    name: raw.card_name,
+    type: cardType,
+    cost: cost,
+    color,
   };
 }
 
@@ -241,21 +249,15 @@ function convertCards(): void {
   const cards = publishedCards.map(convertCard);
 
   // Build database as object with card IDs as keys (TCGArena format)
-  const database: CardDatabase = {
-    _metadata: {
-      name: 'Alpha Clash TCG Card Database',
-      version: '1.0.0',
-      lastUpdated: new Date().toISOString(),
-      totalCards: cards.length,
-      source: 'DeckPlanet',
-      description: 'Complete Alpha Clash TCG card database',
-    },
-  };
+  const database: CardDatabase = {};
 
   // Add each card with its ID as the key
   for (const card of cards) {
     database[card.id] = card;
   }
+
+  console.log(`Converted ${cards.length} cards (${cards.filter(c => c.isToken).length} tokens)`);
+  console.log(`First card sample:`, JSON.stringify(cards[0], null, 2).substring(0, 500) + '...');
 
   console.log('Writing converted card data...');
   fs.writeFileSync(outputPath, JSON.stringify(database, null, 2));
@@ -273,8 +275,8 @@ function convertCards(): void {
   for (const card of cards) {
     stats.byType[card.type] = (stats.byType[card.type] || 0) + 1;
     stats.byColor[card.color] = (stats.byColor[card.color] || 0) + 1;
-    stats.byRarity[card.rarity] = (stats.byRarity[card.rarity] || 0) + 1;
-    stats.bySet[card.set] = (stats.bySet[card.set] || 0) + 1;
+    stats.byRarity[card.face.front.rarity] = (stats.byRarity[card.face.front.rarity] || 0) + 1;
+    stats.bySet[card.face.front.set] = (stats.bySet[card.face.front.set] || 0) + 1;
   }
 
   console.log('\nCard Statistics:');
