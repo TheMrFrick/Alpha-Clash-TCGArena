@@ -27,11 +27,6 @@
         "title": "Standard",
         "gameplay": "Classic",
         "customCategories": []
-      },
-      {
-        "title": "Unlimited",
-        "gameplay": "Classic",
-        "customCategories": []
       }
     ]
   },
@@ -102,87 +97,106 @@
           "Contender",
           "Portal",
           "Clashground",
-          "ClashZone",
-          "Accessory",
+          "Clash-Zone",
+          "Accessory-Zone",
           "Resources",
           "Oblivion"
         ],
         "layout": {
-          "direction": "row",
+          "direction": "column",
           "isSymetricalForOpponents": false,
           "content": [
             {
-              "direction": "column",
+              "section": "Portal",
               "style": {
-                "width": "12vh",
-                "justify-content": "flex-start",
-                "padding-top": "10px"
+                "align-self": "center",
+                "margin-bottom": "10px"
               },
-              "content": [
-                {
-                  "section": "Contender",
-                  "style": {
-                    "height": "auto"
-                  }
-                },
-                {
-                  "section": "Portal",
-                  "style": {
-                    "height": "auto"
-                  }
-                }
-              ],
               "isSymetricalForOpponents": false
             },
             {
-              "direction": "column",
+              "direction": "row",
               "style": {
-                "flex": "1",
                 "gap": "8px"
               },
               "content": [
                 {
-                  "section": "ClashZone",
+                  "direction": "column",
                   "style": {
-                    "min-height": "18vh",
-                    "flex": "1"
-                  }
+                    "width": "24vh",
+                    "gap": "8px"
+                  },
+                  "content": [
+                    {
+                      "direction": "row",
+                      "style": {
+                        "gap": "8px"
+                      },
+                      "content": [
+                        {
+                          "section": "Contender",
+                          "style": {
+                            "height": "auto",
+                            "width": "12vh"
+                          }
+                        },
+                        {
+                          "section": "Clashground",
+                          "style": {
+                            "height": "auto",
+                            "width": "12vh"
+                          }
+                        }
+                      ],
+                      "isSymetricalForOpponents": false
+                    },
+                    {
+                      "section": "Oblivion",
+                      "style": {
+                        "height": "auto"
+                      }
+                    }
+                  ],
+                  "isSymetricalForOpponents": false
                 },
                 {
-                  "section": "Accessory",
+                  "direction": "column",
                   "style": {
-                    "min-height": "18vh",
-                    "flex": "1"
-                  }
-                },
-                {
-                  "section": "Resources",
-                  "style": {
-                    "min-height": "18vh",
-                    "flex": "1"
-                  }
-                }
-              ],
-              "isSymetricalForOpponents": false
-            },
-            {
-              "direction": "column",
-              "style": {
-                "width": "12vh",
-                "gap": "8px"
-              },
-              "content": [
-                {
-                  "section": "Clashground",
-                  "style": {
-                    "flex": "1"
-                  }
-                },
-                {
-                  "section": "Oblivion",
-                  "style": {
-                    "height": "auto"
-                  }
+                    "flex": "1",
+                    "gap": "8px"
+                  },
+                  "content": [
+                    {
+                      "direction": "row",
+                      "style": {
+                        "gap": "8px"
+                      },
+                      "content": [
+                        {
+                          "section": "Clash-Zone",
+                          "style": {
+                            "flex": "1",
+                            "min-height": "18vh"
+                          }
+                        },
+                        {
+                          "section": "Accessory-Zone",
+                          "style": {
+                            "flex": "1",
+                            "min-height": "18vh"
+                          }
+                        }
+                      ],
+                      "isSymetricalForOpponents": false
+                    },
+                    {
+                      "section": "Resources",
+                      "style": {
+                        "min-height": "18vh"
+                      }
+                    }
+                  ],
+                  "isSymetricalForOpponents": false
                 }
               ],
               "isSymetricalForOpponents": false
@@ -195,13 +209,13 @@
         "autoPlayFromHand": {
           "Clash": "Clashground",
           "Action": "Stack",
-          "Accessory": "Accessory",
+          "Accessory": "Accessory-Zone",
           "Clashground": "Clashground"
         },
         "autoPlayFromStack": {
           "Clash": "Clashground",
           "Action": "Oblivion",
-          "Accessory": "Accessory"
+          "Accessory": "Accessory-Zone"
         },
         "sectionsDict": {
           "Hand": {
@@ -354,8 +368,7 @@
             "enterSpun": false,
             "isGroupForbidden": false,
             "keepTappedNewTurn": true,
-            "showHiddenCardInHistory": false,
-            "isShared": true
+            "showHiddenCardInHistory": false
           },
           "Clashground": {
             "title": "Clashground",
@@ -373,8 +386,8 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
-          "ClashZone": {
-            "title": "ClashZone",
+          "Clash-Zone": {
+            "title": "Clash-Zone",
             "isHidden": "no",
             "height": "SMALL",
             "alignment": "CENTER",
@@ -389,8 +402,8 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
-          "Accessory": {
-            "title": "Accessory",
+          "Accessory-Zone": {
+            "title": "Accessory-Zone",
             "isHidden": "no",
             "height": "SMALL",
             "alignment": "CENTER",
