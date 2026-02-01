@@ -101,8 +101,7 @@
           "Clashground",
           "Clash-Zone",
           "Accessory-Zone",
-          "Resources",
-          "Oblivion"
+          "Resources"
         ],
         "layout": {
           "direction": "column",
