@@ -45,10 +45,9 @@
       "beforeGameStart": {
         "initialBoardSetup": [
           {
-            "cardId": "AC2-T01",
+            "createCardId": "AC2-T01",
             "destination": "Portal",
-            "isShared": true,
-            "enterHorizontal": true
+            "count": 1
           }
         ]
       },
