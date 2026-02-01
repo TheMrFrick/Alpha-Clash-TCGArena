@@ -39,7 +39,6 @@
         "info": "You may mulligan once. Choose cards to put back, then draw that many.",
         "startingHandSize": "8",
         "drawNewHand": false,
-        "putSelectionAtBottom": true,
         "drawNewSelectedCards": true
       },
       "beforeGameStart": {
@@ -92,7 +91,7 @@
         }
       ],
       "countersStartingValues": [
-        20
+        30
       ],
       "hideFacedDownCards": false,
       "sections": {
@@ -166,12 +165,6 @@
                     "flex": "1",
                     "min-height": "18vh"
                   }
-                },
-                {
-                  "section": "Oblivion",
-                  "style": {
-                    "height": "auto"
-                  }
                 }
               ],
               "isSymetricalForOpponents": false
@@ -182,15 +175,10 @@
           "Contender"
         ],
         "autoPlayFromHand": {
-          "Clash": "Clashground",
-          "Action": "Stack",
+          "Clash": "Clash-Zone",
           "Accessory": "Accessory-Zone",
+          "Action": "Accessory-Zone",
           "Clashground": "Clashground"
-        },
-        "autoPlayFromStack": {
-          "Clash": "Clashground",
-          "Action": "Oblivion",
-          "Accessory": "Accessory-Zone"
         },
         "sectionsDict": {
           "Hand": {
@@ -214,7 +202,7 @@
           "Discard": {
             "isDefaultSection": true,
             "title": "Discard",
-            "isHidden": "yes",
+            "isHidden": "no",
             "height": "DEFAULT",
             "alignment": "NONE",
             "isHorizontalAllowed": false,
@@ -245,26 +233,9 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
-          "Stack": {
-            "isDefaultSection": true,
-            "title": "Stack",
-            "isHidden": "no",
-            "height": "HUGE",
-            "alignment": "NONE",
-            "isHorizontalAllowed": false,
-            "isGroupForbidden": true,
-            "displayedTitle": "Stack",
-            "opponentAlignment": false,
-            "noAutoPayTo": false,
-            "noQuickActions": false,
-            "enterTapped": false,
-            "enterSpun": false,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false
-          },
           "Exile": {
             "isDefaultSection": true,
-            "title": "Exile",
+            "title": "Banished",
             "isHidden": "no",
             "height": "DEFAULT",
             "alignment": "NONE",
@@ -281,7 +252,7 @@
           },
           "ExileHidden": {
             "isDefaultSection": true,
-            "title": "ExileHidden",
+            "title": "Banished (Hidden)",
             "isHidden": "yes",
             "height": "DEFAULT",
             "alignment": "NONE",
@@ -348,7 +319,7 @@
           "Clashground": {
             "title": "Clashground",
             "isHidden": "no",
-            "height": "MEDIUM",
+            "height": "DEFAULT",
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": false,
@@ -385,7 +356,7 @@
             "opponentAlignment": false,
             "noAutoPayTo": false,
             "isHorizontalAllowed": false,
-            "displayedTitle": "Accessories",
+            "displayedTitle": "Accessories / Traps",
             "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": false,
@@ -405,22 +376,6 @@
             "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": true,
-            "isGroupForbidden": false,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false
-          },
-          "Oblivion": {
-            "title": "Oblivion",
-            "isHidden": "no",
-            "height": "SMALL",
-            "alignment": "DECK",
-            "opponentAlignment": false,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "displayedTitle": "Oblivion",
-            "noQuickActions": false,
-            "enterTapped": false,
-            "enterSpun": false,
             "isGroupForbidden": false,
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
