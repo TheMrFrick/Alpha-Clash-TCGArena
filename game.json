@@ -233,6 +233,23 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
+	      "Stack": {
+	        "isDefaultSection": true,
+	        "title": "Stack",
+	        "isHidden": "yes",
+	        "height": "HUGE",
+	        "alignment": "NONE",
+	        "isHorizontalAllowed": false,
+	        "isGroupForbidden": true,
+	        "displayedTitle": "Stack",
+	        "opponentAlignment": false,
+	        "noAutoPayTo": false,
+	        "noQuickActions": false,
+	        "enterTapped": false,
+	        "enterSpun": false,
+	        "keepTappedNewTurn": false,
+	        "showHiddenCardInHistory": false
+	      },
           "Exile": {
             "isDefaultSection": true,
             "title": "Banished",
