@@ -47,7 +47,8 @@
           {
             "createCardId": "AC2-T01",
             "destination": "Portal",
-            "count": 1
+            "count": 1,
+            "isHorizontal": true
           }
         ]
       },
@@ -139,14 +140,6 @@
               "isSymetricalForOpponents": false
             },
             {
-              "section": "Resources",
-              "style": {
-                "min-height": "18vh",
-                "margin-top": "8px"
-              },
-              "isSymetricalForOpponents": false
-            },
-            {
               "direction": "row",
               "style": {
                 "gap": "8px",
@@ -165,6 +158,13 @@
                   "style": {
                     "height": "auto",
                     "width": "12vh"
+                  }
+                },
+                {
+                  "section": "Resources",
+                  "style": {
+                    "flex": "1",
+                    "min-height": "18vh"
                   }
                 },
                 {
@@ -214,7 +214,7 @@
           "Discard": {
             "isDefaultSection": true,
             "title": "Discard",
-            "isHidden": "no",
+            "isHidden": "yes",
             "height": "DEFAULT",
             "alignment": "NONE",
             "isHorizontalAllowed": false,
