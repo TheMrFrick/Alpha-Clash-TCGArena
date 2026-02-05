@@ -94,11 +94,12 @@
           "Clashground",
           "Clash-Zone",
           "Accessory-Zone",
-          "Resources"
+          "Resources",
+          "Banished"
         ],
         "layout": {
           "direction": "column",
-          "isSymetricalForOpponents": false,
+          "isSymetricalForOpponents": true,
           "content": [
             {
               "direction": "row",
@@ -127,8 +128,7 @@
                     "height": "12vh"
                   }
                 }
-              ],
-              "isSymetricalForOpponents": false
+              ]
             },
             {
               "direction": "row",
@@ -157,9 +157,15 @@
                     "flex": "1",
                     "min-height": "18vh"
                   }
+                },
+                {
+                  "section": "Banished",
+                  "style": {
+                    "height": "auto",
+                    "width": "12vh"
+                  }
                 }
-              ],
-              "isSymetricalForOpponents": false
+              ]
             }
           ]
         },
@@ -169,6 +175,9 @@
           "Accessory": "Accessory-Zone",
           "Action": "Accessory-Zone",
           "Clashground": "Clashground"
+        },
+        "autoPlayFromStack": {
+          "Token": "Clash-Zone"
         },
         "sectionsDict": {
           "Hand": {
@@ -227,7 +236,7 @@
             "isDefaultSection": true,
             "title": "Stack",
             "isHidden": "yes",
-            "height": "HUGE",
+            "height": "none",
             "alignment": "NONE",
             "isHorizontalAllowed": false,
             "isGroupForbidden": true,
@@ -395,7 +404,7 @@
             "opponentAlignment": false,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
-            "displayedTitle": "Banished",
+            "displayedTitle": "Banished Zone",
             "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": false,
