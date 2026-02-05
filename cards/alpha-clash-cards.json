@@ -13816,14 +13816,14 @@
         "type": "Token",
         "cost": null,
         "isHorizontal": true,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01_b.webp"
       },
       "back": {
         "name": "The Portal Closed",
         "type": "Token",
         "cost": null,
         "isHorizontal": true,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01_b.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01.webp"
       }
     },
     "health": null,
