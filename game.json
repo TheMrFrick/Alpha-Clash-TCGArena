@@ -203,7 +203,7 @@
             "title": "Discard",
             "isHidden": "no",
             "height": "DEFAULT",
-            "alignment": "NONE",
+            "alignment": "DECK",
             "isHorizontalAllowed": false,
             "isGroupForbidden": true,
             "noAutoPayTo": true,
