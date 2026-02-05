@@ -94,8 +94,7 @@
           "Clashground",
           "Clash-Zone",
           "Accessory-Zone",
-          "Resources",
-          "Oblivion"
+          "Resources"
         ],
         "layout": {
           "direction": "column",
@@ -218,6 +217,23 @@
             "opponentAlignment": false,
             "noAutoPayTo": false,
             "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Stack": {
+            "isDefaultSection": true,
+            "title": "Stack",
+            "isHidden": "yes",
+            "height": "HUGE",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Stack",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
             "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": false,
