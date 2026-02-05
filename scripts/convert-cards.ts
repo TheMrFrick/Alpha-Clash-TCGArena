@@ -49,21 +49,6 @@ interface CardFace {
   type: string;
   cost: number | null;
   image: string;
-  isHorizontal: boolean;
-  attack: number | null;
-  defense: number | null;
-  health: number | null;
-  color: string;
-  colors: string[];
-  specificCost: string | null;
-  affiliation: string | null;
-  subtype: string | null;
-  text: string | null;
-  rarity: string;
-  set: string;
-  keywords: string[];
-  artist: string | null;
-  planet: string | null;
 }
 
 interface Card {
@@ -230,48 +215,43 @@ function convertCard(raw: RawCard): Card {
   const cost = parseNumber(raw.card_cost);
   const isToken = cardType === 'Token';
 
+  const affiliation = normalizeAffiliation(raw.card_affiliation);
+  const attack = parseNumber(raw.card_attack);
+  const defense = parseNumber(raw.card_defense);
+  const health = parseNumber(raw.card_health);
+  const subtype = raw.card_subtype;
+  const keywords = raw.card_keywords || [];
+  const rarity = normalizeCardRarity(raw.card_rarity);
+  const set = raw.card_series;
+  const planet = raw.card_planet;
+
   const front: CardFace = {
     name: raw.card_name,
     type: cardType,
     cost: cost,
     image: `${IMAGE_BASE_URL}/${raw.img_link}.webp`,
-    isHorizontal: raw.is_horizontal || false,
-    attack: parseNumber(raw.card_attack),
-    defense: parseNumber(raw.card_defense),
-    health: parseNumber(raw.card_health),
-    color,
-    colors,
-    specificCost: raw.card_specific_cost,
-    affiliation: normalizeAffiliation(raw.card_affiliation),
-    subtype: raw.card_subtype,
-    text: stripHtml(raw.card_skill),
-    rarity: normalizeCardRarity(raw.card_rarity),
-    set: raw.card_series,
-    keywords: raw.card_keywords || [],
-    artist: raw.card_artist,
-    planet: raw.card_planet,
   };
 
   // Return with keys in alphabetical order
   return {
-    affiliation: front.affiliation,
-    attack: front.attack,
+    affiliation,
+    attack,
     color,
     colors,
     cost: cost,
-    defense: front.defense,
+    defense,
     face: {
       front,
     },
-    health: front.health,
+    health,
     id: raw.card_number,
     isToken,
-    keywords: front.keywords,
+    keywords,
     name: raw.card_name,
-    planet: front.planet,
-    rarity: front.rarity,
-    set: front.set,
-    subtype: front.subtype,
+    planet,
+    rarity,
+    set,
+    subtype,
     type: cardType,
   };
 }
@@ -322,8 +302,8 @@ function convertCards(): void {
   for (const card of cards) {
     stats.byType[card.type] = (stats.byType[card.type] || 0) + 1;
     stats.byColor[card.color] = (stats.byColor[card.color] || 0) + 1;
-    stats.byRarity[card.face.front.rarity] = (stats.byRarity[card.face.front.rarity] || 0) + 1;
-    stats.bySet[card.face.front.set] = (stats.bySet[card.face.front.set] || 0) + 1;
+    stats.byRarity[card.rarity] = (stats.byRarity[card.rarity] || 0) + 1;
+    stats.bySet[card.set] = (stats.bySet[card.set] || 0) + 1;
   }
 
   console.log('\nCard Statistics:');
