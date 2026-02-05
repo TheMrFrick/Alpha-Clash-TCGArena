@@ -19,12 +19,7 @@
     "imageField": "imgLink"
   },
   "deckBuilding": {
-    "mainFilters": [
-      "color",
-      "type",
-      "affiliation",
-      "rarity"
-    ],
+    "mainFilters": ["color", "type", "affiliation", "rarity"],
     "formats": [
       {
         "title": "Standard",
@@ -90,9 +85,7 @@
           "color": "#00FFFF"
         }
       ],
-      "countersStartingValues": [
-        30
-      ],
+      "countersStartingValues": [30],
       "hideFacedDownCards": false,
       "sections": {
         "customSections": [
@@ -101,7 +94,8 @@
           "Clashground",
           "Clash-Zone",
           "Accessory-Zone",
-          "Resources"
+          "Resources",
+          "Oblivion"
         ],
         "layout": {
           "direction": "column",
@@ -170,9 +164,7 @@
             }
           ]
         },
-        "categoriesAlreadyOnBoard": [
-          "Contender"
-        ],
+        "categoriesAlreadyOnBoard": ["Contender"],
         "autoPlayFromHand": {
           "Clash": "Clash-Zone",
           "Accessory": "Accessory-Zone",
@@ -232,23 +224,6 @@
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
-	      "Stack": {
-	        "isDefaultSection": true,
-	        "title": "Stack",
-	        "isHidden": "yes",
-	        "height": "HUGE",
-	        "alignment": "NONE",
-	        "isHorizontalAllowed": false,
-	        "isGroupForbidden": true,
-	        "displayedTitle": "Stack",
-	        "opponentAlignment": false,
-	        "noAutoPayTo": false,
-	        "noQuickActions": false,
-	        "enterTapped": false,
-	        "enterSpun": false,
-	        "keepTappedNewTurn": false,
-	        "showHiddenCardInHistory": false
-	      },
           "Exile": {
             "isDefaultSection": true,
             "title": "Banished",
