@@ -13809,15 +13809,16 @@
     "colors": [],
     "cost": null,
     "defense": null,
+    "isHorizontal": true,
     "face": {
       "front": {
-        "name": "The Portal",
+        "name": "The Portal Open",
         "type": "Token",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01.webp"
       },
       "back": {
-        "name": "The Portal",
+        "name": "The Portal Closed",
         "type": "Token",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01_b.webp"
