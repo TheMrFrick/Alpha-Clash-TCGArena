@@ -13809,20 +13809,11 @@
     "colors": [],
     "cost": null,
     "defense": null,
-    "isHorizontal": true,
     "face": {
       "front": {
-        "name": "The Portal Open",
+        "name": "The Portal",
         "type": "Token",
         "cost": null,
-        "isHorizontal": true,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01_b.webp"
-      },
-      "back": {
-        "name": "The Portal Closed",
-        "type": "Token",
-        "cost": null,
-        "isHorizontal": true,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01.webp"
       }
     },
@@ -18797,12 +18788,6 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC4-002.webp"
-      },
-      "back": {
-        "name": "Shadowlight, Dark Absence",
-        "type": "Contender",
-        "cost": null,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC4-060.webp"
       }
     },
     "health": 25,
@@ -20582,12 +20567,6 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC4-060.webp"
-      },
-      "back": {
-        "name": "Shadowlight, Bright Beacon",
-        "type": "Contender",
-        "cost": null,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC4-002.webp"
       }
     },
     "health": 25,
@@ -24094,11 +24073,6 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-001.webp"
-      },"back": {
-        "name": "Clarity, Deadly Duelist",
-        "type": "Contender",
-        "cost": null,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-061.webp"
       }
     },
     "health": 20,
@@ -26143,12 +26117,6 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-061.webp"
-      },
-      "back": {
-        "name": "Clarity, Defender of All",
-        "type": "Contender",
-        "cost": null,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-001.webp"
       }
     },
     "health": 20,
@@ -36267,6 +36235,609 @@
     "subtype": null,
     "type": "Token"
   },
+  "AC7-001": {
+    "affiliation": null,
+    "attack": 1,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": null,
+    "defense": 0,
+    "face": {
+      "front": {
+        "name": "The Absence, Voice of the Void",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-001.webp"
+      }
+    },
+    "health": 25,
+    "id": "AC7-001",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Challenge"
+    ],
+    "name": "The Absence, Voice of the Void",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Contender"
+  },
+  "AC7-002": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Earth",
+        "type": "Clashground",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-002.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-002",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Earth",
+    "planet": "Earth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-003": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Inside Nothingness",
+        "type": "Clashground",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-003.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-003",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat",
+      "Trigger - Enter"
+    ],
+    "name": "Inside Nothingness",
+    "planet": "Unknown",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-004": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Breach the Void",
+        "type": "Action",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-004.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-004",
+    "isToken": false,
+    "keywords": [
+      "Undisputed"
+    ],
+    "name": "Breach the Void",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Clash Buff",
+    "type": "Action"
+  },
+  "AC7-005": {
+    "affiliation": "Harbinger",
+    "attack": 5,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 6,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Clarity, Death on High",
+        "type": "Clash",
+        "cost": 6,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-005.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-005",
+    "isToken": false,
+    "keywords": [],
+    "name": "Clarity, Death on High",
+    "planet": "Evelon",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-006": {
+    "affiliation": "Harbinger",
+    "attack": 3,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 3,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Clarity, Elegant Exchange",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-006.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-006",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Clarity, Elegant Exchange",
+    "planet": "Evelon",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-007": {
+    "affiliation": "Harbinger",
+    "attack": 6,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 5,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Death, No Escape",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-007.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-007",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Challenge"
+    ],
+    "name": "Death, No Escape",
+    "planet": "Evelon",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-008": {
+    "affiliation": "Rogue",
+    "attack": 2,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 1,
+    "defense": 1,
+    "face": {
+      "front": {
+        "name": "Iron Piston, Battle-Worn",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-008.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-008",
+    "isToken": false,
+    "keywords": [],
+    "name": "Iron Piston, Battle-Worn",
+    "planet": "Cogheim",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-009": {
+    "affiliation": "Rogue",
+    "attack": 3,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 4,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Iron Piston, Discovered",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-009.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-009",
+    "isToken": false,
+    "keywords": [
+      "Discover"
+    ],
+    "name": "Iron Piston, Discovered",
+    "planet": "Cogheim",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-010": {
+    "affiliation": "Rogue",
+    "attack": 3,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 5,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Iron Piston, Hydraulic Fury",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-010.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-010",
+    "isToken": false,
+    "keywords": [
+      "Breakthrough"
+    ],
+    "name": "Iron Piston, Hydraulic Fury",
+    "planet": "Cogheim",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-011": {
+    "affiliation": "Rogue",
+    "attack": 3,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 4,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Iron Piston, Overdrive",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-011.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-011",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Attack",
+      "Trigger - Defeat"
+    ],
+    "name": "Iron Piston, Overdrive",
+    "planet": "Cogheim",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-012": {
+    "affiliation": "Alpha",
+    "attack": 3,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 3,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Kilimanjaro, the Primordial",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-012.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-012",
+    "isToken": false,
+    "keywords": [
+      "Magnitude 10",
+      "Trigger - Attack"
+    ],
+    "name": "Kilimanjaro, the Primordial",
+    "planet": "Earth",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-013": {
+    "affiliation": null,
+    "attack": 5,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 5,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "The Absence, Born of Nothing",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-013.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-013",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat"
+    ],
+    "name": "The Absence, Born of Nothing",
+    "planet": "The Absence",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-014": {
+    "affiliation": null,
+    "attack": 4,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 5,
+    "defense": 5,
+    "face": {
+      "front": {
+        "name": "The Absence, Hunger Manifest",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-014.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-014",
+    "isToken": false,
+    "keywords": [
+      "Counter - Play",
+      "Engage"
+    ],
+    "name": "The Absence, Hunger Manifest",
+    "planet": "The Absence",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-015": {
+    "affiliation": null,
+    "attack": 3,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 4,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "The Absence, New Host",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-015.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-015",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Victory"
+    ],
+    "name": "The Absence, New Host",
+    "planet": "The Absence",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-016": {
+    "affiliation": null,
+    "attack": 1,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 1,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "The Absence, Shadow Incarnate",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-016.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-016",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Attack",
+      "Trigger - Enter"
+    ],
+    "name": "The Absence, Shadow Incarnate",
+    "planet": "The Absence",
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-017": {
+    "affiliation": null,
+    "attack": 3,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 3,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "The Absence, Unbound Terror",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-017.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-017",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat"
+    ],
+    "name": "The Absence, Unbound Terror",
+    "planet": "The Absence",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-018": {
+    "affiliation": null,
+    "attack": 2,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 3,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "The Absence, Unphased",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-018.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-018",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat"
+    ],
+    "name": "The Absence, Unphased",
+    "planet": "The Absence",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-019": {
+    "affiliation": null,
+    "attack": 1,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "The Absence, Writhe Within",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-019.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-019",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Challenge"
+    ],
+    "name": "The Absence, Writhe Within",
+    "planet": "The Absence",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-020": {
+    "affiliation": "Discarded",
+    "attack": 4,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 7,
+    "defense": 6,
+    "face": {
+      "front": {
+        "name": "Thragor, Hunger of the Hunt",
+        "type": "Clash",
+        "cost": 7,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-020.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-020",
+    "isToken": false,
+    "keywords": [
+      "Close Combat",
+      "Trigger - Attack",
+      "Trigger - Victory"
+    ],
+    "name": "Thragor, Hunger of the Hunt",
+    "planet": "Bardaga",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
   "AC7-021": {
     "affiliation": "Discarded",
     "attack": 1,
@@ -36296,9 +36867,465 @@
     "name": "Thragor, Juggernaut of Ruin",
     "planet": "Bardaga",
     "rarity": "Epic",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
+  },
+  "AC7-022": {
+    "affiliation": "Discarded",
+    "attack": 6,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 4,
+    "defense": 1,
+    "face": {
+      "front": {
+        "name": "Thragor, Savage Momentum",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-022.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-022",
+    "isToken": false,
+    "keywords": [
+      "Breakthrough"
+    ],
+    "name": "Thragor, Savage Momentum",
+    "planet": "Bardaga",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-023": {
+    "affiliation": "Discarded",
+    "attack": 2,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Thragor, Solitary Hunt",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-023.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-023",
+    "isToken": false,
+    "keywords": [
+      "Brutal 1"
+    ],
+    "name": "Thragor, Solitary Hunt",
+    "planet": "Bardaga",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-024": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Dominion of Minds",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-024.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-024",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Dominion of Minds",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-025": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 4,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Iron Relay",
+        "type": "Accessory",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-025.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-025",
+    "isToken": false,
+    "keywords": [],
+    "name": "Iron Relay",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-026": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Steampunk Blueprint",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-026.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-026",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Steampunk Blueprint",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-027": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Terrorizing Stature",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-027.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-027",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack",
+      "Engage",
+      "Exclusive"
+    ],
+    "name": "Terrorizing Stature",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-028": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 4,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Shadowstrike",
+        "type": "Accessory",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-028.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-028",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "Shadowstrike",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-029": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Anti-Tank Grenade",
+        "type": "Accessory",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-029.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-029",
+    "isToken": false,
+    "keywords": [
+      "Attach"
+    ],
+    "name": "Anti-Tank Grenade",
+    "planet": null,
+    "rarity": "Promo",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
+  },
+  "AC7-030": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Hunger of the Void",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-030.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-030",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Exclusive",
+      "Safeguard",
+      "Torment"
+    ],
+    "name": "Hunger of the Void",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
+  },
+  "AC7-031": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Spear of Atlantis",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-031.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-031",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Magnitude 10",
+      "Trigger - Challenge"
+    ],
+    "name": "Spear of Atlantis",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
+  },
+  "AC7-032": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Tempestwrath",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-032.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-032",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Challenge"
+    ],
+    "name": "Tempestwrath",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
+  },
+  "AC7-033": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Unbreakable Plating",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-033.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-033",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Enter",
+      "Trigger - Victory"
+    ],
+    "name": "Unbreakable Plating",
+    "planet": null,
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": "Contender Weapon",
+    "type": "Accessory"
+  },
+  "AC7-034": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Abyssal Confrontation",
+        "type": "Action",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-034.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-034",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Abyssal Confrontation",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Quick",
+    "type": "Action"
+  },
+  "AC7-035": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 4,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Annihilation",
+        "type": "Basic",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-035.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-035",
+    "isToken": false,
+    "keywords": [],
+    "name": "Annihilation",
+    "planet": null,
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": "Action",
+    "type": "Basic"
+  },
+  "AC7-036": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Dimensional Breach",
+        "type": "Basic",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-036.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-036",
+    "isToken": false,
+    "keywords": [
+      "Close Combat"
+    ],
+    "name": "Dimensional Breach",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Action",
+    "type": "Basic"
   },
   "AC7-037": {
     "affiliation": null,
@@ -36312,7 +37339,7 @@
     "face": {
       "front": {
         "name": "Hunger Without End",
-        "type": "Action",
+        "type": "Basic",
         "cost": 6,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-037.webp"
       }
@@ -36324,9 +37351,70 @@
     "name": "Hunger Without End",
     "planet": null,
     "rarity": "Rare",
-    "set": "AC7",
-    "subtype": "Basic",
-    "type": "Action"
+    "set": "Ancient Alphas",
+    "subtype": "Action",
+    "type": "Basic"
+  },
+  "AC7-038": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Death's Aegis",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-038.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-038",
+    "isToken": false,
+    "keywords": [
+      "Safeguard"
+    ],
+    "name": "Death's Aegis",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Action",
+    "type": "Clash"
+  },
+  "AC7-039": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Mark the Grid",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-039.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-039",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack",
+      "Discover"
+    ],
+    "name": "Mark the Grid",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Action",
+    "type": "Clash"
   },
   "AC7-040": {
     "affiliation": "Dragon",
@@ -36358,9 +37446,310 @@
     "name": "Fangyin, Defender of Drak'aroth",
     "planet": "Drak'aroth",
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Contender"
+  },
+  "AC7-041": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Plagueholme",
+        "type": "Clashground",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-041.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-041",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter",
+      "Trigger - Obstruct"
+    ],
+    "name": "Plagueholme",
+    "planet": "Plagueholme",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-042": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Synthoria",
+        "type": "Clashground",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-042.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-042",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Synthoria",
+    "planet": null,
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-043": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Express Delivery",
+        "type": "Action",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-043.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-043",
+    "isToken": false,
+    "keywords": [],
+    "name": "Express Delivery",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Clash Buff",
+    "type": "Action"
+  },
+  "AC7-044": {
+    "affiliation": "Dragon",
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 4,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Avarice's Allies",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-044.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-044",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat",
+      "Unrivaled"
+    ],
+    "name": "Avarice's Allies",
+    "planet": "Drak'aroth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-045": {
+    "affiliation": "Dragon",
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 5,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Avarice, Grasping Greed",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-045.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-045",
+    "isToken": false,
+    "keywords": [
+      "Flight",
+      "Trigger - Enter",
+      "Unrivaled"
+    ],
+    "name": "Avarice, Grasping Greed",
+    "planet": "Drak'aroth",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-046": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Syndicate Device",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-046.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-046",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Challenge"
+    ],
+    "name": "Syndicate Device",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-047": {
+    "affiliation": "Discarded",
+    "attack": 2,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 7,
+    "defense": 6,
+    "face": {
+      "front": {
+        "name": "Cadavros' Lackey",
+        "type": "Clash",
+        "cost": 7,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-047.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-047",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Challenge"
+    ],
+    "name": "Cadavros' Lackey",
+    "planet": "Bardaga",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-048": {
+    "affiliation": "Discarded",
+    "attack": 2,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 3,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Cadavros' Minion, Pierced",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-048.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-048",
+    "isToken": false,
+    "keywords": [],
+    "name": "Cadavros' Minion, Pierced",
+    "planet": "Bardaga",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-049": {
+    "affiliation": "Discarded",
+    "attack": 4,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 4,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Cadavros' Minion, Struck Down",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-049.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-049",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat"
+    ],
+    "name": "Cadavros' Minion, Struck Down",
+    "planet": "Bardaga",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-050": {
+    "affiliation": "Discarded",
+    "attack": 4,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 5,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Cadavros' Hungry Minion",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-050.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-050",
+    "isToken": false,
+    "keywords": [
+      "Necrotic"
+    ],
+    "name": "Cadavros' Hungry Minion",
+    "planet": "Bardaga",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
   },
   "AC7-051": {
     "affiliation": "Dragon",
@@ -36390,7 +37779,127 @@
     "name": "Fangyin, Formidable Challenger",
     "planet": "Drak'aroth",
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-052": {
+    "affiliation": "Dragon",
+    "attack": 2,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Fangyin, Ready to Strike",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-052.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-052",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Fangyin, Ready to Strike",
+    "planet": "Drak'aroth",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-053": {
+    "affiliation": "Dragon",
+    "attack": 2,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 3,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Fangyin, Raging Dragon",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-053.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-053",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Fangyin, Raging Dragon",
+    "planet": "Drak'aroth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-054": {
+    "affiliation": "Dragon",
+    "attack": 3,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 4,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Fangyin, Locked into Battle",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-054.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-054",
+    "isToken": false,
+    "keywords": [
+      "Breakthrough"
+    ],
+    "name": "Fangyin, Locked into Battle",
+    "planet": "Drak'aroth",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-055": {
+    "affiliation": "Dragon",
+    "attack": 4,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 4,
+    "defense": 5,
+    "face": {
+      "front": {
+        "name": "Fangyin, Coiled Intent",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-055.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-055",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat"
+    ],
+    "name": "Fangyin, Coiled Intent",
+    "planet": "Drak'aroth",
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
   },
@@ -36416,15 +37925,289 @@
     "isToken": false,
     "keywords": [
       "Breakthrough",
-      "Daunting",
       "Trigger - Enter"
     ],
     "name": "Fangyin, Sword Drawn",
     "planet": "Drak'aroth",
-    "rarity": "Iconic Rare",
-    "set": "AC7",
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
+  },
+  "AC7-057": {
+    "affiliation": null,
+    "attack": 1,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Harmonisworn, Threat Detected",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-057.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-057",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Harmonisworn, Threat Detected",
+    "planet": "Synthoria",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-058": {
+    "affiliation": null,
+    "attack": 0,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 1,
+    "defense": 1,
+    "face": {
+      "front": {
+        "name": "Harmonisworn, Morphing Terror",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-058.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-058",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Harmonisworn, Morphing Terror",
+    "planet": "Synthoria",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-059": {
+    "affiliation": "Alpha",
+    "attack": 5,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 6,
+    "defense": 5,
+    "face": {
+      "front": {
+        "name": "Magnate, Powered Up",
+        "type": "Clash",
+        "cost": 6,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-059.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-059",
+    "isToken": false,
+    "keywords": [],
+    "name": "Magnate, Powered Up",
+    "planet": "Earth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-060": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Bioluminescent Burst",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-060.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-060",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Exclusive",
+      "Trigger - Enter"
+    ],
+    "name": "Bioluminescent Burst",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-061": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Arcane Surge",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-061.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-061",
+    "isToken": false,
+    "keywords": [
+      "Engage",
+      "Exclusive"
+    ],
+    "name": "Arcane Surge",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-062": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Electrical Surge",
+        "type": "Accessory",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-062.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-062",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "Electrical Surge",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-063": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Hornpierced",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-063.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-063",
+    "isToken": false,
+    "keywords": [
+      "Counter - Play"
+    ],
+    "name": "Hornpierced",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-064": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Grave Resurgence",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-064.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-064",
+    "isToken": false,
+    "keywords": [
+      "Necrotic",
+      "Trigger - Defeat"
+    ],
+    "name": "Grave Resurgence",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Quick",
+    "type": "Action"
+  },
+  "AC7-065": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Weaponry Morphing",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-065.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-065",
+    "isToken": false,
+    "keywords": [
+      "Ambush",
+      "Attach",
+      "Counter - Attack",
+      "Trigger - Defeat"
+    ],
+    "name": "Weaponry Morphing",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
   },
   "AC7-066": {
     "affiliation": null,
@@ -36453,9 +38236,97 @@
     "name": "Molten Breath",
     "planet": null,
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": "Contender Weapon",
     "type": "Accessory"
+  },
+  "AC7-067": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 4,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Dragon Horn",
+        "type": "Accessory",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-067_inverse.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-067",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Enter"
+    ],
+    "name": "Dragon Horn",
+    "planet": null,
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": "WEapon",
+    "type": "Accessory"
+  },
+  "AC7-068": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Excessive Force",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-068.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-068",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Brutal 1"
+    ],
+    "name": "Excessive Force",
+    "planet": null,
+    "rarity": "Promo",
+    "set": "Ancient Alphas",
+    "subtype": "Contender Weapon",
+    "type": "Accessory"
+  },
+  "AC7-069": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
+    "cost": 4,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Regenerative Vat",
+        "type": "Action",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-069.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-069",
+    "isToken": false,
+    "keywords": [],
+    "name": "Regenerative Vat",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Basic",
+    "type": "Action"
   },
   "AC7-070": {
     "affiliation": null,
@@ -36481,9 +38352,40 @@
     "name": "Wisdom of the Ages",
     "planet": null,
     "rarity": "Rare",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": "Basic",
     "type": "Action"
+  },
+  "AC7-071": {
+    "affiliation": "Alpha",
+    "attack": 1,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": null,
+    "defense": 0,
+    "face": {
+      "front": {
+        "name": "Windhoof, Hero of Many",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-071.webp"
+      }
+    },
+    "health": 25,
+    "id": "AC7-071",
+    "isToken": false,
+    "keywords": [
+      "Engage",
+      "Trigger - Challenge"
+    ],
+    "name": "Windhoof, Hero of Many",
+    "planet": "Eldralore",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Contender"
   },
   "AC7-072": {
     "affiliation": "Rogue",
@@ -36506,16 +38408,73 @@
     "id": "AC7-072",
     "isToken": false,
     "keywords": [
-      "Daunting",
-      "Engage",
-      "Recover 1"
+      "Engage"
     ],
     "name": "Valen Solariel, Healer of Eldralore",
     "planet": "Eldralore",
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Contender"
+  },
+  "AC7-073": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Arghor",
+        "type": "Clashground",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-073.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-073",
+    "isToken": false,
+    "keywords": [
+      "Close Combat",
+      "Trigger - Enter"
+    ],
+    "name": "Arghor",
+    "planet": "Arghor",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-074": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Edge of Dominion",
+        "type": "Clashground",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-074.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-074",
+    "isToken": false,
+    "keywords": [],
+    "name": "Edge of Dominion",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
   },
   "AC7-075": {
     "affiliation": null,
@@ -36541,11 +38500,942 @@
       "Engage"
     ],
     "name": "The Abundant Flame",
-    "planet": null,
+    "planet": "Abundant Flame",
     "rarity": "Rare",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clashground"
+  },
+  "AC7-076": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Resounding Strike",
+        "type": "Action",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-076.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-076",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Victory"
+    ],
+    "name": "Resounding Strike",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Clash Buff",
+    "type": "Action"
+  },
+  "AC7-077": {
+    "affiliation": "Dragon",
+    "attack": 2,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 3,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Gwenael, Inverted Grace",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-077.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-077",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat"
+    ],
+    "name": "Gwenael, Inverted Grace",
+    "planet": "Drak'aroth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-078": {
+    "affiliation": "Rogue",
+    "attack": 2,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 3,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Master Zephyrion, Coiled Strike",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-078.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-078",
+    "isToken": false,
+    "keywords": [
+      "Engage",
+      "Trigger - Attack"
+    ],
+    "name": "Master Zephyrion, Coiled Strike",
+    "planet": "Evelon",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-079": {
+    "affiliation": "Rogue",
+    "attack": 2,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Master Zephyrion, Shared Stillness",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-079.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-079",
+    "isToken": false,
+    "keywords": [],
+    "name": "Master Zephyrion, Shared Stillness",
+    "planet": "Evelon",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-080": {
+    "affiliation": "Rogue",
+    "attack": 1,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Maser Zephyrion, Unshaken",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-080.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-080",
+    "isToken": false,
+    "keywords": [],
+    "name": "Maser Zephyrion, Unshaken",
+    "planet": "Evelon",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-081": {
+    "affiliation": "Rogue",
+    "attack": 2,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 4,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Valen Solariel, Healing Light",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-081.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-081",
+    "isToken": false,
+    "keywords": [],
+    "name": "Valen Solariel, Healing Light",
+    "planet": "Eldralore",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-082": {
+    "affiliation": "Rogue",
+    "attack": 3,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 3,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Valen Solariel, Healing Grace",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-082.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-082",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Victory"
+    ],
+    "name": "Valen Solariel, Healing Grace",
+    "planet": "Eldralore",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-083": {
+    "affiliation": "Rogue",
+    "attack": 2,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 4,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Valen Solariel, Lightbringer",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-083.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-083",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack",
+      "Engage",
+      "Exclusive"
+    ],
+    "name": "Valen Solariel, Lightbringer",
+    "planet": "Eldralore",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-084": {
+    "affiliation": "Rogue",
+    "attack": 5,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 7,
+    "defense": 5,
+    "face": {
+      "front": {
+        "name": "Valen Solariel, Light of the Hunt",
+        "type": "Clash",
+        "cost": 7,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-084.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-084",
+    "isToken": false,
+    "keywords": [],
+    "name": "Valen Solariel, Light of the Hunt",
+    "planet": "Eldralore",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-085": {
+    "affiliation": "Rogue",
+    "attack": 4,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 6,
+    "defense": 6,
+    "face": {
+      "front": {
+        "name": "Valen Solariel, Solar Protector",
+        "type": "Clash",
+        "cost": 6,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-085.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-085",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Valen Solariel, Solar Protector",
+    "planet": "Eldralore",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-086": {
+    "affiliation": "Rogue",
+    "attack": 1,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 3,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Valen Solariel, Unseen Approach",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-086.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-086",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Challenge"
+    ],
+    "name": "Valen Solariel, Unseen Approach",
+    "planet": "Eldralore",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-087": {
+    "affiliation": "Alpha",
+    "attack": 4,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 5,
+    "defense": 7,
+    "face": {
+      "front": {
+        "name": "Warcry, Punishing Predator",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-087.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-087",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Victory"
+    ],
+    "name": "Warcry, Punishing Predator",
+    "planet": "Earth",
+    "rarity": "Promo",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-088": {
+    "affiliation": "Alpha",
+    "attack": 4,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 6,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Windhoof, Arrowstorm",
+        "type": "Clash",
+        "cost": 6,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-088.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-088",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Enter",
+      "Trigger - Victory"
+    ],
+    "name": "Windhoof, Arrowstorm",
+    "planet": "Eldralore",
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-089": {
+    "affiliation": "Alpha",
+    "attack": 4,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 4,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Windhoof, Champion of the Gambit",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-089.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-089",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Challenge",
+      "Trigger - Victory"
+    ],
+    "name": "Windhoof, Champion of the Gambit",
+    "planet": "Eldralore",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-090": {
+    "affiliation": "Alpha",
+    "attack": 2,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Windhoof, Crushing Blow",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-090.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-090",
+    "isToken": false,
+    "keywords": [
+      "Close Combat"
+    ],
+    "name": "Windhoof, Crushing Blow",
+    "planet": "Eldralore",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-091": {
+    "affiliation": "Alpha",
+    "attack": 1,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 1,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Windhoof, Protector of Eldralore",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-091.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-091",
+    "isToken": false,
+    "keywords": [
+      "Interception"
+    ],
+    "name": "Windhoof, Protector of Eldralore",
+    "planet": "Eldralore",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-092": {
+    "affiliation": "Alpha",
+    "attack": 3,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 3,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Windhoof, Rapid Onslaught",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-092.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-092",
+    "isToken": false,
+    "keywords": [
+      "Superspeed",
+      "Trigger - Victory"
+    ],
+    "name": "Windhoof, Rapid Onslaught",
+    "planet": "Eldralore",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-093": {
+    "affiliation": "Alpha",
+    "attack": 3,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 5,
+    "defense": 5,
+    "face": {
+      "front": {
+        "name": "Windhoof, Tempest Draw",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-093.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-093",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Enter"
+    ],
+    "name": "Windhoof, Tempest Draw",
+    "planet": "Eldralore",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-094": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Celestial Restoration",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-094.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-094",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Celestial Restoration",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-095": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Preparing for the Unknown",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-095.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-095",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Preparing for the Unknown",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-096": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Harmony Fist",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-096.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-096",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "Harmony Fist",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-097": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Shroud of Oblivion",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-097.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-097",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "Shroud of Oblivion",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-098": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Lunarblade",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-098.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-098",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Exclusive",
+      "Trigger - Victory"
+    ],
+    "name": "Lunarblade",
+    "planet": null,
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
+  },
+  "AC7-099": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Hooves of Havoc",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-099.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-099",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Engage",
+      "Trigger - Victory"
+    ],
+    "name": "Hooves of Havoc",
+    "planet": null,
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": "Contender Weapon",
+    "type": "Accessory"
+  },
+  "AC7-100": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Deflecting Style",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-100.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-100",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Counter - Attack",
+      "Engage"
+    ],
+    "name": "Deflecting Style",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Contender Weapon",
+    "type": "Accessory"
+  },
+  "AC7-101": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Life From Ashes",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-101.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-101",
+    "isToken": false,
+    "keywords": [],
+    "name": "Life From Ashes",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Basic",
+    "type": "Action"
+  },
+  "AC7-102": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 5,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Overflowing Vitality",
+        "type": "Action",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-102_inverse.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-102",
+    "isToken": false,
+    "keywords": [],
+    "name": "Overflowing Vitality",
+    "planet": null,
+    "rarity": "Iconic Rare",
+    "set": "Ancient Alphas",
+    "subtype": "Basic",
+    "type": "Action"
+  },
+  "AC7-103": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Second Wind",
+        "type": "Action",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-103.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-103",
+    "isToken": false,
+    "keywords": [],
+    "name": "Second Wind",
+    "planet": null,
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": "Basic",
+    "type": "Action"
+  },
+  "AC7-104": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Aim of the Sylph",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-104.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-104",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack",
+      "Engage"
+    ],
+    "name": "Aim of the Sylph",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Quick",
+    "type": "Action"
+  },
+  "AC7-105": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Cyclone Arrow",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-105.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-105",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack",
+      "Engage"
+    ],
+    "name": "Cyclone Arrow",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Quick",
+    "type": "Action"
+  },
+  "AC7-106": {
+    "affiliation": null,
+    "attack": null,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Grace Under Fire",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-106.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-106",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "Grace Under Fire",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Quick",
+    "type": "Action"
   },
   "AC7-107": {
     "affiliation": "Alpha",
@@ -36573,7 +39463,7 @@
     "name": "Kheprius, the Scarab Master",
     "planet": "Earth",
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Contender"
   },
@@ -36603,7 +39493,38 @@
     "name": "Between Realms",
     "planet": "Earth",
     "rarity": "Uncommon",
-    "set": "AC7",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-109": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Genesis' Dominion",
+        "type": "Clashground",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-109.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-109",
+    "isToken": false,
+    "keywords": [
+      "Observant",
+      "Trigger - Victory"
+    ],
+    "name": "Genesis' Dominion",
+    "planet": "Zenith Prime",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clashground"
   },
@@ -36633,9 +39554,154 @@
     "name": "Obelisk Blast",
     "planet": null,
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": "Clash Buff",
     "type": "Action"
+  },
+  "AC7-111": {
+    "affiliation": "Progenitor",
+    "attack": 5,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 6,
+    "defense": 7,
+    "face": {
+      "front": {
+        "name": "Alpha Aster",
+        "type": "Clash",
+        "cost": 6,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-111.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-111",
+    "isToken": false,
+    "keywords": [],
+    "name": "Alpha Aster",
+    "planet": "Zenith Prime",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-112": {
+    "affiliation": "Progenitor",
+    "attack": 4,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 7,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Alpha Aster, Prism of Power",
+        "type": "Clash",
+        "cost": 7,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-112_inverse.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-112",
+    "isToken": false,
+    "keywords": [],
+    "name": "Alpha Aster, Prism of Power",
+    "planet": "Zenith Prime",
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-113": {
+    "affiliation": null,
+    "attack": 1,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Amalgamight, Defensive Force",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-113.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-113",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Amalgamight, Defensive Force",
+    "planet": "Synthoria",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-114": {
+    "affiliation": null,
+    "attack": 0,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 1,
+    "defense": 1,
+    "face": {
+      "front": {
+        "name": "Amalgamight, Stalwart Defender",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-114.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-114",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "Amalgamight, Stalwart Defender",
+    "planet": "Synthoria",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-115": {
+    "affiliation": null,
+    "attack": 4,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 7,
+    "defense": 6,
+    "face": {
+      "front": {
+        "name": "Amalgamight, Smashing Fury",
+        "type": "Clash",
+        "cost": 7,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-115.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-115",
+    "isToken": false,
+    "keywords": [
+      "Breakthrough",
+      "Exclusive"
+    ],
+    "name": "Amalgamight, Smashing Fury",
+    "planet": "Synthoria",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
   },
   "AC7-116": {
     "affiliation": "Alpha",
@@ -36662,10 +39728,400 @@
     ],
     "name": "Kheprius, Emergent Threat",
     "planet": "Earth",
-    "rarity": "Iconic Rare",
-    "set": "AC7",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
+  },
+  "AC7-117": {
+    "affiliation": "Alpha",
+    "attack": 2,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 2,
+    "defense": 1,
+    "face": {
+      "front": {
+        "name": "Kheprius, Gift of Renewal",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-117.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-117",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter",
+      "Trigger - Victory"
+    ],
+    "name": "Kheprius, Gift of Renewal",
+    "planet": "Earth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-118": {
+    "affiliation": "Alpha",
+    "attack": 2,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Kheprius, Narrow Escape",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-118.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-118",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Kheprius, Narrow Escape",
+    "planet": "Earth",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-119": {
+    "affiliation": "Alpha",
+    "attack": 6,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 10,
+    "defense": 6,
+    "face": {
+      "front": {
+        "name": "Kheprius, Pivot of Power",
+        "type": "Clash",
+        "cost": 10,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-119.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-119",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Kheprius, Pivot of Power",
+    "planet": "Earth",
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-120": {
+    "affiliation": "Alpha",
+    "attack": 1,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 1,
+    "defense": 1,
+    "face": {
+      "front": {
+        "name": "Kheprius, Rise Again",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-120.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-120",
+    "isToken": false,
+    "keywords": [],
+    "name": "Kheprius, Rise Again",
+    "planet": "Earth",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-121": {
+    "affiliation": "Alpha",
+    "attack": 1,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 2,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Kheprius, the Impaler",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-121.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-121",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Kheprius, the Impaler",
+    "planet": "Earth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-122": {
+    "affiliation": "Alpha",
+    "attack": 5,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 4,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Mean-Streak, Caretaker",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-122.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-122",
+    "isToken": false,
+    "keywords": [],
+    "name": "Mean-Streak, Caretaker",
+    "planet": "Earth",
+    "rarity": "Promo",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-123": {
+    "affiliation": "Alpha",
+    "attack": 1,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 3,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Mean-Streak, Full Speed Ahead",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-123.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-123",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Mean-Streak, Full Speed Ahead",
+    "planet": "Earth",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-124": {
+    "affiliation": "Alpha Hunter",
+    "attack": 6,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 6,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Shadowblade, Cybernetic Assassin",
+        "type": "Clash",
+        "cost": 6,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-124.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-124",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Challenge"
+    ],
+    "name": "Shadowblade, Cybernetic Assassin",
+    "planet": "Mecha Drailia",
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-125": {
+    "affiliation": "Alpha Hunter",
+    "attack": 6,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 5,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Shadowblade, Heightened Awareness",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-125.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-125",
+    "isToken": false,
+    "keywords": [
+      "Superspeed"
+    ],
+    "name": "Shadowblade, Heightened Awareness",
+    "planet": "Mecha Drailia",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-126": {
+    "affiliation": "Alpha Hunter",
+    "attack": 3,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 4,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Shadowblade, Shrouded Hunter",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-126.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-126",
+    "isToken": false,
+    "keywords": [
+      "Ambush",
+      "Trigger - Enter"
+    ],
+    "name": "Shadowblade, Shrouded Hunter",
+    "planet": "Mecha Drailia",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-127": {
+    "affiliation": "Alpha Hunter",
+    "attack": 2,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 3,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Shadowblade, Veilstrike",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-127.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-127",
+    "isToken": false,
+    "keywords": [
+      "Ambush",
+      "Trigger - Defeat"
+    ],
+    "name": "Shadowblade, Veilstrike",
+    "planet": "Mecha Drailia",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-128": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Ancient Scarab",
+        "type": "Accessory",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-128.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-128",
+    "isToken": false,
+    "keywords": [
+      "Exclusive"
+    ],
+    "name": "Ancient Scarab",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-129": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Channeling Darkness",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-129.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-129",
+    "isToken": false,
+    "keywords": [
+      "Engage",
+      "Trigger - Enter"
+    ],
+    "name": "Channeling Darkness",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
   },
   "AC7-130": {
     "affiliation": null,
@@ -36693,9 +40149,223 @@
     "name": "Vanishing Point",
     "planet": null,
     "rarity": "Rare",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": "Relic",
     "type": "Accessory"
+  },
+  "AC7-131": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Loom of the Void",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-131.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-131",
+    "isToken": false,
+    "keywords": [
+      "Counter - Play"
+    ],
+    "name": "Loom of the Void",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-132": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Scarab Shield",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-132.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-132",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack",
+      "Counter - Play"
+    ],
+    "name": "Scarab Shield",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-133": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Scarab Transportation",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-133.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-133",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "Scarab Transportation",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-134": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Accrual",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-134.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-134",
+    "isToken": false,
+    "keywords": [
+      "Ambush",
+      "Attach",
+      "Counter - Play"
+    ],
+    "name": "Accrual",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
+  },
+  "AC7-135": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Violent Tendencies",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-135.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-135",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Attack"
+    ],
+    "name": "Violent Tendencies",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
+  },
+  "AC7-136": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Otherwordly Technology",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-136.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-136",
+    "isToken": false,
+    "keywords": [
+      "Attach"
+    ],
+    "name": "Otherwordly Technology",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Contender Weapon",
+    "type": "Accessory"
+  },
+  "AC7-137": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 4,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "The Gambit",
+        "type": "Action",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-137.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-137",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "The Gambit",
+    "planet": null,
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": "Quick",
+    "type": "Action"
   },
   "AC7-138": {
     "affiliation": null,
@@ -36723,8 +40393,39 @@
     "name": "Vaulted Escape",
     "planet": null,
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": "Quick",
+    "type": "Action"
+  },
+  "AC7-139": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Target Acquired",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-139.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-139",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Defeat"
+    ],
+    "name": "Target Acquired",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Empowerment",
     "type": "Action"
   },
   "AC7-140": {
@@ -36755,9 +40456,100 @@
     "name": "Gearwin, Steampunk Engineer",
     "planet": "Cogheim",
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Contender"
+  },
+  "AC7-141": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Ambush Site",
+        "type": "Clashground",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-141.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-141",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Enter"
+    ],
+    "name": "Ambush Site",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-142": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 5,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Draconic Showdown",
+        "type": "Clashground",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-142.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-142",
+    "isToken": false,
+    "keywords": [
+      "Flight"
+    ],
+    "name": "Draconic Showdown",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-143": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Modern Bardaga",
+        "type": "Clashground",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-143.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-143",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Modern Bardaga",
+    "planet": null,
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
   },
   "AC7-144": {
     "affiliation": null,
@@ -36780,14 +40572,900 @@
     "id": "AC7-144",
     "isToken": false,
     "keywords": [
-      "ambush",
-      "restore_1"
+      "Ambush"
     ],
     "name": "Engineered Execution",
     "planet": null,
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": "Clash Buff",
+    "type": "Action"
+  },
+  "AC7-145": {
+    "affiliation": "Dragon",
+    "attack": 5,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 7,
+    "defense": 7,
+    "face": {
+      "front": {
+        "name": "Anzudak, Enraged",
+        "type": "Clash",
+        "cost": 7,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-145.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-145",
+    "isToken": false,
+    "keywords": [
+      "Enrage 3"
+    ],
+    "name": "Anzudak, Enraged",
+    "planet": "Drak'aroth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-146": {
+    "affiliation": "Dragon",
+    "attack": 5,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 5,
+    "defense": 5,
+    "face": {
+      "front": {
+        "name": "Anzudak, Fierce Competitor",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-146.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-146",
+    "isToken": false,
+    "keywords": [
+      "Barrage 1",
+      "Breakthrough",
+      "Flight"
+    ],
+    "name": "Anzudak, Fierce Competitor",
+    "planet": "Drak'aroth",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-147": {
+    "affiliation": "Dragon",
+    "attack": 5,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 4,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Anzudak, Facing Off",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-147.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-147",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat"
+    ],
+    "name": "Anzudak, Facing Off",
+    "planet": "Drak'aroth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-148": {
+    "affiliation": "Harbinger",
+    "attack": 0,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Areson, Call to Arms",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-148.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-148",
+    "isToken": false,
+    "keywords": [
+      "Engage",
+      "Trigger - Defeat"
+    ],
+    "name": "Areson, Call to Arms",
+    "planet": "Bardaga",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-149": {
+    "affiliation": "Harbinger",
+    "attack": 3,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 5,
+    "defense": 6,
+    "face": {
+      "front": {
+        "name": "Areson, Rising Threat",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-149.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-149",
+    "isToken": false,
+    "keywords": [
+      "Exclusive",
+      "Trigger - Victory"
+    ],
+    "name": "Areson, Rising Threat",
+    "planet": "Bardaga",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-150": {
+    "affiliation": "Rogue",
+    "attack": 3,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 4,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Gearwin, Assignment Deployed",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-150.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-150",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Discover"
+    ],
+    "name": "Gearwin, Assignment Deployed",
+    "planet": "Cogheim",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-151": {
+    "affiliation": "Rogue",
+    "attack": 2,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Gearwin, Reclaimed Vitality",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-151.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-151",
+    "isToken": false,
+    "keywords": [
+      "Discover",
+      "Trigger - Defeat",
+      "Trigger - Enter",
+      "Unrivaled"
+    ],
+    "name": "Gearwin, Reclaimed Vitality",
+    "planet": "Cogheim",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-152": {
+    "affiliation": "Rogue",
+    "attack": 1,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "defense": 1,
+    "face": {
+      "front": {
+        "name": "Gearwin, Scrap for Strength",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-152.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-152",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat"
+    ],
+    "name": "Gearwin, Scrap for Strength",
+    "planet": "Cogheim",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-153": {
+    "affiliation": "Rogue",
+    "attack": 1,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Gearwin, Sudden Ingenuity",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-153.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-153",
+    "isToken": false,
+    "keywords": [
+      "Ambush",
+      "Discover"
+    ],
+    "name": "Gearwin, Sudden Ingenuity",
+    "planet": "Cogheim",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-154": {
+    "affiliation": "Rogue",
+    "attack": 4,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 5,
+    "defense": 5,
+    "face": {
+      "front": {
+        "name": "Gearwin, Surveying the Arsenal",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-154.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-154",
+    "isToken": false,
+    "keywords": [
+      "Discover",
+      "Observant",
+      "Trigger - Attack"
+    ],
+    "name": "Gearwin, Surveying the Arsenal",
+    "planet": "Cogheim",
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-155": {
+    "affiliation": "Alpha Hunter",
+    "attack": 4,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Sinai",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-155.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-155",
+    "isToken": false,
+    "keywords": [],
+    "name": "Sinai",
+    "planet": "Mecha Drailia",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-156": {
+    "affiliation": "Alpha Hunter",
+    "attack": 5,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 5,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Sinai, Cloaked",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-156.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-156",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Exclusive",
+      "Trigger - Enter"
+    ],
+    "name": "Sinai, Cloaked",
+    "planet": "Mecha Drailia",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-157": {
+    "affiliation": "Alpha Hunter",
+    "attack": 3,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Sinai, Stealth Protocol",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-157.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-157",
+    "isToken": false,
+    "keywords": [],
+    "name": "Sinai, Stealth Protocol",
+    "planet": "Mecha Drailia",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-158": {
+    "affiliation": "Alpha Hunter",
+    "attack": 2,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 4,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Sinai, Systems Online",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-158.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-158",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Attack"
+    ],
+    "name": "Sinai, Systems Online",
+    "planet": "Mecha Drailia",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-159": {
+    "affiliation": "Alpha Hunter",
+    "attack": 3,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Webber, Tactical Breach",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-159.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-159",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Attack"
+    ],
+    "name": "Webber, Tactical Breach",
+    "planet": "Earth",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-160": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Bio-Energy Scanner",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-160.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-160",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Engage"
+    ],
+    "name": "Bio-Energy Scanner",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-161": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Clockwork Codex",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-161.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-161",
+    "isToken": false,
+    "keywords": [
+      "Ambush",
+      "Discover",
+      "Engage",
+      "Trigger - Enter"
+    ],
+    "name": "Clockwork Codex",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-162": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Dragon's Breath",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-162.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-162",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Dragon's Breath",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-163": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Elven Augmentation",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-163.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-163",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Elven Augmentation",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-164": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Scale Down",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-164.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-164",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "Scale Down",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-165": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Trapmaster's Insight",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-165.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-165",
+    "isToken": false,
+    "keywords": [
+      "Ambush",
+      "Discover"
+    ],
+    "name": "Trapmaster's Insight",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-166": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Explosive Impact",
+        "type": "Accessory",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-166.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-166",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack",
+      "Engage"
+    ],
+    "name": "Explosive Impact",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-167": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Ironwall Response",
+        "type": "Accessory",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-167.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-167",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack",
+      "Discover"
+    ],
+    "name": "Ironwall Response",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-168": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Gearwin's Goggles",
+        "type": "Accessory",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-168.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-168",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Discover",
+      "Observant"
+    ],
+    "name": "Gearwin's Goggles",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
+  },
+  "AC7-169": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Fuel for the Flames",
+        "type": "Accessory",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-169.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-169",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Attack"
+    ],
+    "name": "Fuel for the Flames",
+    "planet": null,
+    "rarity": "Promo",
+    "set": "Ancient Alphas",
+    "subtype": "Contender Weapon",
+    "type": "Accessory"
+  },
+  "AC7-170": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Consuming Fire",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-170.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-170",
+    "isToken": false,
+    "keywords": [],
+    "name": "Consuming Fire",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Basic",
+    "type": "Action"
+  },
+  "AC7-171": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 9,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "The Beginning of the End",
+        "type": "Clashground",
+        "cost": 9,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-171_inverse.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-171",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "The Beginning of the End",
+    "planet": null,
+    "rarity": "Epic",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-172": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Ageless Champion",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-172.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-172",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "Ageless Champion",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Quick",
+    "type": "Action"
+  },
+  "AC7-173": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Fortify the Blades",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-173.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-173",
+    "isToken": false,
+    "keywords": [
+      "Counter - Play",
+      "Safeguard"
+    ],
+    "name": "Fortify the Blades",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Quick",
     "type": "Action"
   },
   "AC7-174": {
@@ -36811,13 +41489,12 @@
     "id": "AC7-174",
     "isToken": false,
     "keywords": [
-      "Affinity",
       "Counter - Attack"
     ],
     "name": "Entropy, the Progenitor of Chaos",
     "planet": "Zenith Prime",
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Contender"
   },
@@ -36847,7 +41524,7 @@
     "name": "Entropy's Palace",
     "planet": "Zenith Prime",
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clashground"
   },
@@ -36875,7 +41552,7 @@
     "name": "Entropy's Grasp",
     "planet": null,
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": "Clash Buff",
     "type": "Action"
   },
@@ -36908,25 +41585,172 @@
     "name": "Entropy, Blood for Power",
     "planet": "Zenith Prime",
     "rarity": "Rare",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
   },
-  "AC7-183": {
-    "affiliation": "Harbinger",
+  "AC7-178": {
+    "affiliation": "Progenitor",
+    "attack": 3,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 2,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Entropy, Boundless Chaos",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-178.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-178",
+    "isToken": false,
+    "keywords": [],
+    "name": "Entropy, Boundless Chaos",
+    "planet": "Zenith Prime",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-179": {
+    "affiliation": "Progenitor",
+    "attack": 1,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 1,
+    "defense": 1,
+    "face": {
+      "front": {
+        "name": "Entropy, Cost of Chaos",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-179.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-179",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Entropy, Cost of Chaos",
+    "planet": "Zenith Prime",
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-180": {
+    "affiliation": "Progenitor",
+    "attack": 1,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 2,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Entropy, Oblivion's Toll",
+        "type": "Clash",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-180.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-180",
+    "isToken": false,
+    "keywords": [
+      "Engage",
+      "Trigger - Defeat"
+    ],
+    "name": "Entropy, Oblivion's Toll",
+    "planet": "Zenith Prime",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-181": {
+    "affiliation": "Progenitor",
+    "attack": 5,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 4,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Entropy, Order to Erase",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-181_inverse.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-181",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Flight"
+    ],
+    "name": "Entropy, Order to Erase",
+    "planet": "Zenith Prime",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-182": {
+    "affiliation": "Progenitor",
     "attack": 2,
     "color": "Colorless",
     "colors": [
       "Colorless"
     ],
+    "cost": 4,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Entropy, Resurrection Pact",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-182.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-182",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Defeat",
+      "Trigger - Enter"
+    ],
+    "name": "Entropy, Resurrection Pact",
+    "planet": "Zenith Prime",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-183": {
+    "affiliation": "Progenitor",
+    "attack": 2,
+    "color": "Colorless",
+    "colors": [],
     "cost": 5,
     "defense": 3,
     "face": {
       "front": {
-        "name": "Entropy, Rule through Ruin",
+        "name": "Entropy, Rule Through Ruin",
         "type": "Clash",
         "cost": 5,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-183.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-183_inverse.webp"
       }
     },
     "health": null,
@@ -36936,12 +41760,307 @@
       "Flight",
       "Trigger - Attack"
     ],
-    "name": "Entropy, Rule through Ruin",
+    "name": "Entropy, Rule Through Ruin",
     "planet": "Zenith Prime",
-    "rarity": "Epic",
-    "set": "AC7",
+    "rarity": "Iconic Rare",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
+  },
+  "AC7-184": {
+    "affiliation": "Progenitor",
+    "attack": 2,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 5,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Entropy, Twisted Hunger",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-184.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-184",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter",
+      "Trigger - Obstruct"
+    ],
+    "name": "Entropy, Twisted Hunger",
+    "planet": "Zenith Prime",
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-185": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Chaos Ensues",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-185.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-185",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Chaos Ensues",
+    "planet": null,
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-186": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Chaotic Unmaking",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-186.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-186",
+    "isToken": false,
+    "keywords": [],
+    "name": "Chaotic Unmaking",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-187": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Eternal Fee",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-187.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-187",
+    "isToken": false,
+    "keywords": [
+      "Engage",
+      "Trigger - Enter"
+    ],
+    "name": "Eternal Fee",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-188": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Round Table Discussion",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-188.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-188",
+    "isToken": false,
+    "keywords": [
+      "Engage"
+    ],
+    "name": "Round Table Discussion",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-189": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 4,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "The Price of Power",
+        "type": "Accessory",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-189.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-189",
+    "isToken": false,
+    "keywords": [],
+    "name": "The Price of Power",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-190": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "The State of the State",
+        "type": "Accessory",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-190.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-190",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack"
+    ],
+    "name": "The State of the State",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Trap",
+    "type": "Accessory"
+  },
+  "AC7-191": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Serving the Progenitors",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-191.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-191",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Trigger - Challenge"
+    ],
+    "name": "Serving the Progenitors",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Contender Weapon",
+    "type": "Accessory"
+  },
+  "AC7-192": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 4,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Sleight of Hand",
+        "type": "Action",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-192.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-192",
+    "isToken": false,
+    "keywords": [],
+    "name": "Sleight of Hand",
+    "planet": null,
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": "Basic",
+    "type": "Action"
+  },
+  "AC7-193": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Shatter the Continuum",
+        "type": "Action",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-193.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-193",
+    "isToken": false,
+    "keywords": [],
+    "name": "Shatter the Continuum",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Basic",
+    "type": "Action"
   },
   "AC7-194": {
     "affiliation": null,
@@ -36969,25 +42088,224 @@
     "name": "Words of Ruin",
     "planet": null,
     "rarity": "Common",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": "Quick",
     "type": "Action"
   },
+  "AC7-195": {
+    "affiliation": "Rogue",
+    "attack": 2,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 3,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Gearwin",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-195.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-195",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Gearwin",
+    "planet": "Cogheim",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-196": {
+    "affiliation": null,
+    "attack": 4,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 4,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Mr. Pendervick",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-196.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-196",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Mr. Pendervick",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-197": {
+    "affiliation": "Alpha",
+    "attack": 4,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 4,
+    "defense": 3,
+    "face": {
+      "front": {
+        "name": "Kheprius",
+        "type": "Clash",
+        "cost": 4,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-197.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-197",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Kheprius",
+    "planet": "Earth",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-198": {
+    "affiliation": "Rogue",
+    "attack": 5,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 5,
+    "defense": 5,
+    "face": {
+      "front": {
+        "name": "Valen Solariel",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-198.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-198",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Valen Solariel",
+    "planet": "Eldralore",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-199": {
+    "affiliation": "Alpha",
+    "attack": 3,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 3,
+    "defense": 2,
+    "face": {
+      "front": {
+        "name": "Windhoof",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-199.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-199",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Enter"
+    ],
+    "name": "Windhoof",
+    "planet": "Eldralore",
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clash"
+  },
+  "AC7-200": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Cataclysmic Surge",
+        "type": "Clashground",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-200_inverse.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-200",
+    "isToken": false,
+    "keywords": [
+      "Irrefutable",
+      "Unrivaled"
+    ],
+    "name": "Cataclysmic Surge",
+    "planet": null,
+    "rarity": "Alpha Rare",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Clashground"
+  },
+  "AC7-201": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Dueling Dragons",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-201.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-201",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Counter - Play",
+      "Engage",
+      "Safeguard",
+      "Unrivaled"
+    ],
+    "name": "Dueling Dragons",
+    "planet": null,
+    "rarity": "Legendary",
+    "set": "Ancient Alphas",
+    "subtype": "Contender Weapon",
+    "type": "Accessory"
+  },
   "AC7-202": {
     "affiliation": "Alpha",
-    "attack": 2,
-    "color": "Green",
-    "colors": [
-      "Green"
-    ],
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
     "cost": 3,
-    "defense": 4,
+    "defense": null,
     "face": {
       "front": {
         "name": "Windhoof, Relentless Breakout",
         "type": "Clash",
         "cost": 3,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-202.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-202_inverse.webp"
       }
     },
     "health": null,
@@ -37001,8 +42319,8 @@
     ],
     "name": "Windhoof, Relentless Breakout",
     "planet": "Eldralore",
-    "rarity": "Legendary",
-    "set": "AC7",
+    "rarity": "Alpha Rare",
+    "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
   },
@@ -37018,7 +42336,7 @@
     "face": {
       "front": {
         "name": "Scarab of Eternity",
-        "type": "Accessory",
+        "type": "Clash",
         "cost": 4,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-203.webp"
       }
@@ -37034,9 +42352,312 @@
     "name": "Scarab of Eternity",
     "planet": null,
     "rarity": "Legendary",
-    "set": "AC7",
+    "set": "Ancient Alphas",
     "subtype": "Contender Weapon",
+    "type": "Clash"
+  },
+  "AC7-204": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 2,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Catalytic Fragment",
+        "type": "Accessory",
+        "cost": 2,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-204.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-204",
+    "isToken": false,
+    "keywords": [
+      "Discover",
+      "Engage",
+      "Safeguard",
+      "Unrivaled"
+    ],
+    "name": "Catalytic Fragment",
+    "planet": null,
+    "rarity": "Legendary",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
     "type": "Accessory"
+  },
+  "AC7-205": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 8,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Chains of Dominion",
+        "type": "Accessory",
+        "cost": 8,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-205.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-205",
+    "isToken": false,
+    "keywords": [
+      "Unrivaled"
+    ],
+    "name": "Chains of Dominion",
+    "planet": null,
+    "rarity": "Legendary",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-206": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Exhausting Efforts",
+        "type": "Accessory",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-206.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-206",
+    "isToken": false,
+    "keywords": [
+      "Breakthrough",
+      "Trigger - Attack"
+    ],
+    "name": "Exhausting Efforts",
+    "planet": null,
+    "rarity": "Rare",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-207": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Bombardment",
+        "type": "Action",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-207.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-207",
+    "isToken": false,
+    "keywords": [],
+    "name": "Bombardment",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Basic",
+    "type": "Action"
+  },
+  "AC7-208": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 1,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Dispose",
+        "type": "Action",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-208.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-208",
+    "isToken": false,
+    "keywords": [],
+    "name": "Dispose",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": "Basic",
+    "type": "Action"
+  },
+  "AC7-209": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Cleansing Whirlwind Kick",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-209.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-209",
+    "isToken": false,
+    "keywords": [
+      "Counter - Attack",
+      "Engage",
+      "Exclusive"
+    ],
+    "name": "Cleansing Whirlwind Kick",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Relic",
+    "type": "Accessory"
+  },
+  "AC7-210": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": 3,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Zephyrstrike",
+        "type": "Accessory",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-210.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-210",
+    "isToken": false,
+    "keywords": [
+      "Attach",
+      "Barrage 2"
+    ],
+    "name": "Zephyrstrike",
+    "planet": null,
+    "rarity": "Uncommon",
+    "set": "Ancient Alphas",
+    "subtype": "Weapon",
+    "type": "Accessory"
+  },
+  "AC7-T01": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": null,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Synthorian",
+        "type": "Token",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-T01.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-T01",
+    "isToken": true,
+    "keywords": [],
+    "name": "Synthorian",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Token"
+  },
+  "AC7-T02": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": null,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "War Minion",
+        "type": "Token",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-T02.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-T02",
+    "isToken": true,
+    "keywords": [],
+    "name": "War Minion",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Token"
+  },
+  "AC7-T03a": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": null,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Portal",
+        "type": "Token",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-T03a.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-T03a",
+    "isToken": true,
+    "keywords": [],
+    "name": "Portal",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Token"
+  },
+  "AC7-TO3b": {
+    "affiliation": null,
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
+    "cost": null,
+    "defense": null,
+    "face": {
+      "front": {
+        "name": "Portal",
+        "type": "Token",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-TO3b.webp"
+      }
+    },
+    "health": null,
+    "id": "AC7-TO3b",
+    "isToken": true,
+    "keywords": [],
+    "name": "Portal",
+    "planet": null,
+    "rarity": "Common",
+    "set": "Ancient Alphas",
+    "subtype": null,
+    "type": "Token"
   },
   "CC25-001": {
     "affiliation": "Rogue",
@@ -43673,6 +49294,36 @@
     "set": "RK5",
     "subtype": "Contender Weapon",
     "type": "Accessory"
+  },
+  "RK5-003": {
+    "affiliation": "Alpha",
+    "attack": 4,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 5,
+    "defense": 7,
+    "face": {
+      "front": {
+        "name": "Warcry, Punishing Predator",
+        "type": "Clash",
+        "cost": 5,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/RK5-003.webp"
+      }
+    },
+    "health": null,
+    "id": "RK5-003",
+    "isToken": false,
+    "keywords": [
+      "Trigger - Victory"
+    ],
+    "name": "Warcry, Punishing Predator",
+    "planet": "Earth",
+    "rarity": "Common",
+    "set": "RK5",
+    "subtype": null,
+    "type": "Clash"
   },
   "RK5-004": {
     "affiliation": "Alpha",
