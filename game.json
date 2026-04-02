@@ -99,14 +99,12 @@
         ],
         "layout": {
           "direction": "column",
-          "isSymetricalForOpponents": true,
           "content": [
             {
               "direction": "row",
               "style": {
                 "gap": "8px"
               },
-              "isSymetricalForOpponents": true,
               "content": [
                 {
                   "section": "Clash-Zone",
@@ -137,7 +135,6 @@
                 "gap": "8px",
                 "margin-top": "8px"
               },
-              "isSymetricalForOpponents": true,
               "content": [
                 {
                   "section": "Contender",
