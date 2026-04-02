@@ -19931,13 +19931,13 @@
     "colors": [
       "Green"
     ],
-    "cost": 4,
+    "cost": 5,
     "defense": 4,
     "face": {
       "front": {
         "name": "Khagan, Malevolent Dragonforce",
         "type": "Clash",
-        "cost": 4,
+        "cost": 5,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC4-040.webp"
       }
     },
@@ -30736,7 +30736,7 @@
     "face": {
       "front": {
         "name": "Bombardment",
-        "type": "Basic",
+        "type": "Action",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC6-033.webp"
       }
@@ -30749,8 +30749,8 @@
     "planet": null,
     "rarity": "Common",
     "set": "Echoes of Eternity",
-    "subtype": "Action",
-    "type": "Basic"
+    "subtype": "Basic",
+    "type": "Action"
   },
   "AC6-034": {
     "affiliation": null,
@@ -31281,28 +31281,30 @@
     "type": "Clash"
   },
   "AC6-049": {
-    "affiliation": null,
-    "attack": null,
+    "affiliation": "Discarded",
+    "attack": 2,
     "color": "Green",
     "colors": [
       "Green"
     ],
-    "cost": null,
-    "defense": null,
+    "cost": 2,
+    "defense": 2,
     "face": {
       "front": {
         "name": "Cadavros, Toxic Herald",
         "type": "Clash",
-        "cost": null,
+        "cost": 2,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC6-049.webp"
       }
     },
     "health": null,
     "id": "AC6-049",
     "isToken": false,
-    "keywords": [],
+    "keywords": [
+      "trigger_-_defeat"
+    ],
     "name": "Cadavros, Toxic Herald",
-    "planet": null,
+    "planet": "Bardaga",
     "rarity": "Common",
     "set": "Echoes of Eternity",
     "subtype": null,
@@ -35403,8 +35405,8 @@
     "attack": 5,
     "color": "Multi",
     "colors": [
-      "Red",
-      "Green"
+      "Green",
+      "Red"
     ],
     "cost": 6,
     "defense": 6,
@@ -37339,7 +37341,7 @@
     "face": {
       "front": {
         "name": "Hunger Without End",
-        "type": "Basic",
+        "type": "Action",
         "cost": 6,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-037.webp"
       }
@@ -37352,8 +37354,8 @@
     "planet": null,
     "rarity": "Rare",
     "set": "Ancient Alphas",
-    "subtype": "Action",
-    "type": "Basic"
+    "subtype": "Basic",
+    "type": "Action"
   },
   "AC7-038": {
     "affiliation": null,
@@ -42095,8 +42097,11 @@
   "AC7-195": {
     "affiliation": "Rogue",
     "attack": 2,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Multi",
+    "colors": [
+      "Blue",
+      "Red"
+    ],
     "cost": 3,
     "defense": 3,
     "face": {
@@ -42123,8 +42128,11 @@
   "AC7-196": {
     "affiliation": null,
     "attack": 4,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Multi",
+    "colors": [
+      "Green",
+      "Red"
+    ],
     "cost": 4,
     "defense": 3,
     "face": {
@@ -42151,8 +42159,11 @@
   "AC7-197": {
     "affiliation": "Alpha",
     "attack": 4,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Multi",
+    "colors": [
+      "Blue",
+      "White"
+    ],
     "cost": 4,
     "defense": 3,
     "face": {
@@ -42207,8 +42218,11 @@
   "AC7-199": {
     "affiliation": "Alpha",
     "attack": 3,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Multi",
+    "colors": [
+      "Green",
+      "White"
+    ],
     "cost": 3,
     "defense": 2,
     "face": {
@@ -42235,8 +42249,10 @@
   "AC7-200": {
     "affiliation": null,
     "attack": null,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
     "cost": 2,
     "defense": null,
     "face": {
@@ -42418,14 +42434,16 @@
   "AC7-206": {
     "affiliation": null,
     "attack": null,
-    "color": "Colorless",
-    "colors": [],
+    "color": "White",
+    "colors": [
+      "White"
+    ],
     "cost": 1,
     "defense": null,
     "face": {
       "front": {
         "name": "Exhausting Efforts",
-        "type": "Accessory",
+        "type": "Basic",
         "cost": 1,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-206.webp"
       }
@@ -42441,14 +42459,16 @@
     "planet": null,
     "rarity": "Rare",
     "set": "Ancient Alphas",
-    "subtype": "Relic",
-    "type": "Accessory"
+    "subtype": "Action",
+    "type": "Basic"
   },
   "AC7-207": {
     "affiliation": null,
     "attack": null,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
     "cost": 1,
     "defense": null,
     "face": {
@@ -42843,6 +42863,34 @@
     "set": "Comic Promo",
     "subtype": "Relic",
     "type": "Accessory"
+  },
+  "CP-004": {
+    "affiliation": "Rogue",
+    "attack": 2,
+    "color": "White",
+    "colors": [
+      "White"
+    ],
+    "cost": 3,
+    "defense": 4,
+    "face": {
+      "front": {
+        "name": "Master Zephyrion, Holding the Line",
+        "type": "Clash",
+        "cost": 3,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/CP-004.webp"
+      }
+    },
+    "health": null,
+    "id": "CP-004",
+    "isToken": false,
+    "keywords": [],
+    "name": "Master Zephyrion, Holding the Line",
+    "planet": "Evelon",
+    "rarity": "Promo",
+    "set": "PROMOTION CARDS",
+    "subtype": null,
+    "type": "Clash"
   },
   "DB1-001": {
     "affiliation": "Harbinger",
@@ -48995,6 +49043,40 @@
     "subtype": "Relic",
     "type": "Accessory"
   },
+  "PG-003": {
+    "affiliation": null,
+    "attack": 0,
+    "color": "Colorless",
+    "colors": [
+      "Colorless"
+    ],
+    "cost": 1,
+    "defense": 1,
+    "face": {
+      "front": {
+        "name": "Marcus, Ghost of the Gambit",
+        "type": "Clash",
+        "cost": 1,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/PG-003.webp"
+      }
+    },
+    "health": null,
+    "id": "PG-003",
+    "isToken": false,
+    "keywords": [
+      "Counter - Play",
+      "Exclusive",
+      "Interception",
+      "Safeguard",
+      "Trigger - Challenge"
+    ],
+    "name": "Marcus, Ghost of the Gambit",
+    "planet": "Unknown",
+    "rarity": "Promo",
+    "set": "PROMOTION CARDS",
+    "subtype": null,
+    "type": "Clash"
+  },
   "PT25-003": {
     "affiliation": null,
     "attack": null,
@@ -51586,21 +51668,21 @@
     "face": {
       "front": {
         "name": "Streak",
-        "type": "Clash",
+        "type": "Token",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/TP1-024.webp"
       }
     },
     "health": null,
     "id": "TP1-024",
-    "isToken": false,
+    "isToken": true,
     "keywords": [],
     "name": "Streak",
     "planet": null,
     "rarity": "Common",
     "set": "Spoils of the Forgotten",
-    "subtype": "Token",
-    "type": "Clash"
+    "subtype": "Clash",
+    "type": "Token"
   },
   "TP1-025": {
     "affiliation": null,
