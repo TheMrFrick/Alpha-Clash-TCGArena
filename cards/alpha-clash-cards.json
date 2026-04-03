@@ -13811,10 +13811,16 @@
     "defense": null,
     "face": {
       "front": {
-        "name": "The Portal",
+        "name": "The Portal Open",
         "type": "Token",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01.webp"
+      },
+      "back": {
+        "name": "The Portal Closed",
+        "type": "Token",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC2-T01_b.webp"
       }
     },
     "health": null,
@@ -18788,6 +18794,12 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC4-002.webp"
+      },
+      "back": {
+        "name": "Shadowlight, Dark Absence",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC4-060.webp"
       }
     },
     "health": 25,
@@ -20567,6 +20579,12 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC4-060.webp"
+      },
+      "back": {
+        "name": "Shadowlight, Bright Beacon",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC4-002.webp"
       }
     },
     "health": 25,
@@ -24073,6 +24091,12 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-001.webp"
+      },
+      "back": {
+        "name": "Clarity, Deadly Duelist",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-061.webp"
       }
     },
     "health": 20,
@@ -26117,6 +26141,12 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-061.webp"
+      },
+      "back": {
+        "name": "Clarity, Defender of All",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-001.webp"
       }
     },
     "health": 20,
