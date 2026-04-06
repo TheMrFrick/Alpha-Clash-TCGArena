@@ -274,21 +274,16 @@ function convertCards(): void {
   // Filter out cards with status !== 'published' if needed
   const publishedCards = rawData.filter(card => card.status === 'published');
 
-  const cards = publishedCards.map(convertCard);
-
-  // Sort cards by ID (alphabetically, with _ variants after base cards)
-  cards.sort((a, b) => sortCardIds(a.id, b.id));
+  console.log(`Converting ${publishedCards.length} cards...`);
 
   // Build database as object with img_link as keys (for collision detection)
+  // Process in original order - don't sort before matching raw to converted
   const database: CardDatabase = {};
   const collisions: Array<{ imgLink: string; existing: Card; incoming: Card }> = [];
 
   // Add each card with its img_link as the key
   for (const raw of publishedCards) {
-    // Find the matching converted card by card_number (id)
-    const card = cards.find(c => c.id === raw.card_number);
-    if (!card) continue;
-    
+    const card = convertCard(raw);
     const imgLink = raw.img_link;
 
     if (database[imgLink]) {
@@ -309,7 +304,9 @@ function convertCards(): void {
     console.warn(`\nTotal collisions: ${collisions.length} cards were skipped`);
   }
 
-  console.log(`Converted ${Object.keys(database).length} cards (${cards.filter(c => c.isToken).length} tokens)`);
+  const allCards = Object.values(database);
+  const tokenCount = allCards.filter(c => c.isToken).length;
+  console.log(`Converted ${allCards.length} cards (${tokenCount} tokens)`);
   console.log(`First card sample:`, JSON.stringify(Object.values(database)[0], null, 2).substring(0, 500) + '...');
 
   console.log('Writing converted card data...');

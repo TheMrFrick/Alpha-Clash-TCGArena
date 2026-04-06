@@ -1203,7 +1203,7 @@
         "name": "Annihilation",
         "type": "Action",
         "cost": 4,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-035_IA.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-035_IR.webp"
       }
     },
     "health": null,
@@ -1212,7 +1212,7 @@
     "keywords": [],
     "name": "Annihilation",
     "planet": null,
-    "rarity": "Iconic Art",
+    "rarity": "Iconic Rare",
     "set": "Ancient Alphas",
     "subtype": "Basic",
     "type": "Action"
@@ -4904,8 +4904,10 @@
   "AC7-021": {
     "affiliation": "Discarded",
     "attack": 1,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
     "cost": 6,
     "defense": 1,
     "face": {
@@ -4913,7 +4915,7 @@
         "name": "Thragor, Juggernaut of Ruin",
         "type": "Clash",
         "cost": 6,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-021_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-021.webp"
       }
     },
     "health": null,
@@ -5958,8 +5960,10 @@
   "AC7-116": {
     "affiliation": "Alpha",
     "attack": 3,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
     "cost": 3,
     "defense": 3,
     "face": {
@@ -5967,7 +5971,7 @@
         "name": "Kheprius, Emergent Threat",
         "type": "Clash",
         "cost": 3,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-116_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-116.webp"
       }
     },
     "health": null,
@@ -5978,7 +5982,7 @@
     ],
     "name": "Kheprius, Emergent Threat",
     "planet": "Earth",
-    "rarity": "Iconic Rare",
+    "rarity": "Rare",
     "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
@@ -17159,16 +17163,18 @@
   "AC7-035": {
     "affiliation": null,
     "attack": null,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
     "cost": 4,
     "defense": null,
     "face": {
       "front": {
         "name": "Annihilation",
-        "type": "Action",
+        "type": "Basic",
         "cost": 4,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-035_IA.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-035.webp"
       }
     },
     "health": null,
@@ -17177,10 +17183,10 @@
     "keywords": [],
     "name": "Annihilation",
     "planet": null,
-    "rarity": "Iconic Art",
+    "rarity": "Epic",
     "set": "Ancient Alphas",
-    "subtype": "Basic",
-    "type": "Action"
+    "subtype": "Action",
+    "type": "Basic"
   },
   "AC2-127": {
     "affiliation": "Harbinger",
@@ -25063,8 +25069,10 @@
   "AC7-088": {
     "affiliation": "Alpha",
     "attack": 4,
-    "color": "Colorless",
-    "colors": [],
+    "color": "White",
+    "colors": [
+      "White"
+    ],
     "cost": 6,
     "defense": 4,
     "face": {
@@ -25072,7 +25080,7 @@
         "name": "Windhoof, Arrowstorm",
         "type": "Clash",
         "cost": 6,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-088_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-088.webp"
       }
     },
     "health": null,
@@ -27568,8 +27576,10 @@
   "AC7-016": {
     "affiliation": null,
     "attack": 1,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Black",
+    "colors": [
+      "Black"
+    ],
     "cost": 1,
     "defense": 2,
     "face": {
@@ -27577,7 +27587,7 @@
         "name": "The Absence, Shadow Incarnate",
         "type": "Clash",
         "cost": 1,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-016_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-016.webp"
       }
     },
     "health": null,
@@ -38341,7 +38351,7 @@
         "name": "Kilimanjaro, the Primordial",
         "type": "Clash",
         "cost": 3,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-012_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-012.webp"
       }
     },
     "health": null,
@@ -38999,8 +39009,10 @@
   "AC7-055": {
     "affiliation": "Dragon",
     "attack": 4,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
     "cost": 4,
     "defense": 5,
     "face": {
@@ -39008,7 +39020,7 @@
         "name": "Fangyin, Coiled Intent",
         "type": "Clash",
         "cost": 4,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-055_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-055.webp"
       }
     },
     "health": null,
@@ -39774,7 +39786,7 @@
         "name": "Otherwordly Technology",
         "type": "Accessory",
         "cost": 2,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-136_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-136.webp"
       }
     },
     "health": null,
@@ -44443,7 +44455,7 @@
         "name": "Magnate, Powered Up",
         "type": "Clash",
         "cost": 6,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-059_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-059.webp"
       }
     },
     "health": null,
@@ -44488,8 +44500,10 @@
   "AC7-154": {
     "affiliation": "Rogue",
     "attack": 4,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Red",
+    "colors": [
+      "Red"
+    ],
     "cost": 5,
     "defense": 5,
     "face": {
@@ -44497,7 +44511,7 @@
         "name": "Gearwin, Surveying the Arsenal",
         "type": "Clash",
         "cost": 5,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-154_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-154.webp"
       }
     },
     "health": null,
@@ -50618,8 +50632,10 @@
   "AC7-119": {
     "affiliation": "Alpha",
     "attack": 6,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Blue",
+    "colors": [
+      "Blue"
+    ],
     "cost": 10,
     "defense": 6,
     "face": {
@@ -50627,7 +50643,7 @@
         "name": "Kheprius, Pivot of Power",
         "type": "Clash",
         "cost": 10,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-119_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-119.webp"
       }
     },
     "health": null,
@@ -51143,8 +51159,10 @@
   "AC7-056": {
     "affiliation": "Dragon",
     "attack": 1,
-    "color": "Colorless",
-    "colors": [],
+    "color": "Green",
+    "colors": [
+      "Green"
+    ],
     "cost": 6,
     "defense": 1,
     "face": {
@@ -51152,7 +51170,7 @@
         "name": "Fangyin, Sword Drawn",
         "type": "Clash",
         "cost": 6,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-056_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-056.webp"
       }
     },
     "health": null,
@@ -51164,7 +51182,7 @@
     ],
     "name": "Fangyin, Sword Drawn",
     "planet": "Drak'aroth",
-    "rarity": "Iconic Rare",
+    "rarity": "Epic",
     "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
@@ -51349,10 +51367,8 @@
   "AC7-102_inverse": {
     "affiliation": null,
     "attack": null,
-    "color": "White",
-    "colors": [
-      "White"
-    ],
+    "color": "Colorless",
+    "colors": [],
     "cost": 5,
     "defense": null,
     "face": {
@@ -51360,7 +51376,7 @@
         "name": "Overflowing Vitality",
         "type": "Action",
         "cost": 5,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-102.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-102_inverse.webp"
       }
     },
     "health": null,
@@ -51369,7 +51385,7 @@
     "keywords": [],
     "name": "Overflowing Vitality",
     "planet": null,
-    "rarity": "Epic",
+    "rarity": "Iconic Rare",
     "set": "Ancient Alphas",
     "subtype": "Basic",
     "type": "Action"
@@ -51418,7 +51434,7 @@
         "name": "Deflecting Style",
         "type": "Accessory",
         "cost": 2,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-100_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-100.webp"
       }
     },
     "health": null,
@@ -51860,10 +51876,8 @@
   "AC7-112_inverse": {
     "affiliation": "Progenitor",
     "attack": 4,
-    "color": "Blue",
-    "colors": [
-      "Blue"
-    ],
+    "color": "Colorless",
+    "colors": [],
     "cost": 7,
     "defense": 4,
     "face": {
@@ -51871,7 +51885,7 @@
         "name": "Alpha Aster, Prism of Power",
         "type": "Clash",
         "cost": 7,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-112.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-112_inverse.webp"
       }
     },
     "health": null,
@@ -51889,7 +51903,9 @@
     "affiliation": null,
     "attack": null,
     "color": "Colorless",
-    "colors": [],
+    "colors": [
+      "Colorless"
+    ],
     "cost": 4,
     "defense": null,
     "face": {
@@ -51897,7 +51913,7 @@
         "name": "Sleight of Hand",
         "type": "Action",
         "cost": 4,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-192_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-192.webp"
       }
     },
     "health": null,
@@ -52408,7 +52424,7 @@
         "name": "Webber, Tactical Breach",
         "type": "Clash",
         "cost": 3,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-159_inverse.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-159.webp"
       }
     },
     "health": null,
@@ -52692,10 +52708,8 @@
   "AC7-067_inverse": {
     "affiliation": null,
     "attack": null,
-    "color": "Green",
-    "colors": [
-      "Green"
-    ],
+    "color": "Colorless",
+    "colors": [],
     "cost": 4,
     "defense": null,
     "face": {
@@ -52703,7 +52717,7 @@
         "name": "Dragon Horn",
         "type": "Accessory",
         "cost": 4,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-067.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-067_inverse.webp"
       }
     },
     "health": null,
@@ -52717,7 +52731,7 @@
     "planet": null,
     "rarity": "Epic",
     "set": "Ancient Alphas",
-    "subtype": "Weapon",
+    "subtype": "WEapon",
     "type": "Accessory"
   },
   "AC7-185": {
@@ -53050,10 +53064,8 @@
   "AC7-171_inverse": {
     "affiliation": null,
     "attack": null,
-    "color": "Red",
-    "colors": [
-      "Red"
-    ],
+    "color": "Colorless",
+    "colors": [],
     "cost": 9,
     "defense": null,
     "face": {
@@ -53061,7 +53073,7 @@
         "name": "The Beginning of the End",
         "type": "Clashground",
         "cost": 9,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-171.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-171_inverse.webp"
       }
     },
     "health": null,
@@ -53079,19 +53091,17 @@
   },
   "AC7-202_inverse": {
     "affiliation": "Alpha",
-    "attack": 2,
-    "color": "Green",
-    "colors": [
-      "Green"
-    ],
+    "attack": null,
+    "color": "Colorless",
+    "colors": [],
     "cost": 3,
-    "defense": 4,
+    "defense": null,
     "face": {
       "front": {
         "name": "Windhoof, Relentless Breakout",
         "type": "Clash",
         "cost": 3,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-202.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-202_inverse.webp"
       }
     },
     "health": null,
@@ -53105,7 +53115,7 @@
     ],
     "name": "Windhoof, Relentless Breakout",
     "planet": "Eldralore",
-    "rarity": "Legendary",
+    "rarity": "Alpha Rare",
     "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
@@ -53114,9 +53124,7 @@
     "affiliation": "Progenitor",
     "attack": 2,
     "color": "Colorless",
-    "colors": [
-      "Colorless"
-    ],
+    "colors": [],
     "cost": 5,
     "defense": 3,
     "face": {
@@ -53124,7 +53132,7 @@
         "name": "Entropy, Rule Through Ruin",
         "type": "Clash",
         "cost": 5,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-183.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-183_inverse.webp"
       }
     },
     "health": null,
@@ -53136,7 +53144,7 @@
     ],
     "name": "Entropy, Rule Through Ruin",
     "planet": "Zenith Prime",
-    "rarity": "Epic",
+    "rarity": "Iconic Rare",
     "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clash"
@@ -53145,9 +53153,7 @@
     "affiliation": "Progenitor",
     "attack": 5,
     "color": "Colorless",
-    "colors": [
-      "Colorless"
-    ],
+    "colors": [],
     "cost": 4,
     "defense": 3,
     "face": {
@@ -53155,7 +53161,7 @@
         "name": "Entropy, Order to Erase",
         "type": "Clash",
         "cost": 4,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-181.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-181_inverse.webp"
       }
     },
     "health": null,
@@ -53186,7 +53192,7 @@
         "name": "Cataclysmic Surge",
         "type": "Clashground",
         "cost": 2,
-        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-200.webp"
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC7-200_inverse.webp"
       }
     },
     "health": null,
@@ -53197,8 +53203,8 @@
       "Unrivaled"
     ],
     "name": "Cataclysmic Surge",
-    "planet": "The Absence",
-    "rarity": "Legendary",
+    "planet": null,
+    "rarity": "Alpha Rare",
     "set": "Ancient Alphas",
     "subtype": null,
     "type": "Clashground"
