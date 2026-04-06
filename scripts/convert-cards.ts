@@ -209,6 +209,16 @@ function stripHtml(html: string | null): string | null {
     .trim();
 }
 
+// Check if an image URL is accessible
+async function checkImageExists(url: string): Promise<boolean> {
+  try {
+    const response = await fetch(url, { method: 'HEAD' });
+    return response.ok;
+  } catch {
+    return false;
+  }
+}
+
 // Convert a raw card to TCGArena Card format
 function convertCard(raw: RawCard): Card {
   const { color, colors } = parseColor(raw.card_color);
@@ -262,7 +272,7 @@ function convertCard(raw: RawCard): Card {
 }
 
 // Main conversion function
-function convertCards(): void {
+async function convertCards(): Promise<void> {
   const inputPath = path.join(__dirname, '..', 'data', 'dp_alpha_clash_cards.json');
   const outputPath = path.join(__dirname, '..', 'cards', 'alpha-clash-cards.json');
 
@@ -280,11 +290,53 @@ function convertCards(): void {
   // Process in original order - don't sort before matching raw to converted
   const database: CardDatabase = {};
   const collisions: Array<{ imgLink: string; existing: Card; incoming: Card }> = [];
+  const missingImages: Array<{ cardId: string; cardName: string; imgLink: string; missingFront: boolean; missingBack?: boolean }> = [];
+
+  console.log('Checking image availability...');
 
   // Add each card with its img_link as the key
+  let processed = 0;
   for (const raw of publishedCards) {
     const card = convertCard(raw);
     const imgLink = raw.img_link;
+
+    processed++;
+    if (processed % 50 === 0) {
+      process.stdout.write(`\rChecked ${processed}/${publishedCards.length} cards...`);
+    }
+
+    // Check if front image exists
+    const frontImageUrl = `${IMAGE_BASE_URL}/${imgLink}.webp`;
+    const frontExists = await checkImageExists(frontImageUrl);
+
+    if (!frontExists) {
+      missingImages.push({
+        cardId: card.id,
+        cardName: card.name,
+        imgLink,
+        missingFront: true,
+      });
+      console.warn(`\nSkipping card "${card.name}" (${card.id}) - front image not found: ${frontImageUrl}`);
+      continue;
+    }
+
+    // Check back image if present
+    if (card.face.back) {
+      const backImageUrl = card.face.back.image;
+      const backExists = await checkImageExists(backImageUrl);
+      
+      if (!backExists) {
+        missingImages.push({
+          cardId: card.id,
+          cardName: card.name,
+          imgLink,
+          missingFront: false,
+          missingBack: true,
+        });
+        console.warn(`\nSkipping card "${card.name}" (${card.id}) - back image not found: ${backImageUrl}`);
+        continue;
+      }
+    }
 
     if (database[imgLink]) {
       collisions.push({
@@ -292,12 +344,26 @@ function convertCards(): void {
         existing: database[imgLink],
         incoming: card,
       });
-      console.warn(`Collision detected for img_link "${imgLink}":`);
+      console.warn(`\nCollision detected for img_link "${imgLink}":`);
       console.warn(`  Existing: ${database[imgLink].name} (${database[imgLink].id})`);
       console.warn(`  Incoming: ${card.name} (${card.id}) - SKIPPED`);
     } else {
       database[imgLink] = card;
     }
+  }
+
+  console.log('\n');
+
+  if (missingImages.length > 0) {
+    console.warn(`\nTotal cards skipped due to missing images: ${missingImages.length}`);
+    // Save missing images report
+    const missingReportPath = path.join(__dirname, '..', 'data', 'skipped-cards-missing-images.json');
+    fs.writeFileSync(missingReportPath, JSON.stringify({
+      timestamp: new Date().toISOString(),
+      count: missingImages.length,
+      cards: missingImages,
+    }, null, 2));
+    console.log(`Missing images report saved to: ${missingReportPath}`);
   }
 
   if (collisions.length > 0) {
@@ -336,4 +402,7 @@ function convertCards(): void {
   console.log('By Set:', Object.keys(stats.bySet).length, 'sets');
 }
 
-convertCards();
+convertCards().catch(err => {
+  console.error('Conversion failed:', err);
+  process.exit(1);
+});
