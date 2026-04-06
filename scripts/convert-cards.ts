@@ -5,6 +5,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
+import { backfaceData } from './backface-data.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -232,6 +233,9 @@ function convertCard(raw: RawCard): Card {
     image: `${IMAGE_BASE_URL}/${raw.img_link}.webp`,
   };
 
+  // Support for backface - check if we have stored backface data for this img_link
+  const back = backfaceData[raw.img_link];
+
   // Return with keys in alphabetical order
   return {
     affiliation,
@@ -242,6 +246,7 @@ function convertCard(raw: RawCard): Card {
     defense,
     face: {
       front,
+      back,
     },
     health,
     id: raw.card_number,
@@ -274,22 +279,43 @@ function convertCards(): void {
   // Sort cards by ID (alphabetically, with _ variants after base cards)
   cards.sort((a, b) => sortCardIds(a.id, b.id));
 
-  // Build database as object with card IDs as keys (TCGArena format)
-  // Using sorted order to maintain alphabetical key ordering in output
+  // Build database as object with img_link as keys (for collision detection)
   const database: CardDatabase = {};
+  const collisions: Array<{ imgLink: string; existing: Card; incoming: Card }> = [];
 
-  // Add each card with its ID as the key (already sorted)
-  for (const card of cards) {
-    database[card.id] = card;
+  // Add each card with its img_link as the key
+  for (const raw of publishedCards) {
+    // Find the matching converted card by card_number (id)
+    const card = cards.find(c => c.id === raw.card_number);
+    if (!card) continue;
+    
+    const imgLink = raw.img_link;
+
+    if (database[imgLink]) {
+      collisions.push({
+        imgLink,
+        existing: database[imgLink],
+        incoming: card,
+      });
+      console.warn(`Collision detected for img_link "${imgLink}":`);
+      console.warn(`  Existing: ${database[imgLink].name} (${database[imgLink].id})`);
+      console.warn(`  Incoming: ${card.name} (${card.id}) - SKIPPED`);
+    } else {
+      database[imgLink] = card;
+    }
   }
 
-  console.log(`Converted ${cards.length} cards (${cards.filter(c => c.isToken).length} tokens)`);
-  console.log(`First card sample:`, JSON.stringify(cards[0], null, 2).substring(0, 500) + '...');
+  if (collisions.length > 0) {
+    console.warn(`\nTotal collisions: ${collisions.length} cards were skipped`);
+  }
+
+  console.log(`Converted ${Object.keys(database).length} cards (${cards.filter(c => c.isToken).length} tokens)`);
+  console.log(`First card sample:`, JSON.stringify(Object.values(database)[0], null, 2).substring(0, 500) + '...');
 
   console.log('Writing converted card data...');
   fs.writeFileSync(outputPath, JSON.stringify(database, null, 2));
 
-  console.log(`Successfully converted ${cards.length} cards to ${outputPath}`);
+  console.log(`Successfully converted ${Object.keys(database).length} cards to ${outputPath}`);
 
   // Print some stats
   const stats = {
@@ -299,7 +325,7 @@ function convertCards(): void {
     bySet: {} as Record<string, number>,
   };
 
-  for (const card of cards) {
+  for (const card of Object.values(database)) {
     stats.byType[card.type] = (stats.byType[card.type] || 0) + 1;
     stats.byColor[card.color] = (stats.byColor[card.color] || 0) + 1;
     stats.byRarity[card.rarity] = (stats.byRarity[card.rarity] || 0) + 1;
