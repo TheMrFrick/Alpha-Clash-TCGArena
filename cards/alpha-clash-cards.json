@@ -8488,6 +8488,12 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-153_AA.webp"
+      },
+      "back": {
+        "name": "Clarity, Deadly Duelist",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-150_AA.webp"
       }
     },
     "health": null,
@@ -14999,6 +15005,12 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-153.webp"
+      },
+      "back": {
+        "name": "Clarity, Deadly Duelist",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-150.webp"
       }
     },
     "health": null,
@@ -27727,6 +27739,12 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-150.webp"
+      },
+      "back": {
+        "name": "Clarity, Defender of All",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-153.webp"
       }
     },
     "health": null,
@@ -27813,6 +27831,12 @@
         "type": "Contender",
         "cost": null,
         "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-150_AA.webp"
+      },
+      "back": {
+        "name": "Clarity, Defender of All",
+        "type": "Contender",
+        "cost": null,
+        "image": "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-153_AA.webp"
       }
     },
     "health": null,
