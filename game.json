@@ -34,7 +34,11 @@
         "info": "You may mulligan once. Choose cards to put back, then draw that many.",
         "startingHandSize": "8",
         "drawNewHand": false,
-        "drawNewSelectedCards": true
+        "drawNewSelectedCards": true,
+        "mulliganCount": {
+          "min": 0,
+          "max": 1
+        }
       },
       "beforeGameStart": {
         "initialBoardSetup": [
@@ -85,38 +89,7 @@
           "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/toxic.webp"
         }
       ],
-      "tokens": [
-        {
-          "id": "damage",
-          "name": "Damage",
-          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/damage.svg",
-          "color": "#FF4444"
-        },
-        {
-          "id": "boost",
-          "name": "Boost",
-          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/boost.svg",
-          "color": "#44FF44"
-        },
-        {
-          "id": "shield",
-          "name": "Shield",
-          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/shield.svg",
-          "color": "#4444FF"
-        },
-        {
-          "id": "stun",
-          "name": "Stun",
-          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/stun.svg",
-          "color": "#FFFF00"
-        },
-        {
-          "id": "freeze",
-          "name": "Freeze",
-          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/freeze.svg",
-          "color": "#00FFFF"
-        }
-      ],
+      "tokens": [],
       "countersStartingValues": [30],
       "hideFacedDownCards": false,
       "sections": {
