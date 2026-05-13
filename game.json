@@ -53,6 +53,38 @@
         "drawPerTurn": 1
       },
       "defaultNotes": "",
+      "draggableTokens": [
+        {
+          "id": "bounty",
+          "name": "Bounty",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/bounty.webp"
+        },
+        {
+          "id": "collection",
+          "name": "Collection",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/collection.webp"
+        },
+        {
+          "id": "scarab",
+          "name": "Scarab",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/scarab.webp"
+        },
+        {
+          "id": "streak",
+          "name": "Streak",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/streak.webp"
+        },
+        {
+          "id": "temper",
+          "name": "Temper",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/temper.webp"
+        },
+        {
+          "id": "toxic",
+          "name": "Toxic",
+          "image": "https://themrfrick.github.io/Alpha-Clash-TCGArena/images/tokens/toxic.webp"
+        }
+      ],
       "tokens": [
         {
           "id": "damage",
