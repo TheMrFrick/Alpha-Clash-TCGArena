@@ -144,14 +144,14 @@
                 {
                   "section": "Contender",
                   "style": {
-                    "height": "auto",
+                    "height": "18vh",
                     "width": "12vh"
                   }
                 },
                 {
                   "section": "Clashground",
                   "style": {
-                    "height": "auto",
+                    "height": "18vh",
                     "width": "12vh"
                   }
                 },
@@ -165,7 +165,7 @@
                 {
                   "section": "Banished",
                   "style": {
-                    "height": "auto",
+                    "height": "18vh",
                     "width": "12vh"
                   }
                 }
@@ -181,7 +181,11 @@
           "Clashground": "Clashground"
         },
         "autoPlayFromStack": {
-          "Token": "Clash-Zone"
+          "Token": "Clash-Zone",
+          "Clash": "Clash-Zone",
+          "Accessory": "Accessory-Zone",
+          "Action": "Accessory-Zone",
+          "Clashground": "Clashground"
         },
         "sectionsDict": {
           "Hand": {
