@@ -189,7 +189,6 @@
         },
         "sectionsDict": {
           "Hand": {
-            "isDefaultSection": true,
             "title": "Hand",
             "isHidden": "opponent-only",
             "height": "DEFAULT",
@@ -207,7 +206,6 @@
             "showHiddenCardInHistory": false
           },
           "Discard": {
-            "isDefaultSection": true,
             "title": "Discard",
             "isHidden": "no",
             "height": "DEFAULT",
@@ -224,7 +222,6 @@
             "showHiddenCardInHistory": false
           },
           "Deck": {
-            "isDefaultSection": true,
             "title": "Deck",
             "isHidden": "yes",
             "height": "DEFAULT",
@@ -241,7 +238,6 @@
             "showHiddenCardInHistory": false
           },
           "Stack": {
-            "isDefaultSection": true,
             "title": "Stack",
             "isHidden": "yes",
             "height": "none",
@@ -258,7 +254,6 @@
             "showHiddenCardInHistory": false
           },
           "Exile": {
-            "isDefaultSection": true,
             "title": "Banished",
             "isHidden": "no",
             "height": "DEFAULT",
@@ -275,7 +270,6 @@
             "showHiddenCardInHistory": false
           },
           "ExileHidden": {
-            "isDefaultSection": true,
             "title": "Banished (Hidden)",
             "isHidden": "yes",
             "height": "DEFAULT",
@@ -292,7 +286,6 @@
             "showHiddenCardInHistory": false
           },
           "Sideboard": {
-            "isDefaultSection": true,
             "title": "Sideboard",
             "isHidden": "no",
             "height": "DEFAULT",
