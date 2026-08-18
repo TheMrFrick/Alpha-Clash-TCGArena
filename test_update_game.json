@@ -102,6 +102,17 @@
           "Resources",
           "Remove"
         ],
+        "sharedZone": {
+          "height": 12,
+          "layout": {
+            "direction": "row",
+            "content": [
+              {
+                "section": "Portal"
+              }
+            ]
+          }
+        },
         "layout": {
           "direction": "column",
           "content": [
@@ -123,13 +134,6 @@
                   "style": {
                     "width": "30%",
                     "min-height": "18vh"
-                  }
-                },
-                {
-                  "section": "Portal",
-                  "style": {
-                    "width": "10%",
-                    "height": "12vh"
                   }
                 }
               ]
@@ -160,13 +164,6 @@
                   "style": {
                     "flex": "1",
                     "min-height": "18vh"
-                  }
-                },
-                {
-                  "section": "Discard",
-                  "style": {
-                    "height": "18vh",
-                    "width": "12vh"
                   }
                 },
                 {
@@ -223,6 +220,7 @@
             "opponentAlignment": false,
             "displayedTitle": "Oblivion",
             "noQuickActions": false,
+            "cardActionShortcut": { "action": "MOVE", "actionData": { "destination": "Discard" } },
             "enterTapped": false,
             "enterSpun": false,
             "keepTappedNewTurn": false,
@@ -382,6 +380,7 @@
             "isHorizontalAllowed": false,
             "displayedTitle": "Banished",
             "noQuickActions": false,
+            "cardActionShortcut": { "action": "MOVE", "actionData": { "destination": "Remove" } },
             "enterTapped": false,
             "enterSpun": false,
             "isGroupForbidden": false,
