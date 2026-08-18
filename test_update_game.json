@@ -95,12 +95,12 @@
       "sections": {
         "customSections": [
           "Contender",
-          "Portal",
           "Clashground",
           "Clash-Zone",
           "Accessory-Zone",
           "Resources",
-          "Remove"
+          "Remove",
+          "Discard"
         ],
         "sharedZone": {
           "height": 12,
@@ -212,7 +212,7 @@
           "Discard": {
             "title": "Discard",
             "isHidden": "no",
-            "height": "DEFAULT",
+            "height": "SMALL",
             "alignment": "DECK",
             "isHorizontalAllowed": false,
             "isGroupForbidden": true,
