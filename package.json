@@ -1,6 +1,6 @@
 {
   "name": "alpha-clash-tcg",
-  "version": "1.5.6",
+  "version": "1.6.0",
   "description": "Alpha Clash Trading Card Game implementation for TCGArena",
   "main": "dist/index.js",
   "scripts": {
