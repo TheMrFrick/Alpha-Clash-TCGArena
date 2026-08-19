@@ -101,7 +101,8 @@
           "Clashground",
           "Clash-Zone",
           "Accessory-Zone",
-          "Resources"
+          "Resources",
+          "Banished"
         ],
         "sharedZone": {
           "height": 12,
@@ -168,7 +169,7 @@
                   }
                 },
                 {
-                  "section": "Remove",
+                  "section": "Banished",
                   "style": {
                     "height": "12vh",
                     "width": "12vh"
@@ -265,6 +266,36 @@
             "noAutoPayTo": false,
             "isHorizontalAllowed": false,
             "displayedTitle": "Accessories / Traps",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Resources": {
+            "title": "Resources",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Resources",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Banished": {
+            "title": "Banished",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Banished",
             "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": false,
