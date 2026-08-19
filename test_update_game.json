@@ -98,9 +98,7 @@
           "Clashground",
           "Clash-Zone",
           "Accessory-Zone",
-          "Resources",
-          "Remove",
-          "Discard"
+          "Resources"
         ],
         "sharedZone": {
           "height": 12,
@@ -126,14 +124,14 @@
                   "section": "Clash-Zone",
                   "style": {
                     "width": "60%",
-                    "min-height": "18vh"
+                    "min-height": "12vh"
                   }
                 },
                 {
                   "section": "Accessory-Zone",
                   "style": {
-                    "width": "30%",
-                    "min-height": "18vh"
+                    "width": "40%",
+                    "min-height": "12vh"
                   }
                 }
               ]
@@ -148,14 +146,14 @@
                 {
                   "section": "Contender",
                   "style": {
-                    "height": "18vh",
+                    "height": "12vh",
                     "width": "12vh"
                   }
                 },
                 {
                   "section": "Clashground",
                   "style": {
-                    "height": "18vh",
+                    "height": "12vh",
                     "width": "12vh"
                   }
                 },
@@ -163,13 +161,13 @@
                   "section": "Resources",
                   "style": {
                     "flex": "1",
-                    "min-height": "18vh"
+                    "min-height": "12vh"
                   }
                 },
                 {
                   "section": "Remove",
                   "style": {
-                    "height": "18vh",
+                    "height": "12vh",
                     "width": "12vh"
                   }
                 }
@@ -214,13 +212,12 @@
             "isHidden": "no",
             "height": "SMALL",
             "alignment": "DECK",
+            "opponentAlignment": "DECK",
             "isHorizontalAllowed": false,
             "isGroupForbidden": true,
             "noAutoPayTo": true,
-            "opponentAlignment": false,
             "displayedTitle": "Oblivion",
             "noQuickActions": false,
-            "cardActionShortcut": { "action": "MOVE", "actionData": { "destination": "Discard" } },
             "enterTapped": false,
             "enterSpun": false,
             "keepTappedNewTurn": false,
@@ -250,24 +247,7 @@
             "isHorizontalAllowed": false,
             "isGroupForbidden": true,
             "displayedTitle": "Stack",
-            "opponentAlignment": false,
             "noAutoPayTo": false,
-            "noQuickActions": false,
-            "enterTapped": false,
-            "enterSpun": false,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false
-          },
-          "Sideboard": {
-            "title": "Sideboard",
-            "isHidden": "no",
-            "height": "DEFAULT",
-            "alignment": "NONE",
-            "isHorizontalAllowed": false,
-            "isGroupForbidden": true,
-            "opponentAlignment": false,
-            "noAutoPayTo": false,
-            "displayedTitle": "",
             "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": false,
@@ -295,7 +275,6 @@
             "isHidden": "no",
             "height": "SMALL",
             "alignment": "CENTER",
-            "opponentAlignment": false,
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "displayedTitle": "Portal",
