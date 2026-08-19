@@ -46,7 +46,10 @@
             "createCardId": "AC2-T01",
             "destination": "Portal",
             "count": 1,
-            "isHorizontal": true
+            "isHorizontal": true,
+            "overrideState": {
+              "isFlipped": true
+            }
           }
         ]
       },
@@ -208,7 +211,6 @@
             "showHiddenCardInHistory": false
           },
           "Discard": {
-            "title": "Discard",
             "isHidden": "no",
             "height": "SMALL",
             "alignment": "DECK",
@@ -219,7 +221,6 @@
             "displayedTitle": "Oblivion",
             "noQuickActions": false,
             "enterTapped": false,
-            "enterSpun": false,
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           },
@@ -354,13 +355,11 @@
             "isHidden": "no",
             "height": "SMALL",
             "alignment": "DECK",
-            "opponentAlignment": false,
+            "opponentAlignment": "DECK",
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
             "displayedTitle": "Banished",
-            "noQuickActions": false,
-            "cardActionShortcut": { "action": "MOVE", "actionData": { "destination": "Remove" } },
-            "enterTapped": false,
+            "noQuickActions": false,  
             "enterSpun": false,
             "isGroupForbidden": false,
             "keepTappedNewTurn": false,
