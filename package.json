@@ -1,6 +1,6 @@
 {
   "name": "alpha-clash-tcg",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Alpha Clash Trading Card Game implementation for TCGArena",
   "main": "dist/index.js",
   "scripts": {
@@ -10,6 +10,8 @@
     "copy-assets": "cp -r cards images css index.html game.json dist/ 2>/dev/null || true",
     "dev": "npm run build && npm run serve",
     "serve": "npx serve dist -p 3000",
+    "fetch-cards": "tsx scripts/fetch-cards.ts",
+    "convert-cards": "tsx scripts/convert-cards.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -36,6 +38,7 @@
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "ts-jest": "^29.1.0",
+    "tsx": "^4.23.13",
     "typescript": "^5.0.0"
   },
   "engines": {

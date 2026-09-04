@@ -169,11 +169,7 @@
                   }
                 },
                 {
-                  "section": "Banished",
-                  "style": {
-                    "height": "12vh",
-                    "width": "12vh"
-                  }
+                  "section": "Banished"
                 }
               ]
             }
@@ -291,12 +287,11 @@
           "Banished": {
             "title": "Banished",
             "isHidden": "no",
-            "height": "SMALL",
             "alignment": "DECK",
             "noAutoPayTo": false,
             "isHorizontalAllowed": false,
             "displayedTitle": "Banished",
-            "noQuickActions": false,
+            "noQuickActions": true,
             "enterTapped": false,
             "enterSpun": false,
             "isGroupForbidden": false,

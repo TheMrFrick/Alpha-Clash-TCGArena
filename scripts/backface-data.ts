@@ -40,5 +40,17 @@ export const backfaceData: Record<string, CardFace> = {
     type: "Contender",
     cost: null,
     image: "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/AC5-001.webp"
+  },
+  "CG26-001": {
+    name: "Adaptive Portal",
+    type: "Portal",
+    cost: null,
+    image: "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/CG26-001_b.webp"
+  },
+  "CG26-001_mysterious_portal": {
+    name: "Mysterious Portal",
+    type: "Portal",
+    cost: null,
+    image: "https://multi-deckplanet.us-southeast-1.linodeobjects.com/alpha_clash/CG26-001_mysterious_portal_b.webp"
   }
 };
