@@ -172,7 +172,7 @@
                   "section": "Banished",
                   "style": {
                     "height": "12vh",
-                    "width": "8vh"
+                    "width": "12vh"
                   }
                 }
               ]
@@ -223,7 +223,8 @@
             "enterSpun": false,
             "isGroupForbidden": false,
             "keepTappedNewTurn": true,
-            "showHiddenCardInHistory": false
+            "showHiddenCardInHistory": false,
+            "isShared": true
           },
           "Clashground": {
             "title": "Clashground",
