@@ -288,15 +288,7 @@
             "title": "Banished",
             "isHidden": "no",
             "alignment": "DECK",
-            "noAutoPayTo": false,
-            "isHorizontalAllowed": false,
-            "displayedTitle": "Banished",
-            "noQuickActions": true,
-            "enterTapped": false,
-            "enterSpun": false,
-            "isGroupForbidden": false,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false
+            "displayedTitle": "Banished"
           }
         }
       }
