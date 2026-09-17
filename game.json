@@ -169,7 +169,11 @@
                   }
                 },
                 {
-                  "section": "Banished"
+                  "section": "Banished",
+                  "style": {
+                    "height": "12vh",
+                    "width": "2vw"
+                  }
                 }
               ]
             }
